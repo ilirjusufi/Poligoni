@@ -22,6 +22,8 @@ namespace Poligoni.DAL
             sqlComm.Parameters.AddWithValue("@Emri", emri);
             sqlComm.Parameters.AddWithValue("@Mbiemri", mbiemri);
 
+            sqlComm.Parameters.AddWithValue("@Mbiemri", statusi);
+
 
             sqlComm.ExecuteNonQuery();
             sqlConn.Close();
