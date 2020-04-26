@@ -76,6 +76,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegjistrimiPlumbave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegjistrimiPlumbave.Designer.cs">
+      <DependentUpon>frmRegjistrimiPlumbave.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRegjistroKlient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +119,12 @@
       <DependentUpon>frmRegjistrimiArmes.cs</DependentUpon>
     </Compile>
     <Compile Include="sqllidhja.cs" />
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegjistrimiPlumbave.resx">
+      <DependentUpon>frmRegjistrimiPlumbave.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRegjistroKlient.resx">
       <DependentUpon>frmRegjistroKlient.cs</DependentUpon>
     </EmbeddedResource>

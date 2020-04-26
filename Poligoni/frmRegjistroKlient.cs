@@ -23,6 +23,8 @@ namespace Poligoni
             frmlogin.Show();
             frmRegjistrimiArmes frmRegjistrimiArmes = new frmRegjistrimiArmes();
             frmRegjistrimiArmes.Show();
+            frmRegjistrimiPlumbave frmRegjistrimiPlumbave = new frmRegjistrimiPlumbave();
+            frmRegjistrimiPlumbave.Show();
             InitializeComponent();
 
         }
