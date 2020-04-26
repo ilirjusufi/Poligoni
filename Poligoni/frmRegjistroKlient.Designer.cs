@@ -35,13 +35,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.jGradientPanel1 = new JGradient_Panel.JGradientPanel();
-            this.textBox1 = new JTextBox2.JTextBox();
-            this.textBox2 = new JTextBox2.JTextBox();
-            this.jTextBox2 = new JTextBox2.JTextBox();
-            this.jTextBox3 = new JTextBox2.JTextBox();
-            this.jTextBox4 = new JTextBox2.JTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.txtPasswordKlientit = new JTextBox2.JTextBox();
+            this.txtUsernameKlientit = new JTextBox2.JTextBox();
+            this.txtEmailKlientit = new JTextBox2.JTextBox();
+            this.txtMbiemriKlientit = new JTextBox2.JTextBox();
+            this.txtEmriKlientit = new JTextBox2.JTextBox();
             this.jGradientPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -132,11 +132,11 @@
             this.jGradientPanel1.ColorBottom = System.Drawing.Color.SeaGreen;
             this.jGradientPanel1.ColorTop = System.Drawing.Color.DarkOliveGreen;
             this.jGradientPanel1.Controls.Add(this.panel1);
-            this.jGradientPanel1.Controls.Add(this.jTextBox4);
-            this.jGradientPanel1.Controls.Add(this.jTextBox3);
-            this.jGradientPanel1.Controls.Add(this.jTextBox2);
-            this.jGradientPanel1.Controls.Add(this.textBox2);
-            this.jGradientPanel1.Controls.Add(this.textBox1);
+            this.jGradientPanel1.Controls.Add(this.txtPasswordKlientit);
+            this.jGradientPanel1.Controls.Add(this.txtUsernameKlientit);
+            this.jGradientPanel1.Controls.Add(this.txtEmailKlientit);
+            this.jGradientPanel1.Controls.Add(this.txtMbiemriKlientit);
+            this.jGradientPanel1.Controls.Add(this.txtEmriKlientit);
             this.jGradientPanel1.Controls.Add(this.label5);
             this.jGradientPanel1.Controls.Add(this.label4);
             this.jGradientPanel1.Controls.Add(this.button1);
@@ -146,109 +146,9 @@
             this.jGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.jGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.jGradientPanel1.Name = "jGradientPanel1";
-            this.jGradientPanel1.Size = new System.Drawing.Size(903, 499);
+            this.jGradientPanel1.Size = new System.Drawing.Size(903, 561);
             this.jGradientPanel1.TabIndex = 13;
             this.jGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.jGradientPanel1_Paint);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.textBox1.Font_Size = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.textBox1.HintText = null;
-            this.textBox1.IsPassword = false;
-            this.textBox1.Location = new System.Drawing.Point(315, 110);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.MaxLength = 32767;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.OnFocusedColor = System.Drawing.Color.White;
-            this.textBox1.OnFocusedTextColor = System.Drawing.Color.Gray;
-            this.textBox1.ReadOnly = false;
-            this.textBox1.Right_To_Left = System.Windows.Forms.RightToLeft.No;
-            this.textBox1.Size = new System.Drawing.Size(279, 38);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextName = "";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.textBox2.Font_Size = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.textBox2.HintText = null;
-            this.textBox2.IsPassword = false;
-            this.textBox2.Location = new System.Drawing.Point(315, 168);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.MaxLength = 32767;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.OnFocusedColor = System.Drawing.Color.White;
-            this.textBox2.OnFocusedTextColor = System.Drawing.Color.Gray;
-            this.textBox2.ReadOnly = false;
-            this.textBox2.Right_To_Left = System.Windows.Forms.RightToLeft.No;
-            this.textBox2.Size = new System.Drawing.Size(279, 38);
-            this.textBox2.TabIndex = 31;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.TextName = "";
-            // 
-            // jTextBox2
-            // 
-            this.jTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.jTextBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.jTextBox2.Font_Size = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.jTextBox2.HintText = null;
-            this.jTextBox2.IsPassword = false;
-            this.jTextBox2.Location = new System.Drawing.Point(315, 222);
-            this.jTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.jTextBox2.MaxLength = 32767;
-            this.jTextBox2.Name = "jTextBox2";
-            this.jTextBox2.OnFocusedColor = System.Drawing.Color.White;
-            this.jTextBox2.OnFocusedTextColor = System.Drawing.Color.Gray;
-            this.jTextBox2.ReadOnly = false;
-            this.jTextBox2.Right_To_Left = System.Windows.Forms.RightToLeft.No;
-            this.jTextBox2.Size = new System.Drawing.Size(279, 38);
-            this.jTextBox2.TabIndex = 32;
-            this.jTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.jTextBox2.TextName = "";
-            // 
-            // jTextBox3
-            // 
-            this.jTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.jTextBox3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.jTextBox3.Font_Size = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.jTextBox3.HintText = null;
-            this.jTextBox3.IsPassword = false;
-            this.jTextBox3.Location = new System.Drawing.Point(315, 281);
-            this.jTextBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.jTextBox3.MaxLength = 32767;
-            this.jTextBox3.Name = "jTextBox3";
-            this.jTextBox3.OnFocusedColor = System.Drawing.Color.White;
-            this.jTextBox3.OnFocusedTextColor = System.Drawing.Color.Gray;
-            this.jTextBox3.ReadOnly = false;
-            this.jTextBox3.Right_To_Left = System.Windows.Forms.RightToLeft.No;
-            this.jTextBox3.Size = new System.Drawing.Size(279, 38);
-            this.jTextBox3.TabIndex = 33;
-            this.jTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.jTextBox3.TextName = "";
-            // 
-            // jTextBox4
-            // 
-            this.jTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.jTextBox4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.jTextBox4.Font_Size = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.jTextBox4.HintText = null;
-            this.jTextBox4.IsPassword = false;
-            this.jTextBox4.Location = new System.Drawing.Point(315, 338);
-            this.jTextBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.jTextBox4.MaxLength = 32767;
-            this.jTextBox4.Name = "jTextBox4";
-            this.jTextBox4.OnFocusedColor = System.Drawing.Color.White;
-            this.jTextBox4.OnFocusedTextColor = System.Drawing.Color.Gray;
-            this.jTextBox4.ReadOnly = false;
-            this.jTextBox4.Right_To_Left = System.Windows.Forms.RightToLeft.No;
-            this.jTextBox4.Size = new System.Drawing.Size(279, 38);
-            this.jTextBox4.TabIndex = 34;
-            this.jTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.jTextBox4.TextName = "";
             // 
             // panel1
             // 
@@ -270,11 +170,111 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Regjistrimi i Klientit";
             // 
+            // txtPasswordKlientit
+            // 
+            this.txtPasswordKlientit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPasswordKlientit.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.txtPasswordKlientit.Font_Size = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.txtPasswordKlientit.HintText = null;
+            this.txtPasswordKlientit.IsPassword = true;
+            this.txtPasswordKlientit.Location = new System.Drawing.Point(315, 338);
+            this.txtPasswordKlientit.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPasswordKlientit.MaxLength = 32767;
+            this.txtPasswordKlientit.Name = "txtPasswordKlientit";
+            this.txtPasswordKlientit.OnFocusedColor = System.Drawing.Color.White;
+            this.txtPasswordKlientit.OnFocusedTextColor = System.Drawing.Color.Gray;
+            this.txtPasswordKlientit.ReadOnly = false;
+            this.txtPasswordKlientit.Right_To_Left = System.Windows.Forms.RightToLeft.No;
+            this.txtPasswordKlientit.Size = new System.Drawing.Size(279, 38);
+            this.txtPasswordKlientit.TabIndex = 34;
+            this.txtPasswordKlientit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPasswordKlientit.TextName = "";
+            // 
+            // txtUsernameKlientit
+            // 
+            this.txtUsernameKlientit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUsernameKlientit.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.txtUsernameKlientit.Font_Size = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.txtUsernameKlientit.HintText = null;
+            this.txtUsernameKlientit.IsPassword = false;
+            this.txtUsernameKlientit.Location = new System.Drawing.Point(315, 281);
+            this.txtUsernameKlientit.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsernameKlientit.MaxLength = 32767;
+            this.txtUsernameKlientit.Name = "txtUsernameKlientit";
+            this.txtUsernameKlientit.OnFocusedColor = System.Drawing.Color.White;
+            this.txtUsernameKlientit.OnFocusedTextColor = System.Drawing.Color.Gray;
+            this.txtUsernameKlientit.ReadOnly = false;
+            this.txtUsernameKlientit.Right_To_Left = System.Windows.Forms.RightToLeft.No;
+            this.txtUsernameKlientit.Size = new System.Drawing.Size(279, 38);
+            this.txtUsernameKlientit.TabIndex = 33;
+            this.txtUsernameKlientit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUsernameKlientit.TextName = "";
+            // 
+            // txtEmailKlientit
+            // 
+            this.txtEmailKlientit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmailKlientit.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.txtEmailKlientit.Font_Size = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.txtEmailKlientit.HintText = null;
+            this.txtEmailKlientit.IsPassword = false;
+            this.txtEmailKlientit.Location = new System.Drawing.Point(315, 222);
+            this.txtEmailKlientit.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmailKlientit.MaxLength = 32767;
+            this.txtEmailKlientit.Name = "txtEmailKlientit";
+            this.txtEmailKlientit.OnFocusedColor = System.Drawing.Color.White;
+            this.txtEmailKlientit.OnFocusedTextColor = System.Drawing.Color.Gray;
+            this.txtEmailKlientit.ReadOnly = false;
+            this.txtEmailKlientit.Right_To_Left = System.Windows.Forms.RightToLeft.No;
+            this.txtEmailKlientit.Size = new System.Drawing.Size(279, 38);
+            this.txtEmailKlientit.TabIndex = 32;
+            this.txtEmailKlientit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmailKlientit.TextName = "";
+            // 
+            // txtMbiemriKlientit
+            // 
+            this.txtMbiemriKlientit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMbiemriKlientit.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.txtMbiemriKlientit.Font_Size = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.txtMbiemriKlientit.HintText = null;
+            this.txtMbiemriKlientit.IsPassword = false;
+            this.txtMbiemriKlientit.Location = new System.Drawing.Point(315, 168);
+            this.txtMbiemriKlientit.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMbiemriKlientit.MaxLength = 32767;
+            this.txtMbiemriKlientit.Name = "txtMbiemriKlientit";
+            this.txtMbiemriKlientit.OnFocusedColor = System.Drawing.Color.White;
+            this.txtMbiemriKlientit.OnFocusedTextColor = System.Drawing.Color.Gray;
+            this.txtMbiemriKlientit.ReadOnly = false;
+            this.txtMbiemriKlientit.Right_To_Left = System.Windows.Forms.RightToLeft.No;
+            this.txtMbiemriKlientit.Size = new System.Drawing.Size(279, 38);
+            this.txtMbiemriKlientit.TabIndex = 31;
+            this.txtMbiemriKlientit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMbiemriKlientit.TextName = "";
+            // 
+            // txtEmriKlientit
+            // 
+            this.txtEmriKlientit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmriKlientit.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.txtEmriKlientit.Font_Size = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.txtEmriKlientit.HintText = null;
+            this.txtEmriKlientit.IsPassword = false;
+            this.txtEmriKlientit.Location = new System.Drawing.Point(315, 110);
+            this.txtEmriKlientit.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmriKlientit.MaxLength = 32767;
+            this.txtEmriKlientit.Name = "txtEmriKlientit";
+            this.txtEmriKlientit.OnFocusedColor = System.Drawing.Color.White;
+            this.txtEmriKlientit.OnFocusedTextColor = System.Drawing.Color.Gray;
+            this.txtEmriKlientit.ReadOnly = false;
+            this.txtEmriKlientit.Right_To_Left = System.Windows.Forms.RightToLeft.No;
+            this.txtEmriKlientit.Size = new System.Drawing.Size(279, 38);
+            this.txtEmriKlientit.TabIndex = 1;
+            this.txtEmriKlientit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmriKlientit.TextName = "";
+            // 
             // frmRegjistroKlient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(898, 499);
+            this.ClientSize = new System.Drawing.Size(906, 561);
             this.Controls.Add(this.jGradientPanel1);
             this.Name = "frmRegjistroKlient";
             this.Text = "Form1";
@@ -295,11 +295,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private JGradient_Panel.JGradientPanel jGradientPanel1;
-        private JTextBox2.JTextBox textBox1;
-        private JTextBox2.JTextBox jTextBox4;
-        private JTextBox2.JTextBox jTextBox3;
-        private JTextBox2.JTextBox jTextBox2;
-        private JTextBox2.JTextBox textBox2;
+        private JTextBox2.JTextBox txtEmriKlientit;
+        private JTextBox2.JTextBox txtPasswordKlientit;
+        private JTextBox2.JTextBox txtUsernameKlientit;
+        private JTextBox2.JTextBox txtEmailKlientit;
+        private JTextBox2.JTextBox txtMbiemriKlientit;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
     }

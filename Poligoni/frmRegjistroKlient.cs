@@ -21,7 +21,10 @@ namespace Poligoni
         {
             frmLogin frmlogin = new frmLogin();
             frmlogin.Show();
+            frmRegjistrimiArmes frmRegjistrimiArmes = new frmRegjistrimiArmes();
+            frmRegjistrimiArmes.Show();
             InitializeComponent();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -44,8 +47,8 @@ namespace Poligoni
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string emri = textBox1.Text;
-            string mbiemri = textBox2.Text;
+            string emri = txtEmriKlientit.Text;
+            string mbiemri = txtMbiemriKlientit.Text;
             Users user = add.shto(emri, mbiemri);
 
         }
@@ -57,13 +60,17 @@ namespace Poligoni
 
         private void jThinButton1_Click(object sender, EventArgs e)
         {
-            string emri = textBox1.Text;
-            string mbiemri = textBox2.Text;
+            string emri = txtEmriKlientit.Text;
+            string mbiemri = txtMbiemriKlientit.Text;
             Users user = add.shto(emri, mbiemri);
-
         }
 
         private void jGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }
