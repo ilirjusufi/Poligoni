@@ -27,6 +27,8 @@ namespace Poligoni
             frmRegjistrimiPlumbave.Show();
             InitializeComponent();
 
+            frmMenaxhimiStokut frmMenaxhimiStokut = new frmMenaxhimiStokut();
+            frmMenaxhimiStokut.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
