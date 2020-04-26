@@ -14,9 +14,9 @@ using Poligoni.DAL;
 
 namespace Poligoni
 {
-    public partial class frmDashboard : Form
+    public partial class frmRegjistroKlient : Form
     {
-        public frmDashboard()
+        public frmRegjistroKlient()
 
         {
             frmLogin frmlogin = new frmLogin();
@@ -47,6 +47,24 @@ namespace Poligoni
             string emri = textBox1.Text;
             string mbiemri = textBox2.Text;
             Users user = add.shto(emri, mbiemri);
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void jThinButton1_Click(object sender, EventArgs e)
+        {
+            string emri = textBox1.Text;
+            string mbiemri = textBox2.Text;
+            Users user = add.shto(emri, mbiemri);
+
+        }
+
+        private void jGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
