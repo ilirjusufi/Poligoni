@@ -5,12 +5,12 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Poligoni.BLL;
 using Poligoni.BO;
+using usersesion;
 
 namespace Poligoni
 {
@@ -34,7 +34,7 @@ namespace Poligoni
 
         private void button1_Click(object sender, EventArgs e)
         {
-            menuStrip1.Items[0].Visible = false;
+            this.Close();
 
 
         }
@@ -88,12 +88,48 @@ namespace Poligoni
 
         private void FrmDashboard_Load_1(object sender, EventArgs e)
         {
-         
+            
         }
 
         public void administrimiToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void ndryshoStafToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void regjistroKlientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void administrimiToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void regjistroStafToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void regjistroKlientToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmRegjistroklienta frmRegjistroKlient = new frmRegjistroklienta();
+            frmRegjistroKlient.Show();
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            label1.Text = UserSession.CurrentUser.Username.ToString();
         }
     }
 }

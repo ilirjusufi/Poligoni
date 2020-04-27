@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Poligoni.BO;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -41,24 +42,26 @@ namespace Poligoni.DAL
             command.CommandType = commandType;
             return command;
         }
-
+        
         public static void AddParameter(SqlCommand command, string parameterName, object value)
         {
+            
             SqlParameter parameter = command.CreateParameter();
             parameter.ParameterName = parameterName;
             if (value != null)
             {
                 if (value is DateTime)
                 {
-                    //mos me leju data me te vogel se sa 1900
+                    
                     if (DateTime.Parse(value.ToString()) <= DateTime.Parse("1/01/1900"))
                         value = null;
                 }
-
+                
             }
-
+            
             parameter.Value = value ?? DBNull.Value;
             command.Parameters.Add(parameter);
             }
-        }
+       
+    }
 }

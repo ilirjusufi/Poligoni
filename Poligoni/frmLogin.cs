@@ -1,6 +1,6 @@
 ﻿using Poligoni.BLL;
 using Poligoni.BO;
-using RiiMjeshtri;
+using usersesion;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -51,6 +51,7 @@ namespace Poligoni
                         UserSession.CurrentUser = user;
                         this.Hide();
                         FrmDashboard.go(1);
+
                     }
                   else if(user.UserRoleID == 2)
                     {

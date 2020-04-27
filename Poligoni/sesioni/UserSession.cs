@@ -1,7 +1,7 @@
 ﻿using Poligoni.BO;
 
 
-namespace RiiMjeshtri
+namespace usersesion
 {
     public class UserSession
     {

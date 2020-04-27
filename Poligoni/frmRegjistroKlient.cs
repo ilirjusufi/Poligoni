@@ -16,13 +16,7 @@ namespace Poligoni
 {
     public partial class frmRegjistroKlient : Form
     {
-        public frmRegjistroKlient()
-
-        {
-           
-
-
-        }
+       
 
         private void Form1_Load(object sender, EventArgs e)
         {

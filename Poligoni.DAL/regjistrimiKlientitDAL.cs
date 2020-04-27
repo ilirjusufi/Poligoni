@@ -1,50 +1,48 @@
-﻿using System;
+﻿using Poligoni.BO;
+using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Poligoni.BO;
+using System.Data.SqlClient;
+using System.Data;
+
 
 namespace Poligoni.DAL
 {
-    public class UsersDal
+    public class regjistrimiKlientitDAL
     {
-        Users qo = new Users();
+        UsersDal dal = new UsersDal();
+        Users users = new Users();
         
-        public Users Login(string Useri, string Passwordi)
+
+        public Users RegjistroKlient(string Emri, string Mbiemri, string Username, string Password, string Email)
         {
-            try
-            {
+            
+            
                 using (var conn = DataConnection.GetConnection())
                 {
-                    using (var cmd = DataConnection.Command(conn, "dbo.usp_LoginProcedura", CommandType.StoredProcedure))
+                     
+                    using (var cmd = DataConnection.Command(conn, "dbo.usp_regjistroklient", CommandType.StoredProcedure))
                     {
-                        DataConnection.AddParameter(cmd, "@Username", Useri);
-                        DataConnection.AddParameter(cmd, "@Password", Passwordi);
+                        
+                        DataConnection.AddParameter(cmd, "@emri", Emri);
+                        DataConnection.AddParameter(cmd, "@mbiemri", Mbiemri);
+                        DataConnection.AddParameter(cmd, "@username", Username);
+                        DataConnection.AddParameter(cmd, "@password", Password);
+                        DataConnection.AddParameter(cmd, "@email", Email);
+                        DataConnection.AddParameter(cmd, "@insertby", 2);
+                        DataConnection.AddParameter(cmd, "@insertdate", DateTime.Now);
 
-                        using (var reader = cmd.ExecuteReader())
-                        {
-                            Users result = null;
-                            if (reader.Read())
-                            {
-                                result = ToObject(reader);
-                            }
-
-                            return result;
-                        }
+                    cmd.ExecuteNonQuery();
+                        
+                        return null;
                     }
                 }
-            }
-            catch (Exception e)
-            {
-                
-                return null;
-            }
+            
+           
 
         }
-        Users user = new Users();
         public Users ToObject(SqlDataReader reader)
         {
             Users user = new Users();
@@ -65,12 +63,10 @@ namespace Poligoni.DAL
             //user.insertBy = reader["InsertBy"].ToString();
             //user.InsertDate = (DateTime)reader["InsertDate"];
             //update
-           
+
             return user;
 
         }
 
-        
-      
     }
 }
