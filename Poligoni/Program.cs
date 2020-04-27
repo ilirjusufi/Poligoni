@@ -16,7 +16,7 @@ namespace Poligoni
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmRegjistroKlient());
+            Application.Run(new FrmDashboard());
         }
     }
 }

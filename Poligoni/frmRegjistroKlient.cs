@@ -19,16 +19,9 @@ namespace Poligoni
         public frmRegjistroKlient()
 
         {
-            frmLogin frmlogin = new frmLogin();
-            frmlogin.Show();
-            frmRegjistrimiArmes frmRegjistrimiArmes = new frmRegjistrimiArmes();
-            frmRegjistrimiArmes.Show();
-            frmRegjistrimiPlumbave frmRegjistrimiPlumbave = new frmRegjistrimiPlumbave();
-            frmRegjistrimiPlumbave.Show();
-            InitializeComponent();
+           
 
-            frmMenaxhimiStokut frmMenaxhimiStokut = new frmMenaxhimiStokut();
-            frmMenaxhimiStokut.Show();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

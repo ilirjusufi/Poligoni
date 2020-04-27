@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -76,22 +91,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DB_A57CDC_poligoniDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_A57CDC_poligoniDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="frmDashboard.cs">
+    <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDashboard.Designer.cs">
-      <DependentUpon>frmDashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmMenaxhimiStokut.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmMenaxhimiStokut.Designer.cs">
-      <DependentUpon>frmMenaxhimiStokut.cs</DependentUpon>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRegjistrimiPlumbave.cs">
       <SubType>Form</SubType>
@@ -105,21 +109,11 @@
     <Compile Include="frmRegjistroKlient.Designer.cs">
       <DependentUpon>frmRegjistroKlient.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="FrmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="poligoniDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>poligoniDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="poligoniDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>poligoniDataSet1.xsd</DependentUpon>
+    <Compile Include="FrmDashboard.Designer.cs">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -130,11 +124,8 @@
       <DependentUpon>frmRegjistrimiArmes.cs</DependentUpon>
     </Compile>
     <Compile Include="sqllidhja.cs" />
-    <EmbeddedResource Include="frmDashboard.resx">
-      <DependentUpon>frmDashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmMenaxhimiStokut.resx">
-      <DependentUpon>frmMenaxhimiStokut.cs</DependentUpon>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegjistrimiPlumbave.resx">
       <DependentUpon>frmRegjistrimiPlumbave.cs</DependentUpon>
@@ -142,8 +133,8 @@
     <EmbeddedResource Include="frmRegjistroKlient.resx">
       <DependentUpon>frmRegjistroKlient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="FrmDashboard.resx">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -157,39 +148,6 @@
     <EmbeddedResource Include="frmRegjistrimiArmes.resx">
       <DependentUpon>frmRegjistrimiArmes.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DB_A57CDC_poligoniDataSet.xsc">
-      <DependentUpon>DB_A57CDC_poligoniDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DB_A57CDC_poligoniDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB_A57CDC_poligoniDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DB_A57CDC_poligoniDataSet.xss">
-      <DependentUpon>DB_A57CDC_poligoniDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="poligoniDataSet.xsc">
-      <DependentUpon>poligoniDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="poligoniDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>poligoniDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="poligoniDataSet.xss">
-      <DependentUpon>poligoniDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="poligoniDataSet1.xsc">
-      <DependentUpon>poligoniDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="poligoniDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>poligoniDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="poligoniDataSet1.xss">
-      <DependentUpon>poligoniDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -216,6 +174,18 @@
       <Project>{6751f587-070b-4c77-86ec-000e4df63718}</Project>
       <Name>Poligoni.DAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

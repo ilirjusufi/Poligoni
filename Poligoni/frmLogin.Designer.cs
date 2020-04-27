@@ -28,67 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.btnKyqu = new System.Windows.Forms.Button();
+            this.btnAnulo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtUser
             // 
-            this.textBox1.Location = new System.Drawing.Point(40, 101);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(164, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtUser.Location = new System.Drawing.Point(65, 77);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(191, 20);
+            this.txtUser.TabIndex = 0;
             // 
-            // textBox2
+            // txtPass
             // 
-            this.textBox2.Location = new System.Drawing.Point(40, 155);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(164, 20);
-            this.textBox2.TabIndex = 0;
+            this.txtPass.Location = new System.Drawing.Point(65, 115);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(191, 20);
+            this.txtPass.TabIndex = 0;
             // 
-            // button1
+            // btnKyqu
             // 
-            this.button1.Location = new System.Drawing.Point(69, 196);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnKyqu.Location = new System.Drawing.Point(65, 159);
+            this.btnKyqu.Name = "btnKyqu";
+            this.btnKyqu.Size = new System.Drawing.Size(75, 23);
+            this.btnKyqu.TabIndex = 1;
+            this.btnKyqu.Text = "Kyqu";
+            this.btnKyqu.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // btnAnulo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 139);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.btnAnulo.Location = new System.Drawing.Point(169, 159);
+            this.btnAnulo.Name = "btnAnulo";
+            this.btnAnulo.Size = new System.Drawing.Size(75, 23);
+            this.btnAnulo.TabIndex = 1;
+            this.btnAnulo.Text = "Anulo";
+            this.btnAnulo.UseVisualStyleBackColor = true;
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 585);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(315, 331);
+            this.Controls.Add(this.btnAnulo);
+            this.Controls.Add(this.btnKyqu);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtUser);
             this.Name = "frmLogin";
-            this.Text = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,10 +85,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.Button btnKyqu;
+        private System.Windows.Forms.Button btnAnulo;
     }
 }

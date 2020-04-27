@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegjistrimiPlumbave));
             this.btnRegjistroArmen = new FlatButton.JFlatButton();
             this.txtKalibri = new JTextBox2.JTextBox();
@@ -36,6 +37,7 @@
             this.txtEmriArmes = new JTextBox2.JTextBox();
             this.jGradientPanel1 = new JGradient_Panel.JGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.jGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,7 +95,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(144, 243);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 22);
+            this.label5.Size = new System.Drawing.Size(49, 19);
             this.label5.TabIndex = 16;
             this.label5.Text = "Sasia";
             // 
@@ -105,7 +107,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(135, 184);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 22);
+            this.label6.Size = new System.Drawing.Size(58, 19);
             this.label6.TabIndex = 15;
             this.label6.Text = "Kalibri";
             // 
@@ -153,9 +155,14 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(239, 114);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 26);
+            this.label1.Size = new System.Drawing.Size(224, 23);
             this.label1.TabIndex = 21;
             this.label1.Text = "Regjistrimi i Plumbave";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // frmRegjistrimiPlumbave
             // 
@@ -182,5 +189,6 @@
         private JTextBox2.JTextBox txtEmriArmes;
         private JGradient_Panel.JGradientPanel jGradientPanel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

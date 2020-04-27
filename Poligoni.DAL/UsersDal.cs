@@ -21,9 +21,6 @@ namespace Poligoni.DAL
             sqlComm.CommandType = CommandType.StoredProcedure;
             sqlComm.Parameters.AddWithValue("@Emri", emri);
             sqlComm.Parameters.AddWithValue("@Mbiemri", mbiemri);
-
-
-
             sqlComm.ExecuteNonQuery();
             sqlConn.Close();
             
