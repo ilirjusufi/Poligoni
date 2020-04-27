@@ -8,15 +8,14 @@ using Poligoni.BO;
 
 namespace Poligoni.BLL
 {
-   public class add
+   public class UserBLL
     {
         private static  UsersDal dal = new UsersDal();
-
-
-
-        public static  Users shto (string emri, string mbiemri)
+        public static  Users Login (string Useri, string Passwordi)
         {
-            return dal.shto(emri, mbiemri);
+            return dal.Login(Useri, Passwordi);
         }
+
+        
     }
 }

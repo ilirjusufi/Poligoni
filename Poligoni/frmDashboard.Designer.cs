@@ -116,6 +116,7 @@
             this.administrimiToolStripMenuItem.Name = "administrimiToolStripMenuItem";
             this.administrimiToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.administrimiToolStripMenuItem.Text = "Administrimi";
+            this.administrimiToolStripMenuItem.Click += new System.EventHandler(this.administrimiToolStripMenuItem_Click);
             // 
             // regjistroStafToolStripMenuItem
             // 

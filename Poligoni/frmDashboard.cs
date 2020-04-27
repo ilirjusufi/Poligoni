@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,7 +17,14 @@ namespace Poligoni
     
     public partial class FrmDashboard : Form
     {
-    
+        static int go1;
+        public void go(int a)
+        {
+
+             go1 = a;
+        }
+
+
         public FrmDashboard()
         {
          
@@ -27,9 +35,8 @@ namespace Poligoni
         private void button1_Click(object sender, EventArgs e)
         {
             menuStrip1.Items[0].Visible = false;
-            string emri = textBox1.Text;
-            string mbiemri = textBox2.Text;
-            Users user = add.shto(emri, mbiemri);
+
+
         }
 
         private void listoTeGjitheKlientToolStripMenuItem_Click(object sender, EventArgs e)
@@ -63,17 +70,30 @@ namespace Poligoni
             frmLogin frlogin = new frmLogin();
             if (frlogin.ShowDialog() == DialogResult.OK)
             {
-                frlogin.Close();
+                frlogin.Hide();
+              
+                if(go1 == 2)
+                {
+                    menuStrip1.Items[0].Visible = false;
+                    menuStrip1.Items[3].Visible = false;
+                }
+
             }
             else
             {
                 this.Close();
             }
+            
         }
 
         private void FrmDashboard_Load_1(object sender, EventArgs e)
         {
-            this.StartPosition = FormStartPosition.CenterScreen;
+         
+        }
+
+        public void administrimiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,9 +16,12 @@ namespace Poligoni.BO
 
         public string Email { get; set; }
 
-        public int roliID { get; set; }
-        public int MyProperty { get; set; }
-
+        
+        public int UserRoleID { get; set; }
+        public DateTime LastLoginDate { get; set; }
+        public DateTime LastPasswordChangeDate { get; set; }
+        public bool IsPasswordChanged { get; set; }
+        public string insertBy { get; set; }
         public DateTime InsertDate { get; set; }
 
         public virtual UserRole UserRole { get; set; } // konvente duhet me qene virtuale

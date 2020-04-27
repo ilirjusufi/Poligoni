@@ -123,6 +123,7 @@
     <Compile Include="frmRegjistrimiArmes.Designer.cs">
       <DependentUpon>frmRegjistrimiArmes.cs</DependentUpon>
     </Compile>
+    <Compile Include="sesioni\UserSession.cs" />
     <Compile Include="sqllidhja.cs" />
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

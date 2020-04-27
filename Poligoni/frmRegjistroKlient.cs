@@ -44,9 +44,9 @@ namespace Poligoni
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string emri = txtEmriKlientit.Text;
-            string mbiemri = txtMbiemriKlientit.Text;
-            Users user = add.shto(emri, mbiemri);
+            //string emri = txtEmriKlientit.Text;
+            //string mbiemri = txtMbiemriKlientit.Text;
+            //Users user = UserBLL.shto(emri, mbiemri);
 
         }
 
@@ -57,9 +57,9 @@ namespace Poligoni
 
         private void jThinButton1_Click(object sender, EventArgs e)
         {
-            string emri = txtEmriKlientit.Text;
-            string mbiemri = txtMbiemriKlientit.Text;
-            Users user = add.shto(emri, mbiemri);
+            //string emri = txtEmriKlientit.Text;
+            //string mbiemri = txtMbiemriKlientit.Text;
+            //Users user = UserBLL.shto(emri, mbiemri);
         }
 
         private void jGradientPanel1_Paint(object sender, PaintEventArgs e)

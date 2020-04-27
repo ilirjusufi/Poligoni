@@ -56,6 +56,7 @@
             this.btnKyqu.TabIndex = 1;
             this.btnKyqu.Text = "Kyqu";
             this.btnKyqu.UseVisualStyleBackColor = true;
+            this.btnKyqu.Click += new System.EventHandler(this.btnKyqu_Click);
             // 
             // btnAnulo
             // 
@@ -78,6 +79,7 @@
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
