@@ -37,6 +37,8 @@ namespace Poligoni.DAL
                         DataConnection.AddParameter(cmd, "@email", Email);
                         DataConnection.AddParameter(cmd, "@insertby", UserSession1.CurrentUser.ID);
                         DataConnection.AddParameter(cmd, "@insertdate", DateTime.Now);
+                        DataConnection.AddParameter(cmd, "@roliID", 3);
+                    
 
                     cmd.ExecuteNonQuery();
                         

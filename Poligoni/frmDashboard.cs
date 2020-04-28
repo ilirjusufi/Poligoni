@@ -17,13 +17,7 @@ namespace Poligoni
     
     public partial class FrmDashboard : Form
     {
-        static int go1;
-        public void go(int a)
-        {
-
-             go1 = a;
-        }
-
+       
 
         public FrmDashboard()
         {
@@ -72,19 +66,21 @@ namespace Poligoni
             {
                 label1.Text = UserSession1.CurrentUser.Username.ToString();
                 frlogin.Hide();
-              
-                if(go1 == 2)
+
+                if (UserSession1.CurrentUser.Username == "staf")
                 {
                     menuStrip1.Items[0].Visible = false;
                     menuStrip1.Items[3].Visible = false;
                 }
+                else
+                    return;
 
             }
             else
             {
                 this.Close();
             }
-            
+            // ndryshimi i userave
         }
 
         private void FrmDashboard_Load_1(object sender, EventArgs e)

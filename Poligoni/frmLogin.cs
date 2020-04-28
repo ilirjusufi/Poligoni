@@ -51,7 +51,7 @@ namespace Poligoni
                     {
                         UserSession.CurrentUser = user;
                         this.Hide();
-                        FrmDashboard.go(1);
+                       
                         UserSession1.CurrentUser = user;
 
 
@@ -61,8 +61,13 @@ namespace Poligoni
                   else if(user.UserRoleID == 2)
                     {
                         UserSession1.CurrentUser = user;
-                        FrmDashboard.go(2);
+                     
                         this.Hide();
+                    }
+
+                    else
+                    {
+                        UserSession1.CurrentUser = user;
                     }
                        
                     
@@ -70,7 +75,10 @@ namespace Poligoni
                 }
                 else
                 {
+                    FrmDashboard.Close();
                     MessageBox.Show("Username or password invalid");
+               
+                    
                 }
             }
         }
