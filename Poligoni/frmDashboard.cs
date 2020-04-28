@@ -56,7 +56,7 @@ namespace Poligoni
 
         private void FrmDashboard_Load(object sender, EventArgs e)
         {
-
+            this.WindowState = FormWindowState.Maximized;
             frmLogin frlogin = new frmLogin();
             if (frlogin.ShowDialog() == DialogResult.OK)
             {
@@ -119,13 +119,23 @@ namespace Poligoni
 
         private void regjistroKlientToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            frmRegjistroklienta frmRegjistroKlient = new frmRegjistroklienta();
-            frmRegjistroKlient.Show();
+           
         }
 
         private void label1_Click_1(object sender, EventArgs e)
         {
             
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void regjistroKlientToolStripMenuItem_Click_2(object sender, EventArgs e)
+        {
+            frmRegjistroklienta frmRegjistroKlient = new frmRegjistroklienta();
+            frmRegjistroKlient.Show();
         }
     }
 }
