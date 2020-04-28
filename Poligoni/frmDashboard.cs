@@ -24,6 +24,8 @@ namespace Poligoni
          
             
             InitializeComponent();
+            frmRegjistrimiArmes frmRegjistrimiArmes = new frmRegjistrimiArmes();
+            frmRegjistrimiArmes.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

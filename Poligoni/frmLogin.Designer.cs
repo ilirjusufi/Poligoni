@@ -156,14 +156,14 @@
 			this.jGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.jGradientPanel1.Location = new System.Drawing.Point(0, 0);
 			this.jGradientPanel1.Name = "jGradientPanel1";
-			this.jGradientPanel1.Size = new System.Drawing.Size(404, 400);
+			this.jGradientPanel1.Size = new System.Drawing.Size(439, 437);
 			this.jGradientPanel1.TabIndex = 12;
 			// 
 			// pictureBox4
 			// 
 			this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
 			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-			this.pictureBox4.Location = new System.Drawing.Point(123, 315);
+			this.pictureBox4.Location = new System.Drawing.Point(103, 289);
 			this.pictureBox4.Name = "pictureBox4";
 			this.pictureBox4.Size = new System.Drawing.Size(28, 31);
 			this.pictureBox4.TabIndex = 4;
@@ -173,7 +173,7 @@
 			// 
 			this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
 			this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-			this.pictureBox5.Location = new System.Drawing.Point(123, 269);
+			this.pictureBox5.Location = new System.Drawing.Point(103, 243);
 			this.pictureBox5.Name = "pictureBox5";
 			this.pictureBox5.Size = new System.Drawing.Size(28, 31);
 			this.pictureBox5.TabIndex = 3;
@@ -185,7 +185,7 @@
 			this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
 			this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-			this.pictureBox6.Location = new System.Drawing.Point(166, 90);
+			this.pictureBox6.Location = new System.Drawing.Point(146, 64);
 			this.pictureBox6.Name = "pictureBox6";
 			this.pictureBox6.Size = new System.Drawing.Size(139, 138);
 			this.pictureBox6.TabIndex = 2;
@@ -197,7 +197,8 @@
 			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox1.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox1.ForeColor = System.Drawing.Color.White;
-			this.textBox1.Location = new System.Drawing.Point(151, 269);
+			this.textBox1.Location = new System.Drawing.Point(131, 243);
+			this.textBox1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
 			this.textBox1.Multiline = true;
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(199, 31);
@@ -212,7 +213,7 @@
 			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(267, 373);
+			this.button1.Location = new System.Drawing.Point(247, 347);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(98, 42);
 			this.button1.TabIndex = 1;
@@ -225,7 +226,7 @@
 			this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox2.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox2.ForeColor = System.Drawing.Color.White;
-			this.textBox2.Location = new System.Drawing.Point(151, 317);
+			this.textBox2.Location = new System.Drawing.Point(131, 291);
 			this.textBox2.Multiline = true;
 			this.textBox2.Name = "textBox2";
 			this.textBox2.PasswordChar = '#';
@@ -241,18 +242,19 @@
 			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button2.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.button2.ForeColor = System.Drawing.Color.White;
-			this.button2.Location = new System.Drawing.Point(104, 373);
+			this.button2.Location = new System.Drawing.Point(84, 347);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(98, 42);
 			this.button2.TabIndex = 1;
 			this.button2.Text = "Kyqu";
 			this.button2.UseVisualStyleBackColor = false;
+			this.button2.Click += new System.EventHandler(this.button2_Click_1);
 			// 
 			// frmLogin
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(404, 400);
+			this.ClientSize = new System.Drawing.Size(439, 437);
 			this.Controls.Add(this.jGradientPanel1);
 			this.Controls.Add(this.pictureBox3);
 			this.Controls.Add(this.pictureBox2);

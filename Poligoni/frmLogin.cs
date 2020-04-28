@@ -87,5 +87,10 @@ namespace Poligoni
         {
             btnKyqu.DialogResult = DialogResult.OK;
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
