@@ -38,30 +38,40 @@ namespace Poligoni
         private void btnKyqu_Click(object sender, EventArgs e)
         {
             
-            string Useri = txtUser.Text;
-            string Passwordi = txtPass.Text;
-            
+      
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            btnkyquu.DialogResult = DialogResult.OK;
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            string Useri = txtuser1.Text;
+            string Passwordi = txtpass2.Text;
+
             if (Useri.Trim() != "" && Passwordi != "")
             {
                 Users user = UserBLL.Login(Useri, Passwordi);
 
                 if (user != null)
                 {
-                    if(user.UserRoleID == 1)
+                    if (user.UserRoleID == 1)
                     {
                         UserSession.CurrentUser = user;
                         this.Hide();
-                       
+
                         UserSession1.CurrentUser = user;
 
 
 
 
                     }
-                  else if(user.UserRoleID == 2)
+                    else if (user.UserRoleID == 2)
                     {
                         UserSession1.CurrentUser = user;
-                     
+
                         this.Hide();
                     }
 
@@ -69,28 +79,18 @@ namespace Poligoni
                     {
                         UserSession1.CurrentUser = user;
                     }
-                       
-                    
+
+
 
                 }
                 else
                 {
                     FrmDashboard.Close();
                     MessageBox.Show("Username or password invalid");
-               
-                    
+
+
                 }
             }
-        }
-
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-            btnKyqu.DialogResult = DialogResult.OK;
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -21,18 +21,12 @@ namespace Poligoni
 
         public FrmDashboard()
         {
-         
-            
-            InitializeComponent();
-            frmRegjistrimiArmes frmRegjistrimiArmes = new frmRegjistrimiArmes();
-            frmRegjistrimiArmes.Show();
+           InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-
-
         }
 
         private void listoTeGjitheKlientToolStripMenuItem_Click(object sender, EventArgs e)
@@ -75,7 +69,10 @@ namespace Poligoni
                     menuStrip1.Items[3].Visible = false;
                 }
                 else
-                    return;
+                   if (UserSession1.CurrentUser.UserRoleID == 3)
+                {
+                    menuStrip1.Hide();
+                }
 
             }
             else
