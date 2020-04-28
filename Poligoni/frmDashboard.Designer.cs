@@ -44,6 +44,7 @@
             this.raportetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lbluserat = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +61,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.lbluserat);
             this.panel3.Controls.Add(this.menuStrip1);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
@@ -132,19 +134,19 @@
             // ndryshoKlientToolStripMenuItem
             // 
             this.ndryshoKlientToolStripMenuItem.Name = "ndryshoKlientToolStripMenuItem";
-            this.ndryshoKlientToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.ndryshoKlientToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ndryshoKlientToolStripMenuItem.Text = "Ndrysho Klient";
             // 
             // fshijKlientToolStripMenuItem
             // 
             this.fshijKlientToolStripMenuItem.Name = "fshijKlientToolStripMenuItem";
-            this.fshijKlientToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.fshijKlientToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fshijKlientToolStripMenuItem.Text = "Fshij Klient";
             // 
             // listoKlientToolStripMenuItem1
             // 
             this.listoKlientToolStripMenuItem1.Name = "listoKlientToolStripMenuItem1";
-            this.listoKlientToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.listoKlientToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.listoKlientToolStripMenuItem1.Text = "Listo Klient";
             // 
             // rankimiToolStripMenuItem
@@ -162,7 +164,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(847, 24);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 11;
@@ -170,11 +173,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(762, 24);
+            this.label2.Location = new System.Drawing.Point(340, 201);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 10;
             this.label2.Text = "Useri korrekt";
+            // 
+            // lbluserat
+            // 
+            this.lbluserat.AutoSize = true;
+            this.lbluserat.Location = new System.Drawing.Point(414, 200);
+            this.lbluserat.Name = "lbluserat";
+            this.lbluserat.Size = new System.Drawing.Size(35, 13);
+            this.lbluserat.TabIndex = 12;
+            this.lbluserat.Text = "label3";
             // 
             // FrmDashboard
             // 
@@ -215,5 +227,6 @@
         private System.Windows.Forms.ToolStripMenuItem raportetToolStripMenuItem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbluserat;
     }
 }

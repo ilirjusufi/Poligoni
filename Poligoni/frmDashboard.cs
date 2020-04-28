@@ -60,16 +60,16 @@ namespace Poligoni
             frmLogin frlogin = new frmLogin();
             if (frlogin.ShowDialog() == DialogResult.OK)
             {
-                label1.Text = UserSession1.CurrentUser.Username.ToString();
+                lbluserat.Text = UserSession1.CurrentUser.Username.ToString();
                 frlogin.Hide();
 
-                if (UserSession1.CurrentUser.Username == "staf")
+                if (UserSession1.CurrentUser.UserRoleID == 2)
                 {
                     menuStrip1.Items[0].Visible = false;
                     menuStrip1.Items[3].Visible = false;
                 }
                 else
-                   if (UserSession1.CurrentUser.UserRoleID == 3)
+                if (UserSession1.CurrentUser.UserRoleID == 3)
                 {
                     menuStrip1.Hide();
                 }
