@@ -1,10 +1,17 @@
 ﻿using Poligoni.BO;
+using System;
+using Poligoni.DAL;
 
-
-namespace usersesion
+namespace Poligoni
 {
     public class UserSession
     {
+  
         public static Users CurrentUser = null;
+      
+
     }
+    
+
+    
 }

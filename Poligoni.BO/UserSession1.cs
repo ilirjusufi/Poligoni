@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Poligoni.BO;
-namespace Poligoni.DAL
+
+namespace Poligoni.BO
 {
-    public class Class1
+    public class UserSession1
     {
+        public static Users CurrentUser = null;
     }
 }

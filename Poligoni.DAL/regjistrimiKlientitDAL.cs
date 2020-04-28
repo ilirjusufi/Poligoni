@@ -6,6 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using Poligoni;
+
+
 
 
 namespace Poligoni.DAL
@@ -18,8 +21,9 @@ namespace Poligoni.DAL
 
         public Users RegjistroKlient(string Emri, string Mbiemri, string Username, string Password, string Email)
         {
-            
-            
+           
+
+
                 using (var conn = DataConnection.GetConnection())
                 {
                      
@@ -31,7 +35,7 @@ namespace Poligoni.DAL
                         DataConnection.AddParameter(cmd, "@username", Username);
                         DataConnection.AddParameter(cmd, "@password", Password);
                         DataConnection.AddParameter(cmd, "@email", Email);
-                        DataConnection.AddParameter(cmd, "@insertby", 2);
+                        DataConnection.AddParameter(cmd, "@insertby", UserSession1.CurrentUser.ID);
                         DataConnection.AddParameter(cmd, "@insertdate", DateTime.Now);
 
                     cmd.ExecuteNonQuery();
@@ -43,6 +47,8 @@ namespace Poligoni.DAL
            
 
         }
+
+        
         public Users ToObject(SqlDataReader reader)
         {
             Users user = new Users();

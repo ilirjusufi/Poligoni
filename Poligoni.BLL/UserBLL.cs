@@ -14,14 +14,17 @@ namespace Poligoni.BLL
         private static regjistrimiKlientitDAL dalklient = new regjistrimiKlientitDAL();
         public static  Users Login (string Useri, string Passwordi)
         {
+            
             return dal.Login(Useri, Passwordi);
         }
-
+        
         public static Users RegjistroKlient(string Emri, string Mbiemri,string Username,string Password,string Email)
         {
             return dalklient.RegjistroKlient(Emri, Mbiemri, Username, Password, Email);
         }
 
+
+        
         
     }
 }

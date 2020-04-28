@@ -44,6 +44,7 @@
             this.rankimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.raportetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -171,12 +172,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(272, 219);
+            this.label1.Location = new System.Drawing.Point(617, 128);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 8;
-            this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(532, 128);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Useri korrekt";
+            this.label2.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // FrmDashboard
             // 
@@ -184,6 +194,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(880, 585);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -219,5 +230,6 @@
         private System.Windows.Forms.ToolStripMenuItem rankimiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem raportetToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

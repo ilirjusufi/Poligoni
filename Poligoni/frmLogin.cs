@@ -1,6 +1,5 @@
 ﻿using Poligoni.BLL;
 using Poligoni.BO;
-using usersesion;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Poligoni.DAL;
 
 namespace Poligoni
 {
@@ -27,6 +27,7 @@ namespace Poligoni
             string Useri = txtUser.Text;
             string Passwordi = txtPass.Text;
             Users user = UserBLL.Login(Useri, Passwordi);
+            
         }
 
         private void jFlatButton1_Click(object sender, EventArgs e)
@@ -51,10 +52,15 @@ namespace Poligoni
                         UserSession.CurrentUser = user;
                         this.Hide();
                         FrmDashboard.go(1);
+                        UserSession1.CurrentUser = user;
+
+
+
 
                     }
                   else if(user.UserRoleID == 2)
                     {
+                        UserSession1.CurrentUser = user;
                         FrmDashboard.go(2);
                         this.Hide();
                     }

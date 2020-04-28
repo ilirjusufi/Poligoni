@@ -208,6 +208,7 @@
             this.jFlatButton1.SizeModeLeft = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.jFlatButton1.SizeModeRight = System.Windows.Forms.PictureBoxSizeMode.Normal;
             this.jFlatButton1.TabIndex = 13;
+            this.jFlatButton1.Click += new System.EventHandler(this.jFlatButton1_Click);
             // 
             // txtMaxPlumba
             // 

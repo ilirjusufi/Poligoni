@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Poligoni.BLL;
 using Poligoni.BO;
-using usersesion;
+
 
 namespace Poligoni
 {
@@ -70,6 +70,7 @@ namespace Poligoni
             frmLogin frlogin = new frmLogin();
             if (frlogin.ShowDialog() == DialogResult.OK)
             {
+                label1.Text = UserSession1.CurrentUser.Username.ToString();
                 frlogin.Hide();
               
                 if(go1 == 2)
@@ -129,7 +130,7 @@ namespace Poligoni
 
         private void label1_Click_1(object sender, EventArgs e)
         {
-            label1.Text = UserSession.CurrentUser.Username.ToString();
+            
         }
     }
 }
