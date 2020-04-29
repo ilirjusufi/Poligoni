@@ -22,8 +22,21 @@ namespace Poligoni
         public FrmDashboard()
         {
            InitializeComponent();
+            menuStrip1.Renderer = new BlueRenderer();
         }
+        private class BlueRenderer : ToolStripProfessionalRenderer
+        {
+            protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)
+            {
+               
+                Rectangle rc = new Rectangle(Point.Empty, e.Item.Size);
+                Color c = Color.FromArgb(2, 0, 47);
+                using (SolidBrush brush = new SolidBrush(c))
+                    e.Graphics.FillRectangle(brush, rc);
 
+
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -57,6 +70,8 @@ namespace Poligoni
         private void FrmDashboard_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            
+
             frmLogin frlogin = new frmLogin();
             if (frlogin.ShowDialog() == DialogResult.OK)
             {
@@ -136,6 +151,39 @@ namespace Poligoni
         {
             frmRegjistroklienta frmRegjistroKlient = new frmRegjistroklienta();
             frmRegjistroKlient.Show();
+        }
+
+        private void jGradientPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void jGradientPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+           
+        }
+
+        private void regjistroKlientToolStripMenuItem_Click_3(object sender, EventArgs e)
+        {
+            frmRegjistroklienta frmRegjistroklienta = new frmRegjistroklienta();
+            frmRegjistroklienta.Show();
+        }
+
+        private void regjistroArmetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRegjistrimiArmes frmRegjistrimiArmes = new frmRegjistrimiArmes();
+            frmRegjistrimiArmes.Show();
+        }
+
+        private void regjistroPlumbatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRegjistrimiPlumbave frmRegjistrimiPlumbave = new frmRegjistrimiPlumbave();
+            frmRegjistrimiPlumbave.Show();
         }
     }
 }

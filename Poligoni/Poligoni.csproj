@@ -51,6 +51,9 @@
     <Reference Include="FlatButton">
       <HintPath>..\JControls\FlatButton.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\GuNA UI\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 3.5\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="JDragControl">
       <HintPath>..\JControls\JDragControl.dll</HintPath>
     </Reference>
@@ -75,10 +78,12 @@
     <Reference Include="JThinButton">
       <HintPath>..\JControls\JThinButton.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />

@@ -92,5 +92,10 @@ namespace Poligoni
                 }
             }
         }
+
+        private void jGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

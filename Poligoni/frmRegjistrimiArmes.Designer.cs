@@ -37,20 +37,20 @@
 			this.jTextBox3 = new JTextBox2.JTextBox();
 			this.btnRegjistro = new FlatButton.JFlatButton();
 			this.jGradientPanel1 = new JGradient_Panel.JGradientPanel();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.pictureBox4 = new System.Windows.Forms.PictureBox();
+			this.txtMaxPlumba = new System.Windows.Forms.TextBox();
+			this.txtKalibri = new System.Windows.Forms.TextBox();
+			this.txtEmriArmes = new System.Windows.Forms.TextBox();
 			this.btnRegjistroArmen = new FlatButton.JFlatButton();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
-			this.txtEmriArmes = new System.Windows.Forms.TextBox();
-			this.txtKalibri = new System.Windows.Forms.TextBox();
-			this.txtMaxPlumba = new System.Windows.Forms.TextBox();
-			this.pictureBox4 = new System.Windows.Forms.PictureBox();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.jGradientPanel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// jTextBox1
@@ -175,8 +175,8 @@
 			// jGradientPanel1
 			// 
 			this.jGradientPanel1.BackColor = System.Drawing.Color.DarkCyan;
-			this.jGradientPanel1.ColorBottom = System.Drawing.Color.MediumSeaGreen;
-			this.jGradientPanel1.ColorTop = System.Drawing.Color.DarkSlateGray;
+			this.jGradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
+			this.jGradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
 			this.jGradientPanel1.Controls.Add(this.pictureBox2);
 			this.jGradientPanel1.Controls.Add(this.pictureBox1);
 			this.jGradientPanel1.Controls.Add(this.pictureBox4);
@@ -194,10 +194,86 @@
 			this.jGradientPanel1.TabIndex = 7;
 			this.jGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.jGradientPanel1_Paint);
 			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+			this.pictureBox2.Location = new System.Drawing.Point(206, 90);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(28, 31);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox2.TabIndex = 20;
+			this.pictureBox2.TabStop = false;
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.Location = new System.Drawing.Point(206, 201);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(28, 31);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox1.TabIndex = 19;
+			this.pictureBox1.TabStop = false;
+			// 
+			// pictureBox4
+			// 
+			this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+			this.pictureBox4.Location = new System.Drawing.Point(206, 149);
+			this.pictureBox4.Name = "pictureBox4";
+			this.pictureBox4.Size = new System.Drawing.Size(28, 31);
+			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox4.TabIndex = 18;
+			this.pictureBox4.TabStop = false;
+			// 
+			// txtMaxPlumba
+			// 
+			this.txtMaxPlumba.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
+			this.txtMaxPlumba.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.txtMaxPlumba.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtMaxPlumba.ForeColor = System.Drawing.Color.White;
+			this.txtMaxPlumba.Location = new System.Drawing.Point(240, 201);
+			this.txtMaxPlumba.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+			this.txtMaxPlumba.Multiline = true;
+			this.txtMaxPlumba.Name = "txtMaxPlumba";
+			this.txtMaxPlumba.Size = new System.Drawing.Size(254, 31);
+			this.txtMaxPlumba.TabIndex = 16;
+			this.txtMaxPlumba.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// txtKalibri
+			// 
+			this.txtKalibri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
+			this.txtKalibri.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.txtKalibri.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtKalibri.ForeColor = System.Drawing.Color.White;
+			this.txtKalibri.Location = new System.Drawing.Point(240, 149);
+			this.txtKalibri.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+			this.txtKalibri.Multiline = true;
+			this.txtKalibri.Name = "txtKalibri";
+			this.txtKalibri.Size = new System.Drawing.Size(254, 31);
+			this.txtKalibri.TabIndex = 15;
+			this.txtKalibri.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// txtEmriArmes
+			// 
+			this.txtEmriArmes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
+			this.txtEmriArmes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.txtEmriArmes.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtEmriArmes.ForeColor = System.Drawing.Color.White;
+			this.txtEmriArmes.Location = new System.Drawing.Point(240, 90);
+			this.txtEmriArmes.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+			this.txtEmriArmes.Multiline = true;
+			this.txtEmriArmes.Name = "txtEmriArmes";
+			this.txtEmriArmes.Size = new System.Drawing.Size(254, 31);
+			this.txtEmriArmes.TabIndex = 14;
+			this.txtEmriArmes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtEmriArmes.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+			// 
 			// btnRegjistroArmen
 			// 
-			this.btnRegjistroArmen.BackColor = System.Drawing.Color.DarkSlateGray;
-			this.btnRegjistroArmen.BackgroundColor = System.Drawing.Color.DarkSlateGray;
+			this.btnRegjistroArmen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
+			this.btnRegjistroArmen.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
 			this.btnRegjistroArmen.ButtonText = "Regjistro Armen";
 			this.btnRegjistroArmen.CausesValidation = false;
 			this.btnRegjistroArmen.ErrorImageLeft = ((System.Drawing.Image)(resources.GetObject("btnRegjistroArmen.ErrorImageLeft")));
@@ -206,7 +282,7 @@
 			this.btnRegjistroArmen.FocusFontColor = System.Drawing.Color.Empty;
 			this.btnRegjistroArmen.ForeColors = System.Drawing.Color.White;
 			this.btnRegjistroArmen.HoverBackground = System.Drawing.Color.DarkSlateGray;
-			this.btnRegjistroArmen.HoverFontColor = System.Drawing.Color.ForestGreen;
+			this.btnRegjistroArmen.HoverFontColor = System.Drawing.Color.Transparent;
 			this.btnRegjistroArmen.ImageLeft = ((System.Drawing.Image)(resources.GetObject("btnRegjistroArmen.ImageLeft")));
 			this.btnRegjistroArmen.ImageRight = null;
 			this.btnRegjistroArmen.LeftPictureColor = System.Drawing.Color.Transparent;
@@ -257,82 +333,6 @@
 			this.label6.TabIndex = 8;
 			this.label6.Text = "Emri Armes";
 			// 
-			// txtEmriArmes
-			// 
-			this.txtEmriArmes.BackColor = System.Drawing.Color.MediumSeaGreen;
-			this.txtEmriArmes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.txtEmriArmes.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtEmriArmes.ForeColor = System.Drawing.Color.White;
-			this.txtEmriArmes.Location = new System.Drawing.Point(240, 90);
-			this.txtEmriArmes.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-			this.txtEmriArmes.Multiline = true;
-			this.txtEmriArmes.Name = "txtEmriArmes";
-			this.txtEmriArmes.Size = new System.Drawing.Size(254, 31);
-			this.txtEmriArmes.TabIndex = 14;
-			this.txtEmriArmes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.txtEmriArmes.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-			// 
-			// txtKalibri
-			// 
-			this.txtKalibri.BackColor = System.Drawing.Color.MediumSeaGreen;
-			this.txtKalibri.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.txtKalibri.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtKalibri.ForeColor = System.Drawing.Color.White;
-			this.txtKalibri.Location = new System.Drawing.Point(240, 149);
-			this.txtKalibri.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-			this.txtKalibri.Multiline = true;
-			this.txtKalibri.Name = "txtKalibri";
-			this.txtKalibri.Size = new System.Drawing.Size(254, 31);
-			this.txtKalibri.TabIndex = 15;
-			this.txtKalibri.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			// 
-			// txtMaxPlumba
-			// 
-			this.txtMaxPlumba.BackColor = System.Drawing.Color.MediumSeaGreen;
-			this.txtMaxPlumba.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.txtMaxPlumba.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtMaxPlumba.ForeColor = System.Drawing.Color.White;
-			this.txtMaxPlumba.Location = new System.Drawing.Point(240, 201);
-			this.txtMaxPlumba.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-			this.txtMaxPlumba.Multiline = true;
-			this.txtMaxPlumba.Name = "txtMaxPlumba";
-			this.txtMaxPlumba.Size = new System.Drawing.Size(254, 31);
-			this.txtMaxPlumba.TabIndex = 16;
-			this.txtMaxPlumba.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			// 
-			// pictureBox4
-			// 
-			this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-			this.pictureBox4.Location = new System.Drawing.Point(206, 149);
-			this.pictureBox4.Name = "pictureBox4";
-			this.pictureBox4.Size = new System.Drawing.Size(28, 31);
-			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox4.TabIndex = 18;
-			this.pictureBox4.TabStop = false;
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(206, 201);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(28, 31);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox1.TabIndex = 19;
-			this.pictureBox1.TabStop = false;
-			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-			this.pictureBox2.Location = new System.Drawing.Point(206, 90);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(28, 31);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox2.TabIndex = 20;
-			this.pictureBox2.TabStop = false;
-			// 
 			// frmRegjistrimiArmes
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -352,9 +352,9 @@
 			this.Load += new System.EventHandler(this.RegjistrimiArmes_Load);
 			this.jGradientPanel1.ResumeLayout(false);
 			this.jGradientPanel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
