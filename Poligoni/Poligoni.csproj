@@ -126,6 +126,7 @@
     <Compile Include="frmRegjistroklienta.Designer.cs">
       <DependentUpon>frmRegjistroklienta.cs</DependentUpon>
     </Compile>
+    <Compile Include="lidhjainternet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmRegjistrimiArmes.cs">

@@ -29,10 +29,7 @@ namespace Poligoni
             protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)
             {
                
-                Rectangle rc = new Rectangle(Point.Empty, e.Item.Size);
-                Color c = Color.FromArgb(2, 0, 47);
-                using (SolidBrush brush = new SolidBrush(c))
-                    e.Graphics.FillRectangle(brush, rc);
+                
 
 
             }
@@ -103,11 +100,6 @@ namespace Poligoni
         }
 
         public void administrimiToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }
@@ -184,6 +176,16 @@ namespace Poligoni
         {
             frmRegjistrimiPlumbave frmRegjistrimiPlumbave = new frmRegjistrimiPlumbave();
             frmRegjistrimiPlumbave.Show();
+        }
+
+        private void dfgdgToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dfgdgToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
