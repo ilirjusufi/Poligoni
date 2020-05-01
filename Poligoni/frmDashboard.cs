@@ -70,6 +70,8 @@ namespace Poligoni
             frmLogin frlogin = new frmLogin();
             if (frlogin.ShowDialog() == DialogResult.OK)
             {
+                lbldata.Text = DateTime.Now.Date.ToString();
+
                 for (int i = 0; i < 100; i++)
                 {
                     Thread.Sleep(20);
