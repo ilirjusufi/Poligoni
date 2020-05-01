@@ -79,9 +79,11 @@ namespace Poligoni
                     guna2CircleProgressBar2.Update();
                     lblfinancat.Text = i.ToString();
                     lblfinancat.Update();
+                   
 
                 }
-
+              
+                
                 lblemrimbiemri.Text = UserSession1.CurrentUser.Username.ToString();
                 frlogin.Hide();
 
