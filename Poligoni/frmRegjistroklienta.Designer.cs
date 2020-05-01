@@ -287,6 +287,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.jGradientPanel1);
             this.Name = "frmRegjistroklienta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmRegjistroklienta";
             this.jGradientPanel1.ResumeLayout(false);
             this.jGradientPanel1.PerformLayout();

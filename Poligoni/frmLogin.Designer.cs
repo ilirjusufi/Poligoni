@@ -44,6 +44,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -147,6 +148,7 @@
             this.jGradientPanel1.BackColor = System.Drawing.SystemColors.GrayText;
             this.jGradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
             this.jGradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
+            this.jGradientPanel1.Controls.Add(this.gunaControlBox1);
             this.jGradientPanel1.Controls.Add(this.pictureBox4);
             this.jGradientPanel1.Controls.Add(this.pictureBox5);
             this.jGradientPanel1.Controls.Add(this.pictureBox6);
@@ -157,7 +159,7 @@
             this.jGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.jGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.jGradientPanel1.Name = "jGradientPanel1";
-            this.jGradientPanel1.Size = new System.Drawing.Size(439, 471);
+            this.jGradientPanel1.Size = new System.Drawing.Size(455, 510);
             this.jGradientPanel1.TabIndex = 12;
             this.jGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.jGradientPanel1_Paint);
             // 
@@ -169,7 +171,7 @@
             this.btnkyquu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnkyquu.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnkyquu.ForeColor = System.Drawing.Color.White;
-            this.btnkyquu.Location = new System.Drawing.Point(84, 347);
+            this.btnkyquu.Location = new System.Drawing.Point(98, 385);
             this.btnkyquu.Name = "btnkyquu";
             this.btnkyquu.Size = new System.Drawing.Size(98, 42);
             this.btnkyquu.TabIndex = 1;
@@ -183,7 +185,7 @@
             this.txtpass2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpass2.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpass2.ForeColor = System.Drawing.Color.White;
-            this.txtpass2.Location = new System.Drawing.Point(131, 291);
+            this.txtpass2.Location = new System.Drawing.Point(145, 329);
             this.txtpass2.Multiline = true;
             this.txtpass2.Name = "txtpass2";
             this.txtpass2.PasswordChar = '*';
@@ -199,7 +201,7 @@
             this.btnanuloo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnanuloo.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnanuloo.ForeColor = System.Drawing.Color.White;
-            this.btnanuloo.Location = new System.Drawing.Point(247, 347);
+            this.btnanuloo.Location = new System.Drawing.Point(261, 385);
             this.btnanuloo.Name = "btnanuloo";
             this.btnanuloo.Size = new System.Drawing.Size(98, 42);
             this.btnanuloo.TabIndex = 1;
@@ -212,7 +214,7 @@
             this.txtuser1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtuser1.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtuser1.ForeColor = System.Drawing.Color.White;
-            this.txtuser1.Location = new System.Drawing.Point(131, 243);
+            this.txtuser1.Location = new System.Drawing.Point(145, 281);
             this.txtuser1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.txtuser1.Multiline = true;
             this.txtuser1.Name = "txtuser1";
@@ -226,7 +228,7 @@
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(146, 64);
+            this.pictureBox6.Location = new System.Drawing.Point(160, 102);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(139, 138);
             this.pictureBox6.TabIndex = 2;
@@ -236,7 +238,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(103, 243);
+            this.pictureBox5.Location = new System.Drawing.Point(117, 281);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(28, 31);
             this.pictureBox5.TabIndex = 3;
@@ -246,17 +248,32 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(103, 289);
+            this.pictureBox4.Location = new System.Drawing.Point(117, 327);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(28, 31);
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
             // 
+            // gunaControlBox1
+            // 
+            this.gunaControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaControlBox1.AnimationHoverSpeed = 0.07F;
+            this.gunaControlBox1.AnimationSpeed = 0.03F;
+            this.gunaControlBox1.IconColor = System.Drawing.Color.Black;
+            this.gunaControlBox1.IconSize = 15F;
+            this.gunaControlBox1.Location = new System.Drawing.Point(385, 0);
+            this.gunaControlBox1.Name = "gunaControlBox1";
+            this.gunaControlBox1.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
+            this.gunaControlBox1.OnHoverIconColor = System.Drawing.Color.White;
+            this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaControlBox1.Size = new System.Drawing.Size(70, 29);
+            this.gunaControlBox1.TabIndex = 5;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 471);
+            this.ClientSize = new System.Drawing.Size(455, 510);
             this.Controls.Add(this.jGradientPanel1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -265,6 +282,7 @@
             this.Controls.Add(this.btnAnulo);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.btnKyqu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(455, 510);
             this.MinimumSize = new System.Drawing.Size(455, 510);
             this.Name = "frmLogin";
@@ -301,5 +319,6 @@
 		private System.Windows.Forms.Button btnanuloo;
 		private System.Windows.Forms.TextBox txtpass2;
 		private System.Windows.Forms.Button btnkyquu;
-	}
+        private Guna.UI.WinForms.GunaControlBox gunaControlBox1;
+    }
 }

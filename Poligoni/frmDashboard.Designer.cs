@@ -34,22 +34,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblemrimbiemri = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.administrimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.regjistroStafToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ndyshoStafToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fshijStafToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.klientatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.regjistroKlientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ndryshoKlientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fshijKlientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listoKlientToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.rankimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.regjistroArmetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.regjistroPlumbatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listoTeGjithaArmetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listoTeGjithePlumbatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.raportetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jGradientPanel1 = new JGradient_Panel.JGradientPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -83,7 +67,7 @@
             this.btnregjistoklienta = new Guna.UI2.WinForms.Guna2Button();
             this.btnregjistroplumba = new Guna.UI2.WinForms.Guna2Button();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.guna2CircleProgressBar6 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
+            this.financatrrethi = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -91,9 +75,25 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.lbldata = new System.Windows.Forms.Label();
+            this.administrimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.regjistroStafToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ndyshoStafToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fshijStafToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.klientatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.regjistroKlientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ndryshoKlientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fshijKlientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listoKlientToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.rankimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.regjistroArmetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.regjistroPlumbatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listoTeGjithaArmetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listoTeGjithePlumbatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.raportetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.lblemri = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.jGradientPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -102,6 +102,7 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel12.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
@@ -163,142 +164,6 @@
             this.lblemrimbiemri.Size = new System.Drawing.Size(0, 24);
             this.lblemrimbiemri.TabIndex = 1;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
-            this.menuStrip1.Font = new System.Drawing.Font("Montserrat", 10F);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.administrimiToolStripMenuItem,
-            this.klientatToolStripMenuItem,
-            this.rankimiToolStripMenuItem,
-            this.raportetToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1213, 26);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // administrimiToolStripMenuItem
-            // 
-            this.administrimiToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.administrimiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.regjistroStafToolStripMenuItem,
-            this.ndyshoStafToolStripMenuItem,
-            this.fshijStafToolStripMenuItem});
-            this.administrimiToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.administrimiToolStripMenuItem.Name = "administrimiToolStripMenuItem";
-            this.administrimiToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
-            this.administrimiToolStripMenuItem.Text = "Administrimi";
-            // 
-            // regjistroStafToolStripMenuItem
-            // 
-            this.regjistroStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroStafToolStripMenuItem.Image")));
-            this.regjistroStafToolStripMenuItem.Name = "regjistroStafToolStripMenuItem";
-            this.regjistroStafToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.regjistroStafToolStripMenuItem.Text = "Regjistro Staf";
-            // 
-            // ndyshoStafToolStripMenuItem
-            // 
-            this.ndyshoStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ndyshoStafToolStripMenuItem.Image")));
-            this.ndyshoStafToolStripMenuItem.Name = "ndyshoStafToolStripMenuItem";
-            this.ndyshoStafToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.ndyshoStafToolStripMenuItem.Text = "Ndysho Staf";
-            // 
-            // fshijStafToolStripMenuItem
-            // 
-            this.fshijStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fshijStafToolStripMenuItem.Image")));
-            this.fshijStafToolStripMenuItem.Name = "fshijStafToolStripMenuItem";
-            this.fshijStafToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.fshijStafToolStripMenuItem.Text = "Fshij Staf";
-            // 
-            // klientatToolStripMenuItem
-            // 
-            this.klientatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.regjistroKlientToolStripMenuItem,
-            this.ndryshoKlientToolStripMenuItem,
-            this.fshijKlientToolStripMenuItem,
-            this.listoKlientToolStripMenuItem1});
-            this.klientatToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.klientatToolStripMenuItem.Name = "klientatToolStripMenuItem";
-            this.klientatToolStripMenuItem.Size = new System.Drawing.Size(76, 22);
-            this.klientatToolStripMenuItem.Text = "Klientat";
-            // 
-            // regjistroKlientToolStripMenuItem
-            // 
-            this.regjistroKlientToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroKlientToolStripMenuItem.Image")));
-            this.regjistroKlientToolStripMenuItem.Name = "regjistroKlientToolStripMenuItem";
-            this.regjistroKlientToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.regjistroKlientToolStripMenuItem.Text = "Regjistro Klient";
-            this.regjistroKlientToolStripMenuItem.Click += new System.EventHandler(this.regjistroKlientToolStripMenuItem_Click_4);
-            // 
-            // ndryshoKlientToolStripMenuItem
-            // 
-            this.ndryshoKlientToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ndryshoKlientToolStripMenuItem.Image")));
-            this.ndryshoKlientToolStripMenuItem.Name = "ndryshoKlientToolStripMenuItem";
-            this.ndryshoKlientToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.ndryshoKlientToolStripMenuItem.Text = "Ndrysho Klient";
-            // 
-            // fshijKlientToolStripMenuItem
-            // 
-            this.fshijKlientToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fshijKlientToolStripMenuItem.Image")));
-            this.fshijKlientToolStripMenuItem.Name = "fshijKlientToolStripMenuItem";
-            this.fshijKlientToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.fshijKlientToolStripMenuItem.Text = "Fshij Klient";
-            // 
-            // listoKlientToolStripMenuItem1
-            // 
-            this.listoKlientToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("listoKlientToolStripMenuItem1.Image")));
-            this.listoKlientToolStripMenuItem1.Name = "listoKlientToolStripMenuItem1";
-            this.listoKlientToolStripMenuItem1.Size = new System.Drawing.Size(186, 22);
-            this.listoKlientToolStripMenuItem1.Text = "Listo Klient";
-            // 
-            // rankimiToolStripMenuItem
-            // 
-            this.rankimiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.regjistroArmetToolStripMenuItem,
-            this.regjistroPlumbatToolStripMenuItem,
-            this.listoTeGjithaArmetToolStripMenuItem,
-            this.listoTeGjithePlumbatToolStripMenuItem});
-            this.rankimiToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.rankimiToolStripMenuItem.Name = "rankimiToolStripMenuItem";
-            this.rankimiToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
-            this.rankimiToolStripMenuItem.Text = "Stoku";
-            // 
-            // regjistroArmetToolStripMenuItem
-            // 
-            this.regjistroArmetToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroArmetToolStripMenuItem.Image")));
-            this.regjistroArmetToolStripMenuItem.Name = "regjistroArmetToolStripMenuItem";
-            this.regjistroArmetToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
-            this.regjistroArmetToolStripMenuItem.Text = "Regjistro Armet";
-            // 
-            // regjistroPlumbatToolStripMenuItem
-            // 
-            this.regjistroPlumbatToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroPlumbatToolStripMenuItem.Image")));
-            this.regjistroPlumbatToolStripMenuItem.Name = "regjistroPlumbatToolStripMenuItem";
-            this.regjistroPlumbatToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
-            this.regjistroPlumbatToolStripMenuItem.Text = "Regjistro Plumbat";
-            // 
-            // listoTeGjithaArmetToolStripMenuItem
-            // 
-            this.listoTeGjithaArmetToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("listoTeGjithaArmetToolStripMenuItem.Image")));
-            this.listoTeGjithaArmetToolStripMenuItem.Name = "listoTeGjithaArmetToolStripMenuItem";
-            this.listoTeGjithaArmetToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
-            this.listoTeGjithaArmetToolStripMenuItem.Text = "Listo te gjitha Armet";
-            // 
-            // listoTeGjithePlumbatToolStripMenuItem
-            // 
-            this.listoTeGjithePlumbatToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("listoTeGjithePlumbatToolStripMenuItem.Image")));
-            this.listoTeGjithePlumbatToolStripMenuItem.Name = "listoTeGjithePlumbatToolStripMenuItem";
-            this.listoTeGjithePlumbatToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
-            this.listoTeGjithePlumbatToolStripMenuItem.Text = "Listo te gjithe Plumbat";
-            // 
-            // raportetToolStripMenuItem
-            // 
-            this.raportetToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.raportetToolStripMenuItem.Name = "raportetToolStripMenuItem";
-            this.raportetToolStripMenuItem.Size = new System.Drawing.Size(83, 22);
-            this.raportetToolStripMenuItem.Text = "Raportet";
-            // 
             // jGradientPanel1
             // 
             this.jGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
@@ -310,6 +175,7 @@
             this.jGradientPanel1.Controls.Add(this.panel6);
             this.jGradientPanel1.Controls.Add(this.lbldata);
             this.jGradientPanel1.Controls.Add(this.label18);
+            this.jGradientPanel1.Controls.Add(this.lblemri);
             this.jGradientPanel1.Controls.Add(this.label1);
             this.jGradientPanel1.Controls.Add(this.menuStrip1);
             this.jGradientPanel1.Controls.Add(this.panel4);
@@ -699,7 +565,7 @@
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
             this.panel12.Controls.Add(this.panel13);
-            this.panel12.Controls.Add(this.guna2CircleProgressBar6);
+            this.panel12.Controls.Add(this.financatrrethi);
             this.panel12.Controls.Add(this.label15);
             this.panel12.Controls.Add(this.label16);
             this.panel12.Controls.Add(this.label17);
@@ -708,19 +574,19 @@
             this.panel12.Size = new System.Drawing.Size(446, 383);
             this.panel12.TabIndex = 4;
             // 
-            // guna2CircleProgressBar6
+            // financatrrethi
             // 
-            this.guna2CircleProgressBar6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2CircleProgressBar6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2CircleProgressBar6.Location = new System.Drawing.Point(76, 49);
-            this.guna2CircleProgressBar6.Name = "guna2CircleProgressBar6";
-            this.guna2CircleProgressBar6.ProgressColor = System.Drawing.Color.White;
-            this.guna2CircleProgressBar6.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleProgressBar6.ShadowDecoration.Parent = this.guna2CircleProgressBar6;
-            this.guna2CircleProgressBar6.ShowPercentage = true;
-            this.guna2CircleProgressBar6.Size = new System.Drawing.Size(294, 282);
-            this.guna2CircleProgressBar6.TabIndex = 6;
-            this.guna2CircleProgressBar6.Value = 30;
+            this.financatrrethi.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.financatrrethi.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.financatrrethi.Location = new System.Drawing.Point(76, 49);
+            this.financatrrethi.Name = "financatrrethi";
+            this.financatrrethi.ProgressColor = System.Drawing.Color.White;
+            this.financatrrethi.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.financatrrethi.ShadowDecoration.Parent = this.financatrrethi;
+            this.financatrrethi.ShowPercentage = true;
+            this.financatrrethi.Size = new System.Drawing.Size(294, 282);
+            this.financatrrethi.TabIndex = 6;
+            this.financatrrethi.Value = 30;
             // 
             // label15
             // 
@@ -794,6 +660,153 @@
             this.lbldata.TabIndex = 1;
             this.lbldata.Text = "Data";
             // 
+            // administrimiToolStripMenuItem
+            // 
+            this.administrimiToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.administrimiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.regjistroStafToolStripMenuItem,
+            this.ndyshoStafToolStripMenuItem,
+            this.fshijStafToolStripMenuItem});
+            this.administrimiToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.administrimiToolStripMenuItem.Name = "administrimiToolStripMenuItem";
+            this.administrimiToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.administrimiToolStripMenuItem.Text = "Administrimi";
+            // 
+            // regjistroStafToolStripMenuItem
+            // 
+            this.regjistroStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroStafToolStripMenuItem.Image")));
+            this.regjistroStafToolStripMenuItem.Name = "regjistroStafToolStripMenuItem";
+            this.regjistroStafToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.regjistroStafToolStripMenuItem.Text = "Regjistro Staf";
+            // 
+            // ndyshoStafToolStripMenuItem
+            // 
+            this.ndyshoStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ndyshoStafToolStripMenuItem.Image")));
+            this.ndyshoStafToolStripMenuItem.Name = "ndyshoStafToolStripMenuItem";
+            this.ndyshoStafToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.ndyshoStafToolStripMenuItem.Text = "Ndysho Staf";
+            // 
+            // fshijStafToolStripMenuItem
+            // 
+            this.fshijStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fshijStafToolStripMenuItem.Image")));
+            this.fshijStafToolStripMenuItem.Name = "fshijStafToolStripMenuItem";
+            this.fshijStafToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.fshijStafToolStripMenuItem.Text = "Fshij Staf";
+            // 
+            // klientatToolStripMenuItem
+            // 
+            this.klientatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.regjistroKlientToolStripMenuItem,
+            this.ndryshoKlientToolStripMenuItem,
+            this.fshijKlientToolStripMenuItem,
+            this.listoKlientToolStripMenuItem1});
+            this.klientatToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.klientatToolStripMenuItem.Name = "klientatToolStripMenuItem";
+            this.klientatToolStripMenuItem.Size = new System.Drawing.Size(76, 22);
+            this.klientatToolStripMenuItem.Text = "Klientat";
+            // 
+            // regjistroKlientToolStripMenuItem
+            // 
+            this.regjistroKlientToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroKlientToolStripMenuItem.Image")));
+            this.regjistroKlientToolStripMenuItem.Name = "regjistroKlientToolStripMenuItem";
+            this.regjistroKlientToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.regjistroKlientToolStripMenuItem.Text = "Regjistro Klient";
+            this.regjistroKlientToolStripMenuItem.Click += new System.EventHandler(this.regjistroKlientToolStripMenuItem_Click_4);
+            // 
+            // ndryshoKlientToolStripMenuItem
+            // 
+            this.ndryshoKlientToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ndryshoKlientToolStripMenuItem.Image")));
+            this.ndryshoKlientToolStripMenuItem.Name = "ndryshoKlientToolStripMenuItem";
+            this.ndryshoKlientToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.ndryshoKlientToolStripMenuItem.Text = "Ndrysho Klient";
+            // 
+            // fshijKlientToolStripMenuItem
+            // 
+            this.fshijKlientToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fshijKlientToolStripMenuItem.Image")));
+            this.fshijKlientToolStripMenuItem.Name = "fshijKlientToolStripMenuItem";
+            this.fshijKlientToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.fshijKlientToolStripMenuItem.Text = "Fshij Klient";
+            // 
+            // listoKlientToolStripMenuItem1
+            // 
+            this.listoKlientToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("listoKlientToolStripMenuItem1.Image")));
+            this.listoKlientToolStripMenuItem1.Name = "listoKlientToolStripMenuItem1";
+            this.listoKlientToolStripMenuItem1.Size = new System.Drawing.Size(186, 22);
+            this.listoKlientToolStripMenuItem1.Text = "Listo Klient";
+            // 
+            // rankimiToolStripMenuItem
+            // 
+            this.rankimiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.regjistroArmetToolStripMenuItem,
+            this.regjistroPlumbatToolStripMenuItem,
+            this.listoTeGjithaArmetToolStripMenuItem,
+            this.listoTeGjithePlumbatToolStripMenuItem});
+            this.rankimiToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.rankimiToolStripMenuItem.Name = "rankimiToolStripMenuItem";
+            this.rankimiToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
+            this.rankimiToolStripMenuItem.Text = "Stoku";
+            // 
+            // regjistroArmetToolStripMenuItem
+            // 
+            this.regjistroArmetToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroArmetToolStripMenuItem.Image")));
+            this.regjistroArmetToolStripMenuItem.Name = "regjistroArmetToolStripMenuItem";
+            this.regjistroArmetToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.regjistroArmetToolStripMenuItem.Text = "Regjistro Armet";
+            // 
+            // regjistroPlumbatToolStripMenuItem
+            // 
+            this.regjistroPlumbatToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroPlumbatToolStripMenuItem.Image")));
+            this.regjistroPlumbatToolStripMenuItem.Name = "regjistroPlumbatToolStripMenuItem";
+            this.regjistroPlumbatToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.regjistroPlumbatToolStripMenuItem.Text = "Regjistro Plumbat";
+            // 
+            // listoTeGjithaArmetToolStripMenuItem
+            // 
+            this.listoTeGjithaArmetToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("listoTeGjithaArmetToolStripMenuItem.Image")));
+            this.listoTeGjithaArmetToolStripMenuItem.Name = "listoTeGjithaArmetToolStripMenuItem";
+            this.listoTeGjithaArmetToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.listoTeGjithaArmetToolStripMenuItem.Text = "Listo te gjitha Armet";
+            // 
+            // listoTeGjithePlumbatToolStripMenuItem
+            // 
+            this.listoTeGjithePlumbatToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("listoTeGjithePlumbatToolStripMenuItem.Image")));
+            this.listoTeGjithePlumbatToolStripMenuItem.Name = "listoTeGjithePlumbatToolStripMenuItem";
+            this.listoTeGjithePlumbatToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.listoTeGjithePlumbatToolStripMenuItem.Text = "Listo te gjithe Plumbat";
+            // 
+            // raportetToolStripMenuItem
+            // 
+            this.raportetToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.raportetToolStripMenuItem.Name = "raportetToolStripMenuItem";
+            this.raportetToolStripMenuItem.Size = new System.Drawing.Size(83, 22);
+            this.raportetToolStripMenuItem.Text = "Raportet";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
+            this.menuStrip1.Font = new System.Drawing.Font("Montserrat", 10F);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administrimiToolStripMenuItem,
+            this.klientatToolStripMenuItem,
+            this.rankimiToolStripMenuItem,
+            this.raportetToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1213, 26);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // lblemri
+            // 
+            this.lblemri.AutoSize = true;
+            this.lblemri.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblemri.ForeColor = System.Drawing.Color.LightGray;
+            this.lblemri.Location = new System.Drawing.Point(362, 36);
+            this.lblemri.Name = "lblemri";
+            this.lblemri.Size = new System.Drawing.Size(66, 24);
+            this.lblemri.TabIndex = 1;
+            this.lblemri.Text = "lblemri";
+            // 
             // FrmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -809,8 +822,6 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.jGradientPanel1.ResumeLayout(false);
             this.jGradientPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -826,6 +837,8 @@
             this.panel7.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -837,22 +850,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem administrimiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem regjistroStafToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ndyshoStafToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fshijStafToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem klientatToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem regjistroKlientToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ndryshoKlientToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fshijKlientToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listoKlientToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem rankimiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem regjistroArmetToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem regjistroPlumbatToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listoTeGjithaArmetToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listoTeGjithePlumbatToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem raportetToolStripMenuItem;
         private JGradient_Panel.JGradientPanel jGradientPanel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel2;
@@ -886,7 +883,7 @@
         private Guna.UI2.WinForms.Guna2Button btnregjistroplumba;
         private Guna.UI2.WinForms.Guna2Button btnregjistoklienta;
         private System.Windows.Forms.Panel panel12;
-        private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar6;
+        private Guna.UI2.WinForms.Guna2CircleProgressBar financatrrethi;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
@@ -894,5 +891,22 @@
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label lbldata;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem administrimiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem regjistroStafToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ndyshoStafToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fshijStafToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem klientatToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem regjistroKlientToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ndryshoKlientToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fshijKlientToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listoKlientToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem rankimiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem regjistroArmetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem regjistroPlumbatToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listoTeGjithaArmetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listoTeGjithePlumbatToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem raportetToolStripMenuItem;
+        private System.Windows.Forms.Label lblemri;
     }
 }

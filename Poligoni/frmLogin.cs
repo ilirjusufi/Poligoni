@@ -46,6 +46,8 @@ namespace Poligoni
         private void frmLogin_Load(object sender, EventArgs e)
         {
             btnkyquu.DialogResult = DialogResult.OK;
+            FrmDashboard.StartPosition = FormStartPosition.CenterParent;
+           
         }
 
         private void button2_Click_1(object sender, EventArgs e)

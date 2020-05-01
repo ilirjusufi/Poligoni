@@ -64,8 +64,8 @@ namespace Poligoni
 
         private void FrmDashboard_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-         
+
+            this.StartPosition = FormStartPosition.CenterParent;
 
             frmLogin frlogin = new frmLogin();
             if (frlogin.ShowDialog() == DialogResult.OK)
@@ -82,10 +82,11 @@ namespace Poligoni
                    
 
                 }
-              
+             
                 
                 lblemrimbiemri.Text = UserSession1.CurrentUser.Username.ToString();
                 frlogin.Hide();
+                lblemri.Text = UserSession1.CurrentUser.Username.ToString();
 
                 if (UserSession1.CurrentUser.UserRoleID == 2)
                 {
@@ -222,8 +223,12 @@ namespace Poligoni
 
         private void btnregjistoklienta_Click(object sender, EventArgs e)
         {
-            frmRegjistroklienta frmk = new frmRegjistroklienta();
-            frmk.Show();
+            frmRegjistroklienta klientatform = new frmRegjistroklienta();
+            if (klientatform.ShowDialog() == DialogResult.Abort)
+            {
+
+            }
+           
         }
 
         private void lblfinancat_Click(object sender, EventArgs e)
