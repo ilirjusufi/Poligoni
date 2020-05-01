@@ -79,9 +79,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.lblfinancat = new System.Windows.Forms.Label();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnregjistroarm = new Guna.UI2.WinForms.Guna2Button();
+            this.btnregjistoklienta = new Guna.UI2.WinForms.Guna2Button();
+            this.btnregjistroplumba = new Guna.UI2.WinForms.Guna2Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.guna2CircleProgressBar6 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.label15 = new System.Windows.Forms.Label();
@@ -109,9 +109,9 @@
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
-            this.panel4.Controls.Add(this.guna2Button2);
-            this.panel4.Controls.Add(this.guna2Button1);
-            this.panel4.Controls.Add(this.guna2Button3);
+            this.panel4.Controls.Add(this.btnregjistroplumba);
+            this.panel4.Controls.Add(this.btnregjistoklienta);
+            this.panel4.Controls.Add(this.btnregjistroarm);
             this.panel4.Controls.Add(this.lblemrimbiemri);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label2);
@@ -647,51 +647,52 @@
             this.lblfinancat.Text = "00000";
             this.lblfinancat.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // guna2Button3
+            // btnregjistroarm
             // 
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(13, 323);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button3.TabIndex = 2;
-            this.guna2Button3.Text = "Regjistro arme";
+            this.btnregjistroarm.CheckedState.Parent = this.btnregjistroarm;
+            this.btnregjistroarm.CustomImages.Parent = this.btnregjistroarm;
+            this.btnregjistroarm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
+            this.btnregjistroarm.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnregjistroarm.ForeColor = System.Drawing.Color.White;
+            this.btnregjistroarm.HoverState.Parent = this.btnregjistroarm;
+            this.btnregjistroarm.Location = new System.Drawing.Point(13, 323);
+            this.btnregjistroarm.Name = "btnregjistroarm";
+            this.btnregjistroarm.ShadowDecoration.Parent = this.btnregjistroarm;
+            this.btnregjistroarm.Size = new System.Drawing.Size(180, 45);
+            this.btnregjistroarm.TabIndex = 2;
+            this.btnregjistroarm.Text = "Regjistro arme";
             // 
-            // guna2Button1
+            // btnregjistoklienta
             // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(13, 258);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "Regjistro klienta";
-            this.guna2Button1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.btnregjistoklienta.CheckedState.Parent = this.btnregjistoklienta;
+            this.btnregjistoklienta.CustomImages.Parent = this.btnregjistoklienta;
+            this.btnregjistoklienta.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
+            this.btnregjistoklienta.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnregjistoklienta.ForeColor = System.Drawing.Color.White;
+            this.btnregjistoklienta.HoverState.Parent = this.btnregjistoklienta;
+            this.btnregjistoklienta.Location = new System.Drawing.Point(13, 258);
+            this.btnregjistoklienta.Name = "btnregjistoklienta";
+            this.btnregjistoklienta.ShadowDecoration.Parent = this.btnregjistoklienta;
+            this.btnregjistoklienta.Size = new System.Drawing.Size(180, 45);
+            this.btnregjistoklienta.TabIndex = 3;
+            this.btnregjistoklienta.Text = "Regjistro klienta";
+            this.btnregjistoklienta.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.btnregjistoklienta.Click += new System.EventHandler(this.btnregjistoklienta_Click);
             // 
-            // guna2Button2
+            // btnregjistroplumba
             // 
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(13, 383);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button2.TabIndex = 3;
-            this.guna2Button2.Text = "Regjistro klienta";
+            this.btnregjistroplumba.CheckedState.Parent = this.btnregjistroplumba;
+            this.btnregjistroplumba.CustomImages.Parent = this.btnregjistroplumba;
+            this.btnregjistroplumba.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
+            this.btnregjistroplumba.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnregjistroplumba.ForeColor = System.Drawing.Color.White;
+            this.btnregjistroplumba.HoverState.Parent = this.btnregjistroplumba;
+            this.btnregjistroplumba.Location = new System.Drawing.Point(13, 383);
+            this.btnregjistroplumba.Name = "btnregjistroplumba";
+            this.btnregjistroplumba.ShadowDecoration.Parent = this.btnregjistroplumba;
+            this.btnregjistroplumba.Size = new System.Drawing.Size(180, 45);
+            this.btnregjistroplumba.TabIndex = 3;
+            this.btnregjistroplumba.Text = "Regjistro klienta";
             // 
             // panel12
             // 
@@ -867,7 +868,7 @@
         private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar3;
         private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar5;
         private System.Windows.Forms.Panel panel8;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button btnregjistroarm;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label lblfinancat;
         private System.Windows.Forms.Panel panel10;
@@ -881,8 +882,8 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnregjistroplumba;
+        private Guna.UI2.WinForms.Guna2Button btnregjistoklienta;
         private System.Windows.Forms.Panel panel12;
         private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar6;
         private System.Windows.Forms.Label label15;

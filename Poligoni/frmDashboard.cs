@@ -217,5 +217,11 @@ namespace Poligoni
         {
 
         }
+
+        private void btnregjistoklienta_Click(object sender, EventArgs e)
+        {
+            frmRegjistroklienta frmk = new frmRegjistroklienta();
+            frmk.Show();
+        }
     }
 }
