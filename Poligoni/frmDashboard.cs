@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Poligoni.BLL;
@@ -67,12 +68,20 @@ namespace Poligoni
         private void FrmDashboard_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            
+         
 
             frmLogin frlogin = new frmLogin();
             if (frlogin.ShowDialog() == DialogResult.OK)
             {
-                lbluserat.Text = UserSession1.CurrentUser.Username.ToString();
+                for (int i = 0; i < 100; i++)
+                {
+                    Thread.Sleep(20);
+                    guna2CircleProgressBar2.Value = i;
+                    guna2CircleProgressBar2.Update();
+
+                }
+
+                lblemrimbiemri.Text = UserSession1.CurrentUser.Username.ToString();
                 frlogin.Hide();
 
                 if (UserSession1.CurrentUser.UserRoleID == 2)
@@ -152,7 +161,7 @@ namespace Poligoni
 
         private void jGradientPanel3_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -184,6 +193,21 @@ namespace Poligoni
         }
 
         private void dfgdgToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void jGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void regjistroKlientToolStripMenuItem_Click_4(object sender, EventArgs e)
         {
 
         }
