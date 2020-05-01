@@ -71,6 +71,7 @@
 			this.jTextBox1.TabIndex = 0;
 			this.jTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.jTextBox1.TextName = "";
+			this.jTextBox1.Load += new System.EventHandler(this.jTextBox1_Load);
 			// 
 			// label1
 			// 
@@ -83,6 +84,7 @@
 			this.label1.Size = new System.Drawing.Size(101, 20);
 			this.label1.TabIndex = 1;
 			this.label1.Text = "Emri Armes";
+			this.label1.Click += new System.EventHandler(this.label1_Click);
 			// 
 			// label2
 			// 
@@ -95,6 +97,7 @@
 			this.label2.Size = new System.Drawing.Size(58, 20);
 			this.label2.TabIndex = 2;
 			this.label2.Text = "Kalibri";
+			this.label2.Click += new System.EventHandler(this.label2_Click);
 			// 
 			// label3
 			// 
@@ -107,6 +110,7 @@
 			this.label3.Size = new System.Drawing.Size(100, 20);
 			this.label3.TabIndex = 3;
 			this.label3.Text = "MaxPlumba";
+			this.label3.Click += new System.EventHandler(this.label3_Click);
 			// 
 			// jTextBox2
 			// 
@@ -126,6 +130,7 @@
 			this.jTextBox2.TabIndex = 4;
 			this.jTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.jTextBox2.TextName = "";
+			this.jTextBox2.Load += new System.EventHandler(this.jTextBox2_Load);
 			// 
 			// jTextBox3
 			// 
@@ -145,6 +150,7 @@
 			this.jTextBox3.TabIndex = 5;
 			this.jTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			this.jTextBox3.TextName = "";
+			this.jTextBox3.Load += new System.EventHandler(this.jTextBox3_Load);
 			// 
 			// btnRegjistro
 			// 
@@ -171,6 +177,7 @@
 			this.btnRegjistro.SizeModeLeft = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
 			this.btnRegjistro.SizeModeRight = System.Windows.Forms.PictureBoxSizeMode.Normal;
 			this.btnRegjistro.TabIndex = 6;
+			this.btnRegjistro.Click += new System.EventHandler(this.btnRegjistro_Click);
 			// 
 			// jGradientPanel1
 			// 
@@ -204,6 +211,7 @@
 			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox2.TabIndex = 20;
 			this.pictureBox2.TabStop = false;
+			this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
 			// 
 			// pictureBox1
 			// 
@@ -215,6 +223,7 @@
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox1.TabIndex = 19;
 			this.pictureBox1.TabStop = false;
+			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
 			// 
 			// pictureBox4
 			// 
@@ -226,6 +235,7 @@
 			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox4.TabIndex = 18;
 			this.pictureBox4.TabStop = false;
+			this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
 			// 
 			// txtMaxPlumba
 			// 
@@ -240,6 +250,7 @@
 			this.txtMaxPlumba.Size = new System.Drawing.Size(254, 31);
 			this.txtMaxPlumba.TabIndex = 16;
 			this.txtMaxPlumba.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtMaxPlumba.TextChanged += new System.EventHandler(this.txtMaxPlumba_TextChanged);
 			// 
 			// txtKalibri
 			// 
@@ -254,6 +265,7 @@
 			this.txtKalibri.Size = new System.Drawing.Size(254, 31);
 			this.txtKalibri.TabIndex = 15;
 			this.txtKalibri.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtKalibri.TextChanged += new System.EventHandler(this.txtKalibri_TextChanged);
 			// 
 			// txtEmriArmes
 			// 
@@ -308,6 +320,7 @@
 			this.label4.Size = new System.Drawing.Size(106, 22);
 			this.label4.TabIndex = 10;
 			this.label4.Text = "MaxPlumba";
+			this.label4.Click += new System.EventHandler(this.label4_Click);
 			// 
 			// label5
 			// 
@@ -320,6 +333,7 @@
 			this.label5.Size = new System.Drawing.Size(59, 22);
 			this.label5.TabIndex = 9;
 			this.label5.Text = "Kalibri";
+			this.label5.Click += new System.EventHandler(this.label5_Click);
 			// 
 			// label6
 			// 
@@ -332,6 +346,7 @@
 			this.label6.Size = new System.Drawing.Size(104, 22);
 			this.label6.TabIndex = 8;
 			this.label6.Text = "Emri Armes";
+			this.label6.Click += new System.EventHandler(this.label6_Click);
 			// 
 			// frmRegjistrimiArmes
 			// 

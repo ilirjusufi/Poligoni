@@ -15,23 +15,17 @@ using Poligoni.BO;
 
 namespace Poligoni
 {
-    
+
     public partial class FrmDashboard : Form
     {
-       
+
 
         public FrmDashboard()
         {
-           InitializeComponent();
-            menuStrip1.Renderer = new BlueRenderer();
+            InitializeComponent();
         }
-        private class BlueRenderer : ToolStripProfessionalRenderer
-        {
-            protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)
-            {
-               
-            }
-        }
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -77,13 +71,13 @@ namespace Poligoni
                     Thread.Sleep(20);
                     guna2CircleProgressBar2.Value = i;
                     guna2CircleProgressBar2.Update();
-                    lblfinancat.Text = i.ToString()+ " €";
+                    lblfinancat.Text = i.ToString() + " €";
                     lblfinancat.Update();
-                   
+
 
                 }
-             
-                
+
+
                 lblemrimbiemri.Text = UserSession1.CurrentUser.Username.ToString();
                 frlogin.Hide();
                 lblemri.Text = UserSession1.CurrentUser.Username.ToString();
@@ -109,7 +103,7 @@ namespace Poligoni
 
         private void FrmDashboard_Load_1(object sender, EventArgs e)
         {
-            
+
         }
 
         public void administrimiToolStripMenuItem_Click(object sender, EventArgs e)
@@ -139,12 +133,12 @@ namespace Poligoni
 
         private void regjistroKlientToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-           
+
         }
 
         private void label1_Click_1(object sender, EventArgs e)
         {
-            
+
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -165,12 +159,12 @@ namespace Poligoni
 
         private void jGradientPanel3_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-           
+
         }
 
         private void regjistroKlientToolStripMenuItem_Click_3(object sender, EventArgs e)
@@ -213,6 +207,11 @@ namespace Poligoni
 
         private void regjistroKlientToolStripMenuItem_Click_4(object sender, EventArgs e)
         {
+            frmRegjistroklienta klientatform = new frmRegjistroklienta();
+            if (klientatform.ShowDialog() == DialogResult.Abort)
+            {
+
+            }
 
         }
 
@@ -228,12 +227,84 @@ namespace Poligoni
             {
 
             }
-           
+
         }
 
         private void lblfinancat_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnregjistroarm_Click(object sender, EventArgs e)
+        {
+            frmRegjistrimiArmes frmRegjistrimiArmes = new frmRegjistrimiArmes();
+            if (frmRegjistrimiArmes.ShowDialog() == DialogResult.Abort)
+            {
+
+            }
+        }
+
+        private void menuStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
+        {
+        }
+
+        private void raportetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void regjistroGjuajtjenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRegjistroGjuajtjen frmRegjistroGjuajtjen = new frmRegjistroGjuajtjen();
+            if (frmRegjistroGjuajtjen.ShowDialog() == DialogResult.Abort)
+            {
+
+            }
+        }
+
+        private void btnRegjistroGjuajtje_Click(object sender, EventArgs e)
+        {
+            frmRegjistroGjuajtjen frmRegjistroGjuajtjen = new frmRegjistroGjuajtjen();
+            if (frmRegjistroGjuajtjen.ShowDialog() == DialogResult.Abort)
+            {
+
+            }
+        }
+
+        private void regjistroArmetToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmRegjistrimiArmes frmRegjistrimiArmes = new frmRegjistrimiArmes();
+            if (frmRegjistrimiArmes.ShowDialog() == DialogResult.Abort)
+            {
+
+            }
+        }
+
+        private void regjistroPlumbatToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmRegjistrimiPlumbave frmRegjistrimiPlumbave = new frmRegjistrimiPlumbave();
+            if (frmRegjistrimiPlumbave.ShowDialog() == DialogResult.Abort)
+            {
+
+            }
+        }
+
+        private void btnregjistroplumba_Click(object sender, EventArgs e)
+        {
+            frmRegjistrimiPlumbave frmRegjistrimiPlumbave = new frmRegjistrimiPlumbave();
+            if (frmRegjistrimiPlumbave.ShowDialog() == DialogResult.Abort)
+            {
+
+            }
+        }
+
+        private void regjistroStafToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRegjistroStaff frmRegjistroStaff = new frmRegjistroStaff();
+            if (frmRegjistroStaff.ShowDialog() == DialogResult.Abort)
+            {
+
+            }
         }
     }
 }

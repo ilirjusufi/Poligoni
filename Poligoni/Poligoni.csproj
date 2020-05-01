@@ -52,7 +52,7 @@
       <HintPath>..\JControls\FlatButton.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\..\..\Desktop\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 3.5\Guna.UI.dll</HintPath>
+      <HintPath>..\..\..\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>..\..\..\..\Desktop\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 3.5\Guna.UI2.dll</HintPath>
@@ -112,23 +112,29 @@
     <Compile Include="frmRegjistrimiPlumbave.Designer.cs">
       <DependentUpon>frmRegjistrimiPlumbave.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRegjistroKlient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmRegjistroKlient.Designer.cs">
-      <DependentUpon>frmRegjistroKlient.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmDashboard.Designer.cs">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRegjistroGjuajtjen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegjistroGjuajtjen.Designer.cs">
+      <DependentUpon>frmRegjistroGjuajtjen.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRegjistroklienta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRegjistroklienta.Designer.cs">
       <DependentUpon>frmRegjistroklienta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegjistroStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegjistroStaff.Designer.cs">
+      <DependentUpon>frmRegjistroStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="lidhjainternet.cs" />
     <Compile Include="Program.cs" />
@@ -147,14 +153,17 @@
     <EmbeddedResource Include="frmRegjistrimiPlumbave.resx">
       <DependentUpon>frmRegjistrimiPlumbave.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRegjistroKlient.resx">
-      <DependentUpon>frmRegjistroKlient.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmDashboard.resx">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRegjistroGjuajtjen.resx">
+      <DependentUpon>frmRegjistroGjuajtjen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRegjistroklienta.resx">
       <DependentUpon>frmRegjistroklienta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegjistroStaff.resx">
+      <DependentUpon>frmRegjistroStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
