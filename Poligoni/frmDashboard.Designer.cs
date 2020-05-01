@@ -646,6 +646,7 @@
             this.lblfinancat.TabIndex = 1;
             this.lblfinancat.Text = "00000";
             this.lblfinancat.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblfinancat.Click += new System.EventHandler(this.lblfinancat_Click);
             // 
             // btnregjistroarm
             // 

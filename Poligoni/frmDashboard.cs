@@ -77,7 +77,7 @@ namespace Poligoni
                     Thread.Sleep(20);
                     guna2CircleProgressBar2.Value = i;
                     guna2CircleProgressBar2.Update();
-                    lblfinancat.Text = i.ToString();
+                    lblfinancat.Text = i.ToString()+ " €";
                     lblfinancat.Update();
                    
 
@@ -224,6 +224,11 @@ namespace Poligoni
         {
             frmRegjistroklienta frmk = new frmRegjistroklienta();
             frmk.Show();
+        }
+
+        private void lblfinancat_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
