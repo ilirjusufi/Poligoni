@@ -30,9 +30,6 @@ namespace Poligoni
             protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)
             {
                
-                
-
-
             }
         }
         private void button1_Click(object sender, EventArgs e)
@@ -78,6 +75,8 @@ namespace Poligoni
                     Thread.Sleep(20);
                     guna2CircleProgressBar2.Value = i;
                     guna2CircleProgressBar2.Update();
+                    lblfinancat.Text = i.ToString();
+                    lblfinancat.Update();
 
                 }
 
@@ -208,6 +207,11 @@ namespace Poligoni
         }
 
         private void regjistroKlientToolStripMenuItem_Click_4(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
