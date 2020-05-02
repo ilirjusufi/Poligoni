@@ -59,11 +59,16 @@ namespace Poligoni
 
         private void FrmDashboard_Load(object sender, EventArgs e)
         {
-            
 
 
-            lbldata.Text = DateTime.Now.ToString();
-            lbldata.Update();
+
+
+            timer1.Start();
+
+           
+
+
+
 
 
 
@@ -316,6 +321,18 @@ namespace Poligoni
             {
                 
             }
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime dateTime = DateTime.Now;
+            lbldata.Text = dateTime.ToString();
+            lbldata.Update();
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDashboard));
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnRegjistroGjuajtje = new Guna.UI2.WinForms.Guna2Button();
@@ -97,6 +98,7 @@
             this.listoTeGjithaGjuajtjetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listoTeGjithaGjuajtjetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.raportetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.jGradientPanel1.SuspendLayout();
@@ -873,6 +875,10 @@
             this.raportetToolStripMenuItem.Text = "Raportet";
             this.raportetToolStripMenuItem.Click += new System.EventHandler(this.raportetToolStripMenuItem_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FrmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -979,5 +985,6 @@
 		private System.Windows.Forms.ToolStripMenuItem regjistroGjuajtjenToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem listoTeGjithaGjuajtjetToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem listoTeGjithaGjuajtjetToolStripMenuItem1;
-	}
+        private System.Windows.Forms.Timer timer1;
+    }
 }
