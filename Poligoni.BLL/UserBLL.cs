@@ -18,9 +18,9 @@ namespace Poligoni.BLL
             return dal.Login(Useri, Passwordi);
         }
         
-        public static Users RegjistroKlient(string Emri, string Mbiemri,string Username,string Password,string Email)
+        public static Users RegjistroKlient(string Emri, string Mbiemri,string Username,string Password,string Email, int Roli)
         {
-            return dalklient.RegjistroKlient(Emri, Mbiemri, Username, Password, Email);
+            return dalklient.RegjistroKlient(Emri, Mbiemri, Username, Password, Email,Roli);
         }
 
 

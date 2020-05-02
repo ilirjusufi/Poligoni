@@ -65,14 +65,16 @@ namespace Poligoni
             if (frlogin.ShowDialog() == DialogResult.OK)
             {
                 lbldata.Text = DateTime.Now.Date.ToString();
-
+                int slep = 20;
                 for (int i = 0; i < 100; i++)
                 {
-                    Thread.Sleep(20);
+                    Thread.Sleep(slep);
                     guna2CircleProgressBar2.Value = i;
                     guna2CircleProgressBar2.Update();
                     lblfinancat.Text = i.ToString() + " €";
                     lblfinancat.Update();
+                    if (i == 80) slep = 100;
+                    if (i == 90) slep = 200;
 
 
                 }
@@ -303,7 +305,7 @@ namespace Poligoni
             frmRegjistroStaff frmRegjistroStaff = new frmRegjistroStaff();
             if (frmRegjistroStaff.ShowDialog() == DialogResult.Abort)
             {
-
+                
             }
         }
     }

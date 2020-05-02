@@ -19,7 +19,7 @@ namespace Poligoni.DAL
         Users users = new Users();
         
 
-        public Users RegjistroKlient(string Emri, string Mbiemri, string Username, string Password, string Email)
+        public Users RegjistroKlient(string Emri, string Mbiemri, string Username, string Password, string Email,int roli)
         {
            
 
@@ -37,7 +37,7 @@ namespace Poligoni.DAL
                         DataConnection.AddParameter(cmd, "@email", Email);
                         DataConnection.AddParameter(cmd, "@insertby", UserSession1.CurrentUser.ID);
                         DataConnection.AddParameter(cmd, "@insertdate", DateTime.Now);
-                        DataConnection.AddParameter(cmd, "@roliID", 3);
+                        DataConnection.AddParameter(cmd, "@roliID", roli);
                     
 
                     cmd.ExecuteNonQuery();

@@ -26,7 +26,7 @@ namespace Poligoni
             string username = Btnusername.Text;
             string Password = btnPassword.Text;
             string Email = btnEmail.Text;
-            Users user = UserBLL.RegjistroKlient(Emri, Mbiemri, username, Password, Email);
+            Users user = UserBLL.RegjistroKlient(Emri, Mbiemri, username, Password, Email,3);
 
 
             MessageBox.Show("Ju keni regjistruar klient", "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
