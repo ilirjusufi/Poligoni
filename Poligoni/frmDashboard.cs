@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -58,13 +59,21 @@ namespace Poligoni
 
         private void FrmDashboard_Load(object sender, EventArgs e)
         {
+            
+
+
+            lbldata.Text = DateTime.Now.ToString();
+            lbldata.Update();
+
+
+
 
             this.StartPosition = FormStartPosition.CenterParent;
 
             frmLogin frlogin = new frmLogin();
             if (frlogin.ShowDialog() == DialogResult.OK)
             {
-                lbldata.Text = DateTime.Now.Date.ToString();
+               
                 int slep = 20;
                 for (int i = 0; i < 100; i++)
                 {

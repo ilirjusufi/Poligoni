@@ -21,5 +21,10 @@ namespace Poligoni
 		{
 
 		}
+
+		private void btnRegjistroGjuajtjen_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

@@ -10,7 +10,6 @@ namespace Poligoni
 {
     public class lidhjainternet
     {
-       
         public static bool CheckForInternetConnection()
         {
 			try
