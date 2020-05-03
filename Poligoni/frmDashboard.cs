@@ -100,7 +100,7 @@ namespace Poligoni
                 {
                     menuStrip1.Items[0].Visible = false;
                     menuStrip1.Items[3].Visible = false;
-                    //tesrd
+                    //tesrde
                 }
                 else
                 if (UserSession1.CurrentUser.UserRoleID == 3)
