@@ -93,9 +93,9 @@ namespace Poligoni
                     {
                         
                         MessageBox.Show("Username or password invalid");
-                        FrmDashboard.Close();
+                        Application.Exit();
 
-
+                        
                     }
                 }
                 

@@ -367,7 +367,6 @@
             this.guna2CircleProgressBar2.ShowPercentage = true;
             this.guna2CircleProgressBar2.Size = new System.Drawing.Size(294, 282);
             this.guna2CircleProgressBar2.TabIndex = 6;
-            this.guna2CircleProgressBar2.Value = 1;
             // 
             // label14
             // 
@@ -735,7 +734,7 @@
             // 
             this.regjistroStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroStafToolStripMenuItem.Image")));
             this.regjistroStafToolStripMenuItem.Name = "regjistroStafToolStripMenuItem";
-            this.regjistroStafToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.regjistroStafToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.regjistroStafToolStripMenuItem.Text = "Regjistro Staf";
             this.regjistroStafToolStripMenuItem.Click += new System.EventHandler(this.regjistroStafToolStripMenuItem_Click);
             // 
@@ -743,14 +742,14 @@
             // 
             this.ndyshoStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ndyshoStafToolStripMenuItem.Image")));
             this.ndyshoStafToolStripMenuItem.Name = "ndyshoStafToolStripMenuItem";
-            this.ndyshoStafToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ndyshoStafToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.ndyshoStafToolStripMenuItem.Text = "Ndysho Staf";
             // 
             // fshijStafToolStripMenuItem
             // 
             this.fshijStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fshijStafToolStripMenuItem.Image")));
             this.fshijStafToolStripMenuItem.Name = "fshijStafToolStripMenuItem";
-            this.fshijStafToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fshijStafToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.fshijStafToolStripMenuItem.Text = "Fshij Staf";
             // 
             // klientatToolStripMenuItem
@@ -786,6 +785,7 @@
             this.fshijKlientToolStripMenuItem.Name = "fshijKlientToolStripMenuItem";
             this.fshijKlientToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.fshijKlientToolStripMenuItem.Text = "Fshij Klient";
+            this.fshijKlientToolStripMenuItem.Click += new System.EventHandler(this.fshijKlientToolStripMenuItem_Click);
             // 
             // listoKlientToolStripMenuItem1
             // 
@@ -793,6 +793,7 @@
             this.listoKlientToolStripMenuItem1.Name = "listoKlientToolStripMenuItem1";
             this.listoKlientToolStripMenuItem1.Size = new System.Drawing.Size(186, 22);
             this.listoKlientToolStripMenuItem1.Text = "Listo Klient";
+            this.listoKlientToolStripMenuItem1.Click += new System.EventHandler(this.listoKlientToolStripMenuItem1_Click);
             // 
             // rankimiToolStripMenuItem
             // 

@@ -31,5 +31,10 @@ namespace Poligoni
 
 			MessageBox.Show("Ju keni regjistruar klient", "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
+
+		private void jGradientPanel1_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
 	}
 }

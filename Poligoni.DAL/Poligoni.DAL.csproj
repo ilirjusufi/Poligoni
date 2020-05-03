@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="DataConnection.cs" />
+    <Compile Include="listoKlient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="regjistrimiKlientitDAL.cs" />
     <Compile Include="RegjistroPlumbatDAL.cs" />

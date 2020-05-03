@@ -100,6 +100,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmListoKlientat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListoKlientat.Designer.cs">
+      <DependentUpon>frmListoKlientat.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,12 @@
       <DependentUpon>frmRegjistroStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="lidhjainternet.cs" />
+    <Compile Include="listoklientat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listoklientat.Designer.cs">
+      <DependentUpon>listoklientat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmRegjistrimiArmes.cs">
@@ -147,6 +159,9 @@
     </Compile>
     <Compile Include="sesioni\UserSession.cs" />
     <Compile Include="sqllidhja.cs" />
+    <EmbeddedResource Include="frmListoKlientat.resx">
+      <DependentUpon>frmListoKlientat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +180,9 @@
     <EmbeddedResource Include="frmRegjistroStaff.resx">
       <DependentUpon>frmRegjistroStaff.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="listoklientat.resx">
+      <DependentUpon>listoklientat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -178,6 +196,7 @@
     <EmbeddedResource Include="frmRegjistrimiArmes.resx">
       <DependentUpon>frmRegjistrimiArmes.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\Poligoni.BO.Users.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

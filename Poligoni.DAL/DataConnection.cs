@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace Poligoni.DAL
 {
-     class DataConnection
+     public class DataConnection
     {
         public static string sqllidhja
         {

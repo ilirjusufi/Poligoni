@@ -44,13 +44,35 @@ namespace Poligoni.DAL
                         
                         return null;
                     }
+
+
+               
                 }
-            
+
            
 
         }
+        public Users editoKlient(string edito, string Emri, string Mbiemri, string Username, string Email)
+        {
+            using (var conn = DataConnection.GetConnection())
+            {
 
-        
+                using (var cmd = DataConnection.Command(conn, "dbo.usp_editoklient", CommandType.StoredProcedure))
+                {
+                    DataConnection.AddParameter(cmd, "@edito", edito);
+                    DataConnection.AddParameter(cmd, "@emri", Emri);
+                    DataConnection.AddParameter(cmd, "@mbiemri", Mbiemri);
+                    DataConnection.AddParameter(cmd, "@username", Username);  
+                    DataConnection.AddParameter(cmd, "@email", Email);
+                    cmd.ExecuteNonQuery();
+                    return null;
+                }
+
+
+
+            }
+        }
+
         public Users ToObject(SqlDataReader reader)
         {
             Users user = new Users();

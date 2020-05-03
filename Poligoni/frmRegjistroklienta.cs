@@ -14,6 +14,7 @@ namespace Poligoni
 {
     public partial class frmRegjistroklienta : Form
     {
+        public string Emri { get; set; }
         public frmRegjistroklienta()
         {
             InitializeComponent();
@@ -35,6 +36,30 @@ namespace Poligoni
         private void btnEmri_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        public void btnEmri_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        public void editoklientat(string emri)
+        {
+            string edito = emri;
+            string Emri = "", Mbiemri = "", username = "", Password = "", Email = "";
+            Users editoklient = UserBLL.editoKlienta(edito,Emri, Mbiemri, username, Email );
+            btnEmri.Text = editoklient.Emri;
+            btnMbiemri.Text = editoklient.Mbiemri;
+            Btnusername.Text = editoklient.Username;
+            btnEmail.Text = editoklient.Email;
+            this.Show();
+            
+
+        }
+        private void jGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        
         }
     }
 }

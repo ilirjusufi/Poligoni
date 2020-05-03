@@ -25,5 +25,11 @@ namespace Poligoni.BO
         public DateTime InsertDate { get; set; }
 
         public virtual UserRole UserRole { get; set; } // konvente duhet me qene virtuale
+
+
+        public Users()
+        {
+
+        }
     }
 }

@@ -84,6 +84,7 @@
             this.jGradientPanel1.Name = "jGradientPanel1";
             this.jGradientPanel1.Size = new System.Drawing.Size(800, 450);
             this.jGradientPanel1.TabIndex = 1;
+            this.jGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.jGradientPanel1_Paint);
             // 
             // pictureBox6
             // 

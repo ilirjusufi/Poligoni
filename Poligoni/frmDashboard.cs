@@ -79,7 +79,7 @@ namespace Poligoni
             if (frlogin.ShowDialog() == DialogResult.OK)
             {
                
-                int slep = 20;
+                int slep = 2;
                 for (int i = 0; i < 100; i++)
                 {
                     Thread.Sleep(slep);
@@ -87,9 +87,7 @@ namespace Poligoni
                     guna2CircleProgressBar2.Update();
                     lblfinancat.Text = i.ToString() + " €";
                     lblfinancat.Update();
-                    if (i == 80) slep = 100;
-                    if (i == 90) slep = 200;
-
+                 
 
                 }
 
@@ -333,6 +331,21 @@ namespace Poligoni
             DateTime dateTime = DateTime.Now;
             lbldata.Text = dateTime.ToString();
             lbldata.Update();
+        }
+
+        private void listoKlientToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            listoklientat frmListoKlientat = new listoklientat();
+
+            if(frmListoKlientat.ShowDialog() == DialogResult.Abort)
+            {
+
+            }
+        }
+
+        private void fshijKlientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
