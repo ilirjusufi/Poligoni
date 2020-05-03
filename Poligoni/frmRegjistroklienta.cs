@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,10 +15,17 @@ namespace Poligoni
 {
     public partial class frmRegjistroklienta : Form
     {
+        public int userID { get; set; }
         public string Emri { get; set; }
+
+        public string Mbiemri { get; set; }
+        public string Username { get; set; }
+        public string Email { get; set; }
         public frmRegjistroklienta()
         {
+            
             InitializeComponent();
+            btnEdito.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,16 +51,23 @@ namespace Poligoni
 
         }
 
-        public void editoklientat(string emri)
+       
+        public void editoklientat(int userID,string emri,string mbiemri,string username,string email)
         {
+            
+            btnShto.Hide();
+            btnEdito.Show();
             string edito = emri;
-            string Emri = "", Mbiemri = "", username = "", Password = "", Email = "";
-            Users editoklient = UserBLL.editoKlienta(edito,Emri, Mbiemri, username, Email );
-            btnEmri.Text = editoklient.Emri;
-            btnMbiemri.Text = editoklient.Mbiemri;
-            Btnusername.Text = editoklient.Username;
-            btnEmail.Text = editoklient.Email;
+            btnEmri.Text = emri;
+            btnMbiemri.Text = mbiemri;
+            Btnusername.Text = username;
+            btnEmail.Text = email;
             this.Show();
+            this.Emri = emri;
+            this.userID = userID;
+            this.Mbiemri = mbiemri;
+            this.Username = username;
+            this.Email = email;
             
 
         }
@@ -60,6 +75,20 @@ namespace Poligoni
         {
             
         
+        }
+
+        private void frmRegjistroklienta_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void jThinButton1_Click(object sender, EventArgs e)
+        {
+            this.Emri = btnEmri.Text;
+            this.Mbiemri = btnMbiemri.Text;
+            this.Username = Btnusername.Text;
+            this.Email = btnEmail.Text;
+            Users EditoKlient = UserBLL.editoKlienta(userID, Emri, Mbiemri, Username, Email);
         }
     }
 }

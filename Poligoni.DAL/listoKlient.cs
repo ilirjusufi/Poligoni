@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.ServiceModel.Security.Tokens;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,11 +23,11 @@ namespace Poligoni.DAL
             cmd.Connection = cnn;
             if(po == "p")
             {
-                cmd.CommandText = "select Emri,Mbiemri,Username,Email from Userat where Emri like @kerko";
+                cmd.CommandText = "select UserID,Emri,Mbiemri,Username,Email from Userat where Emri like @kerko";
                 cmd.Parameters.AddWithValue("@kerko", kerko );
             }
             else
-            cmd.CommandText = "select Emri,Mbiemri,Username,Email from Userat where RoliID = 3";
+            cmd.CommandText = "select UserID,Emri,Mbiemri,Username,Email from Userat where RoliID = 3";
             cmd.CommandType = CommandType.Text;
             cnn.Close();
             cnn.Open();
@@ -35,7 +36,7 @@ namespace Poligoni.DAL
                 while (dr.Read())
                 {
                     Users d = new Users();
-
+                    d.ID = int.Parse(dr["UserID"].ToString());
                     d.Emri = dr["Emri"].ToString();
                     d.Mbiemri = dr["Mbiemri"].ToString();
                     d.Username = dr["Username"].ToString();
@@ -48,14 +49,14 @@ namespace Poligoni.DAL
             return lst;
         }
 
-        public static string fshij(string d)
+        public static string fshij(int d)
         {
             var cnn = DataConnection.GetConnection();
 
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = cnn;
             //cmd.CommandText = "update from Userat where emri";
-            cmd.CommandText = "delete from Userat where emri = @fshij";
+            cmd.CommandText = "delete from Userat where UserID = @fshij";
             cmd.Parameters.AddWithValue("@fshij", d);
             cmd.CommandType = CommandType.Text;
             cmd.ExecuteScalar();

@@ -24,9 +24,9 @@ namespace Poligoni.BLL
         }
 
 
-        public static Users editoKlienta(string edito, string Emri, string Mbiemri, string Username,  string Email)
+        public static Users editoKlienta(int userID, string Emri, string Mbiemri, string Username,  string Email)
         {
-            return dalklient.editoKlient(edito,Emri, Mbiemri, Username, Email);
+            return dalklient.editoKlient(userID,Emri, Mbiemri, Username, Email);
         }
 
     }

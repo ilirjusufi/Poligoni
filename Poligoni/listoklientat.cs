@@ -82,13 +82,13 @@ namespace Poligoni
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            if (this.gridiListo[0, gridiListo.CurrentCell.RowIndex].Value.ToString() != null)
+            if (this.gridiListo[1, gridiListo.CurrentCell.RowIndex].Value.ToString() != null)
             {
                 var d = new Users();
 
-                d.Emri = this.gridiListo[0, gridiListo.CurrentCell.RowIndex].Value.ToString();
+                d.ID = Convert.ToInt32(this.gridiListo[0, gridiListo.CurrentCell.RowIndex].Value);
 
-                string qo = d.Emri;
+                int qo = d.ID;
 
                 listoKlient.fshij(qo);
 
@@ -105,12 +105,12 @@ namespace Poligoni
             if (this.gridiListo[0, gridiListo.CurrentCell.RowIndex].Value.ToString() != null)
             {
                 var d = new Users();
-
-                d.Emri = this.gridiListo[0, gridiListo.CurrentCell.RowIndex].Value.ToString();
-
-                string qo = d.Emri;
-
-                frmRegjistroklienta.editoklientat(qo);
+                int userID = Convert.ToInt32(this.gridiListo[0, gridiListo.CurrentCell.RowIndex].Value);
+                string emri = this.gridiListo[1, gridiListo.CurrentCell.RowIndex].Value.ToString();
+                string mbiemri =  this.gridiListo[2, gridiListo.CurrentCell.RowIndex].Value.ToString();
+                string username = this.gridiListo[3, gridiListo.CurrentCell.RowIndex].Value.ToString();
+                string email = this.gridiListo[4, gridiListo.CurrentCell.RowIndex].Value.ToString();
+                frmRegjistroklienta.editoklientat(userID, emri,mbiemri,username,email);
 
 
 

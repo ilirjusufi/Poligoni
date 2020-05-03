@@ -41,13 +41,14 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new JThinButton.JThinButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnShto = new JThinButton.JThinButton();
+            this.btnEdito = new JThinButton.JThinButton();
             this.jGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -61,6 +62,7 @@
             // 
             this.jGradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
             this.jGradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
+            this.jGradientPanel1.Controls.Add(this.btnEdito);
             this.jGradientPanel1.Controls.Add(this.btnEmail);
             this.jGradientPanel1.Controls.Add(this.btnPassword);
             this.jGradientPanel1.Controls.Add(this.Btnusername);
@@ -72,7 +74,7 @@
             this.jGradientPanel1.Controls.Add(this.pictureBox3);
             this.jGradientPanel1.Controls.Add(this.pictureBox2);
             this.jGradientPanel1.Controls.Add(this.pictureBox1);
-            this.jGradientPanel1.Controls.Add(this.button1);
+            this.jGradientPanel1.Controls.Add(this.btnShto);
             this.jGradientPanel1.Controls.Add(this.label5);
             this.jGradientPanel1.Controls.Add(this.label4);
             this.jGradientPanel1.Controls.Add(this.label3);
@@ -214,27 +216,6 @@
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.button1.BorderColor = System.Drawing.Color.White;
-            this.button1.BorderRadius = 5;
-            this.button1.ButtonText = "Submit";
-            this.button1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Font_Size = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColors = System.Drawing.Color.White;
-            this.button1.HoverBackground = System.Drawing.Color.White;
-            this.button1.HoverBorder = System.Drawing.Color.Empty;
-            this.button1.HoverFontColor = System.Drawing.Color.Black;
-            this.button1.LineThickness = 2;
-            this.button1.Location = new System.Drawing.Point(349, 356);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 48);
-            this.button1.TabIndex = 36;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -307,6 +288,48 @@
             this.label1.TabIndex = 31;
             this.label1.Text = "Emri";
             // 
+            // btnShto
+            // 
+            this.btnShto.BackColor = System.Drawing.Color.Transparent;
+            this.btnShto.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
+            this.btnShto.BorderColor = System.Drawing.Color.White;
+            this.btnShto.BorderRadius = 5;
+            this.btnShto.ButtonText = "Submit";
+            this.btnShto.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShto.Font_Size = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShto.ForeColors = System.Drawing.Color.White;
+            this.btnShto.HoverBackground = System.Drawing.Color.White;
+            this.btnShto.HoverBorder = System.Drawing.Color.Empty;
+            this.btnShto.HoverFontColor = System.Drawing.Color.Black;
+            this.btnShto.LineThickness = 2;
+            this.btnShto.Location = new System.Drawing.Point(347, 358);
+            this.btnShto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnShto.Name = "btnShto";
+            this.btnShto.Size = new System.Drawing.Size(142, 48);
+            this.btnShto.TabIndex = 36;
+            this.btnShto.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnEdito
+            // 
+            this.btnEdito.BackColor = System.Drawing.Color.Transparent;
+            this.btnEdito.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
+            this.btnEdito.BorderColor = System.Drawing.Color.White;
+            this.btnEdito.BorderRadius = 5;
+            this.btnEdito.ButtonText = "Edito";
+            this.btnEdito.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdito.Font_Size = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdito.ForeColors = System.Drawing.Color.White;
+            this.btnEdito.HoverBackground = System.Drawing.Color.White;
+            this.btnEdito.HoverBorder = System.Drawing.Color.Empty;
+            this.btnEdito.HoverFontColor = System.Drawing.Color.Black;
+            this.btnEdito.LineThickness = 2;
+            this.btnEdito.Location = new System.Drawing.Point(347, 358);
+            this.btnEdito.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEdito.Name = "btnEdito";
+            this.btnEdito.Size = new System.Drawing.Size(142, 48);
+            this.btnEdito.TabIndex = 45;
+            this.btnEdito.Click += new System.EventHandler(this.jThinButton1_Click);
+            // 
             // frmRegjistroklienta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -316,6 +339,7 @@
             this.Name = "frmRegjistroklienta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmRegjistroklienta";
+            this.Load += new System.EventHandler(this.frmRegjistroklienta_Load);
             this.jGradientPanel1.ResumeLayout(false);
             this.jGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -337,7 +361,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
-        private JThinButton.JThinButton button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -349,5 +372,7 @@
 		private System.Windows.Forms.TextBox Btnusername;
 		private System.Windows.Forms.TextBox btnMbiemri;
 		private System.Windows.Forms.TextBox btnEmri;
-	}
+        private JThinButton.JThinButton btnShto;
+        private JThinButton.JThinButton btnEdito;
+    }
 }

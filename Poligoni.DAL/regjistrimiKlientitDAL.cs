@@ -52,20 +52,26 @@ namespace Poligoni.DAL
            
 
         }
-        public Users editoKlient(string edito, string Emri, string Mbiemri, string Username, string Email)
+        public Users editoKlient(int userID, string Emri, string Mbiemri, string Username, string Email)
         {
+
+            var cnn = DataConnection.GetConnection();
+
             using (var conn = DataConnection.GetConnection())
             {
 
                 using (var cmd = DataConnection.Command(conn, "dbo.usp_editoklient", CommandType.StoredProcedure))
                 {
-                    DataConnection.AddParameter(cmd, "@edito", edito);
+                    DataConnection.AddParameter(cmd, "@userID", userID);
                     DataConnection.AddParameter(cmd, "@emri", Emri);
                     DataConnection.AddParameter(cmd, "@mbiemri", Mbiemri);
-                    DataConnection.AddParameter(cmd, "@username", Username);  
+                    DataConnection.AddParameter(cmd, "@username", Username);
                     DataConnection.AddParameter(cmd, "@email", Email);
                     cmd.ExecuteNonQuery();
-                    return null;
+                    return users;
+
+
+
                 }
 
 

@@ -222,6 +222,7 @@ namespace Poligoni
 
         private void regjistroKlientToolStripMenuItem_Click_4(object sender, EventArgs e)
         {
+            
             frmRegjistroklienta klientatform = new frmRegjistroklienta();
             if (klientatform.ShowDialog() == DialogResult.Abort)
             {
