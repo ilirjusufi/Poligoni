@@ -26,6 +26,8 @@ namespace Poligoni
             
             InitializeComponent();
             btnEdito.Hide();
+            label6.Text = "Regjistro Klient";
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,6 +58,7 @@ namespace Poligoni
         {
             
             btnShto.Hide();
+            label6.Text = "Edito Klient";
             btnEdito.Show();
             string edito = emri;
             btnEmri.Text = emri;

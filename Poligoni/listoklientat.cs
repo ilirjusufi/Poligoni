@@ -14,6 +14,7 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 using Microsoft.Win32;
 using System.Configuration;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Poligoni
 {
@@ -69,19 +70,35 @@ namespace Poligoni
 
         }
 
+        
         private void gridiListo_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-           
+            if (e.ColumnIndex == gridiListo.Columns["Edito"].Index && e.RowIndex >= 0)
+            {
+                
             
-        }
 
-        private void button2_Click_1(object sender, EventArgs e)
-        {
+            frmRegjistroklienta frmRegjistroklienta = new frmRegjistroklienta();
+                if (this.gridiListo[5, gridiListo.CurrentCell.RowIndex].Value.ToString() != null)
+                {
+                    
+                    var d = new Users();
+                    int userID = Convert.ToInt32(this.gridiListo[0, gridiListo.CurrentCell.RowIndex].Value);
+                    string emri = this.gridiListo[1, gridiListo.CurrentCell.RowIndex].Value.ToString();
+                    string mbiemri = this.gridiListo[2, gridiListo.CurrentCell.RowIndex].Value.ToString();
+                    string username = this.gridiListo[3, gridiListo.CurrentCell.RowIndex].Value.ToString();
+                    string email = this.gridiListo[4, gridiListo.CurrentCell.RowIndex].Value.ToString();
+                    frmRegjistroklienta.editoklientat(userID, emri, mbiemri, username, email);
+
+
+
+                }
+            }
+
+
+
+            else
+            if (e.ColumnIndex == gridiListo.Columns["Fshij"].Index && e.RowIndex >= 0){ 
             if (this.gridiListo[1, gridiListo.CurrentCell.RowIndex].Value.ToString() != null)
             {
                 var d = new Users();
@@ -94,7 +111,30 @@ namespace Poligoni
 
                 LoadData();
 
+            }
+            }
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+            
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            
+            if (this.gridiListo[1, gridiListo.CurrentCell.RowIndex].Value.ToString() != null)
+            {
+                var d = new Users();
+
+                d.ID = Convert.ToInt32(this.gridiListo[0, gridiListo.CurrentCell.RowIndex].Value);
+
+                int qo = d.ID;
+
+                listoKlient.fshij(qo);
+
+                LoadData();
 
             }
         }
@@ -112,10 +152,24 @@ namespace Poligoni
                 string email = this.gridiListo[4, gridiListo.CurrentCell.RowIndex].Value.ToString();
                 frmRegjistroklienta.editoklientat(userID, emri,mbiemri,username,email);
 
-
-
             }
 
+        }
+
+        private void btnkerko_Click(object sender, EventArgs e)
+        {
+            string search;
+            search = textkos.Text;
+
+            listoKlientat = listoKlient.listoLlientat(search, "p");
+
+            this.bindingSource1.Clear();
+
+            listoKlientat.ForEach(delegate (Users d)
+            {
+                this.bindingSource1.Add(d);
+
+            });
         }
     }
 }
