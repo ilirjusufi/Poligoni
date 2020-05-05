@@ -111,18 +111,16 @@ namespace Poligoni
 		private void button3_Click(object sender, EventArgs e)
 		{
 			frmRegjistrimiPlumbave frmRegjistrimiPlumbave = new frmRegjistrimiPlumbave();
-			if (frmRegjistrimiPlumbave.ShowDialog() == DialogResult.Abort)
-			{
+			
 				if (this.ListoPlumbatGrid[0, ListoPlumbatGrid.CurrentCell.RowIndex].Value.ToString() != null)
 				{
-
 					var d = new RegjistroPlumbatBO();
 					int PlumbiID = Convert.ToInt32(this.ListoPlumbatGrid[0, ListoPlumbatGrid.CurrentCell.RowIndex].Value);
 					int Kalibri = Convert.ToInt32(this.ListoPlumbatGrid[1, ListoPlumbatGrid.CurrentCell.RowIndex].Value);
 					int Sasia = Convert.ToInt32(this.ListoPlumbatGrid[2, ListoPlumbatGrid.CurrentCell.RowIndex].Value);
 					frmRegjistrimiPlumbave.NdryshoPlumbat(PlumbiID, Kalibri, Sasia);
 				}
-			}
+			
 			
 		}
 

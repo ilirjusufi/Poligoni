@@ -21,9 +21,10 @@ namespace Poligoni.DAL
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = cnn;
             //cmd.CommandText = "update from Userat where emri";
-            cmd.CommandText = "insert into Plumbat (Kalibri,Sasia) values (@kalibri,@sasia)";
+            cmd.CommandText = "insert into Plumbat (Kalibri,Sasia,InsertBy) values (@kalibri,@sasia,@InsertBy)";
             cmd.Parameters.AddWithValue("@kalibri", kalibri);
             cmd.Parameters.AddWithValue("@sasia", sasia);
+            cmd.Parameters.AddWithValue("@InsertBy", UserSession1.CurrentUser.ID);            
             cmd.CommandType = CommandType.Text;
             cmd.ExecuteScalar();
             cnn.Close();

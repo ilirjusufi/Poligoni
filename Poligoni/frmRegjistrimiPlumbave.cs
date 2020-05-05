@@ -21,6 +21,9 @@ namespace Poligoni
         public frmRegjistrimiPlumbave()
         {
             InitializeComponent();
+            btnNdryshoPlumbat.Hide();
+            lblNdryshimi.Hide();
+            
         }
 
         private void btnRegjistroArmen_Click(object sender, EventArgs e)
@@ -28,7 +31,7 @@ namespace Poligoni
             int kalibri = Convert.ToInt32(txtKalibri.Text);
             int sasia = Convert.ToInt32(txtSasia.Text);
 
-            RegjistroPlumbatBO plumbat = RegjistroPlumbatBLL.RegjistroPlumba(sasia, kalibri);
+            RegjistroPlumbatBO plumbat = RegjistroPlumbatBLL.RegjistroPlumbat(sasia, kalibri);
 
 
             MessageBox.Show("Ju keni ndryshuar te dhenat", "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -41,9 +44,8 @@ namespace Poligoni
         public void NdryshoPlumbat(int PlumbiID,int kalibri, int sasia)
         {
 
-            this.Show();
-            btnRegjistroPlumbat.Hide();
             label1.Hide();
+            btnRegjistroPlumbat.Hide();
             lblNdryshimi.Show();
             btnNdryshoPlumbat.Show();
             txtKalibri.Text = Convert.ToString(kalibri);
@@ -53,7 +55,7 @@ namespace Poligoni
             this.Kalibri = kalibri;
             this.Sasia = sasia;
 
-
+            this.Show();
         }
 
         private void btnNdryshoPlumbat_Click(object sender, EventArgs e)
@@ -62,6 +64,11 @@ namespace Poligoni
             this.Kalibri = int.Parse(txtKalibri.Text);
             this.Sasia = int.Parse(txtSasia.Text);
             RegjistroPlumbatBO NdryshoPlumbat = RegjistroPlumbatBLL.ndryshoPlumbat(PlumbiID, Kalibri, Sasia);
+        }
+
+        private void frmRegjistrimiPlumbave_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
