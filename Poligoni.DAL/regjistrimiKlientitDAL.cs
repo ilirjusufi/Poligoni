@@ -67,6 +67,7 @@ namespace Poligoni.DAL
                     DataConnection.AddParameter(cmd, "@mbiemri", Mbiemri);
                     DataConnection.AddParameter(cmd, "@username", Username);
                     DataConnection.AddParameter(cmd, "@email", Email);
+                    DataConnection.AddParameter(cmd, "@insertby", UserSession1.CurrentUser.ID);
                     cmd.ExecuteNonQuery();
                     return users;
 
