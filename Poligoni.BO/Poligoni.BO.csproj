@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ArmaBO.cs" />
     <Compile Include="RegjistroPlumbatBO.cs" />
     <Compile Include="UserRole.cs" />
     <Compile Include="Users.cs" />

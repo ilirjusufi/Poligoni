@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Poligoni.BO
 {
-	public class RegjistroPlumbatBO
+	public class ArmaBO
     {
-            public int PlumbiID { get; set; }
-            public int Kalibri { get; set; }
+            public int ArmaID { get; set; }
+            public string EmriArmes { get; set; }
             public int Sasia { get; set; }
+            public int MaxPlumba { get; set; }
             public string InsertBy { get; set; }
             public DateTime InsertDate { get; set; }
             public string Lub { get; set; }

@@ -60,18 +60,7 @@ namespace Poligoni
         private void FrmDashboard_Load(object sender, EventArgs e)
         {
 
-
-
-
             timer1.Start();
-
-           
-
-
-
-
-
-
 
             this.StartPosition = FormStartPosition.CenterParent;
 
@@ -253,11 +242,7 @@ namespace Poligoni
 
         private void btnregjistroarm_Click(object sender, EventArgs e)
         {
-            frmRegjistrimiArmes frmRegjistrimiArmes = new frmRegjistrimiArmes();
-            if (frmRegjistrimiArmes.ShowDialog() == DialogResult.Abort)
-            {
-
-            }
+            
         }
 
         private void menuStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
@@ -337,7 +322,7 @@ namespace Poligoni
 
         private void listoKlientToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            listoklientat frmListoKlientat = new listoklientat();
+            frmListoKlientat frmListoKlientat = new frmListoKlientat();
 
             if(frmListoKlientat.ShowDialog() == DialogResult.Abort)
             {
@@ -348,6 +333,49 @@ namespace Poligoni
         private void fshijKlientToolStripMenuItem_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void listoTeGjithePlumbatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListoPlumbat frmListoArmet = new frmListoPlumbat();
+
+            if (frmListoArmet.ShowDialog() == DialogResult.Abort)
+            {
+                
+            }
+        }
+
+        private void regjistroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRegjistrimiArmes frmRegjistrimiArmes = new frmRegjistrimiArmes();
+            if (frmRegjistrimiArmes.ShowDialog() == DialogResult.Abort)
+            {
+
+            }
+        }
+
+        private void listoTeGjithaArmetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void regjistroPlumbaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRegjistrimiPlumbave frmRegjistrimiPlumbave = new frmRegjistrimiPlumbave();
+            if (frmRegjistrimiPlumbave.ShowDialog() == DialogResult.Abort)
+            {
+
+            }
+        }
+
+        private void menaxhoPlumbatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListoPlumbat frmListoArmet = new frmListoPlumbat();
+
+            if (frmListoArmet.ShowDialog() == DialogResult.Abort)
+            {
+
+            }
         }
     }
 }
