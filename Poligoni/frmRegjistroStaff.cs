@@ -29,7 +29,7 @@ namespace Poligoni
 			Users user = UserBLL.RegjistroKlient(Emri, Mbiemri, username, Password, Email,2);
 
 
-			MessageBox.Show("Ju keni regjistruar klient", "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			MessageBox.Show("Ju keni regjistruar staf", "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
 
 		private void jGradientPanel1_Paint(object sender, PaintEventArgs e)

@@ -28,8 +28,6 @@ namespace Poligoni.DAL
             s.plumbaStok = Convert.ToInt32(temp2);
             lidhe.Close();
             return s;
-
-            
         }
     }
             

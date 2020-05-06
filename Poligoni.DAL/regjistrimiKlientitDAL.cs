@@ -18,12 +18,8 @@ namespace Poligoni.DAL
         UsersDal dal = new UsersDal();
         Users users = new Users();
         
-
         public Users RegjistroKlient(string Emri, string Mbiemri, string Username, string Password, string Email,int roli)
         {
-           
-
-
                 using (var conn = DataConnection.GetConnection())
                 {
                      
@@ -44,13 +40,8 @@ namespace Poligoni.DAL
                         
                         return null;
                     }
-
-
                
                 }
-
-           
-
         }
         public Users editoKlient(int userID, string Emri, string Mbiemri, string Username, string Email)
         {

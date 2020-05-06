@@ -69,16 +69,12 @@ namespace Poligoni
         {
 
         }
-
-        
+       
         private void gridiListo_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == gridiListo.Columns["Edito"].Index && e.RowIndex >= 0)
             {
-                
-            
-
-            frmRegjistroklienta frmRegjistroklienta = new frmRegjistroklienta();
+                frmRegjistroklienta frmRegjistroklienta = new frmRegjistroklienta();
                 if (this.gridiListo[5, gridiListo.CurrentCell.RowIndex].Value.ToString() != null)
                 {
                     
@@ -94,9 +90,6 @@ namespace Poligoni
 
                 }
             }
-
-
-
             else
             if (e.ColumnIndex == gridiListo.Columns["Fshij"].Index && e.RowIndex >= 0){ 
             if (this.gridiListo[1, gridiListo.CurrentCell.RowIndex].Value.ToString() != null)
