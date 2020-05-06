@@ -62,7 +62,7 @@ namespace Poligoni
         private void FrmDashboard_Load(object sender, EventArgs e)
         {
 
-            loadData();
+            
 
 
 
@@ -74,7 +74,7 @@ namespace Poligoni
             frmLogin frlogin = new frmLogin();
             if (frlogin.ShowDialog() == DialogResult.OK)
             {
-               
+                loadData();
                 int slep = 2;
                 for (int i = 0; i < 100; i++)
                 {
@@ -86,7 +86,7 @@ namespace Poligoni
                  
 
                 }
-
+                loadData();
 
                 lblemrimbiemri.Text = UserSession1.CurrentUser.Username.ToString();
                 frlogin.Hide();
@@ -121,6 +121,7 @@ namespace Poligoni
             lblklientaregjistrum.Text = merre.klientateRegjistrua.ToString();
             lblplumbastok.Text = merre.plumbaStok.ToString();
             lblgjuajtjet.Text = merre.gjuajtjaTotale.ToString();
+         
           
         }
         private void FrmDashboard_Load_1(object sender, EventArgs e)

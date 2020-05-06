@@ -76,7 +76,7 @@
             this.jGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.jGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.jGradientPanel1.Name = "jGradientPanel1";
-            this.jGradientPanel1.Size = new System.Drawing.Size(800, 450);
+            this.jGradientPanel1.Size = new System.Drawing.Size(792, 450);
             this.jGradientPanel1.TabIndex = 8;
             // 
             // label2
@@ -95,9 +95,9 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(552, -30);
+            this.pictureBox5.Location = new System.Drawing.Point(552, -28);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(236, 514);
+            this.pictureBox5.Size = new System.Drawing.Size(236, 509);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 25;
             this.pictureBox5.TabStop = false;
@@ -283,7 +283,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(792, 450);
             this.Controls.Add(this.jGradientPanel1);
             this.Name = "frmRegjistroGjuajtjen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

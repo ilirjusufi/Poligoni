@@ -66,6 +66,7 @@ namespace Poligoni
             RegjistroPlumbatBO NdryshoPlumbat = RegjistroPlumbatBLL.ndryshoPlumbat(PlumbiID, Kalibri, Sasia);
             
             
+            
         }
 
         private void frmRegjistrimiPlumbave_Load(object sender, EventArgs e)

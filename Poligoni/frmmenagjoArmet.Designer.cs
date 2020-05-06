@@ -86,7 +86,7 @@
             this.dsatagridArmet.Name = "dsatagridArmet";
             this.dsatagridArmet.RowHeadersVisible = false;
             this.dsatagridArmet.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dsatagridArmet.Size = new System.Drawing.Size(776, 270);
+            this.dsatagridArmet.Size = new System.Drawing.Size(776, 310);
             this.dsatagridArmet.TabIndex = 0;
             this.dsatagridArmet.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.WetAsphalt;
             this.dsatagridArmet.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
@@ -180,12 +180,12 @@
             this.btnEdito.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEdito.ForeColor = System.Drawing.Color.White;
             this.btnEdito.HoverState.Parent = this.btnEdito;
-            this.btnEdito.Location = new System.Drawing.Point(405, 393);
+            this.btnEdito.Location = new System.Drawing.Point(558, 404);
             this.btnEdito.Name = "btnEdito";
             this.btnEdito.ShadowDecoration.Parent = this.btnEdito;
-            this.btnEdito.Size = new System.Drawing.Size(180, 45);
+            this.btnEdito.Size = new System.Drawing.Size(107, 34);
             this.btnEdito.TabIndex = 3;
-            this.btnEdito.Text = "guna2Button1";
+            this.btnEdito.Text = "Edito";
             this.btnEdito.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // BtnFshij
@@ -195,12 +195,12 @@
             this.BtnFshij.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnFshij.ForeColor = System.Drawing.Color.White;
             this.BtnFshij.HoverState.Parent = this.BtnFshij;
-            this.BtnFshij.Location = new System.Drawing.Point(608, 393);
+            this.BtnFshij.Location = new System.Drawing.Point(681, 404);
             this.BtnFshij.Name = "BtnFshij";
             this.BtnFshij.ShadowDecoration.Parent = this.BtnFshij;
-            this.BtnFshij.Size = new System.Drawing.Size(180, 45);
+            this.BtnFshij.Size = new System.Drawing.Size(107, 34);
             this.BtnFshij.TabIndex = 4;
-            this.BtnFshij.Text = "guna2Button2";
+            this.BtnFshij.Text = "Fshij";
             this.BtnFshij.Click += new System.EventHandler(this.BtnFshij_Click);
             // 
             // frmmenagjoArmet
