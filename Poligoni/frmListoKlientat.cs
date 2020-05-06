@@ -27,7 +27,7 @@ namespace Poligoni
             listoKlientat = new List<Users>();
             LoadData();
         }
-        private void LoadData()
+        public void LoadData()
         {
             listoKlientat.Clear();
 

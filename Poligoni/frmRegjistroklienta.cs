@@ -85,7 +85,7 @@ namespace Poligoni
         {
             
         }
-
+        
         private void jThinButton1_Click(object sender, EventArgs e)
         {
             this.Emri = btnEmri.Text;
@@ -93,6 +93,7 @@ namespace Poligoni
             this.Username = Btnusername.Text;
             this.Email = btnEmail.Text;
             Users EditoKlient = UserBLL.editoKlienta(userID, Emri, Mbiemri, Username, Email);
+           
         }
     }
 }
