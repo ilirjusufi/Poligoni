@@ -45,21 +45,21 @@
             this.lblListoArmet = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.ListoPlumbatGrid = new Guna.UI.WinForms.GunaDataGridView();
-            this.PlumbiID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Kalibri = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sasia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.Sasia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Kalibri = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PlumbiID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ListoPlumbatGrid = new Guna.UI.WinForms.GunaDataGridView();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ListoPlumbatGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ListoPlumbatGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // txtKerkoArmet
@@ -212,6 +212,53 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(800, 383);
             this.panel4.TabIndex = 9;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(546, 249);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(91, 35);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Edit";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(658, 249);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 35);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Fshij";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Sasia
+            // 
+            this.Sasia.DataPropertyName = "sasia";
+            this.Sasia.HeaderText = "Sasia";
+            this.Sasia.Name = "Sasia";
+            // 
+            // Kalibri
+            // 
+            this.Kalibri.DataPropertyName = "kalibri";
+            this.Kalibri.HeaderText = "Kalibri";
+            this.Kalibri.Name = "Kalibri";
+            // 
+            // PlumbiID
+            // 
+            this.PlumbiID.DataPropertyName = "PlumbiID";
+            this.PlumbiID.HeaderText = "PlumbiID";
+            this.PlumbiID.Name = "PlumbiID";
             // 
             // ListoPlumbatGrid
             // 
@@ -277,52 +324,6 @@
             this.ListoPlumbatGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.ListoPlumbatGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDataGridView1_CellContentClick);
             // 
-            // PlumbiID
-            // 
-            this.PlumbiID.DataPropertyName = "PlumbiID";
-            this.PlumbiID.HeaderText = "PlumbiID";
-            this.PlumbiID.Name = "PlumbiID";
-            // 
-            // Kalibri
-            // 
-            this.Kalibri.DataPropertyName = "kalibri";
-            this.Kalibri.HeaderText = "Kalibri";
-            this.Kalibri.Name = "Kalibri";
-            // 
-            // Sasia
-            // 
-            this.Sasia.DataPropertyName = "sasia";
-            this.Sasia.HeaderText = "Sasia";
-            this.Sasia.Name = "Sasia";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(546, 249);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 35);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Edit";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(658, 249);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 35);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Fshij";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // frmListoPlumbat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -332,6 +333,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "frmListoPlumbat";
             this.Text = "frmListoArmet";
+            this.Load += new System.EventHandler(this.frmListoPlumbat_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -340,8 +342,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ListoPlumbatGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ListoPlumbatGrid)).EndInit();
             this.ResumeLayout(false);
 
 		}
@@ -358,13 +360,13 @@
 		private Guna.UI2.WinForms.Guna2Button btnkerko;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox txtKerko;
-		private Guna.UI.WinForms.GunaDataGridView ListoPlumbatGrid;
 		private System.Windows.Forms.BindingSource bindingSource1;
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.DataGridViewTextBoxColumn PlumbiID;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Kalibri;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Sasia;
 		private System.Windows.Forms.Panel panel4;
-	}
+        private Guna.UI.WinForms.GunaDataGridView ListoPlumbatGrid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PlumbiID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Kalibri;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sasia;
+    }
 }

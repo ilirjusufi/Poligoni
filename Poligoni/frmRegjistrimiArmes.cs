@@ -15,9 +15,19 @@ namespace Poligoni
 {
     public partial class frmRegjistrimiArmes : Form
     {
+        public int ArmaID { get; set; }
+        public string EmriArmes { get; set; }
+     
+        public string Kalibiri { get; set; }
+        public int MaxPlumba
+        {
+            get; set;
+        }
         public frmRegjistrimiArmes()
         {
             InitializeComponent();
+            btnEdito.Hide();
+
         }
 
         private void RegjistrimiArmes_Load(object sender, EventArgs e)
@@ -39,6 +49,25 @@ namespace Poligoni
             MessageBox.Show("Ju keni regjistruar nje arme", "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        public void editoArmen(int ArmaID,string EmriArmes, string Kalibiri, int MaxPlumba)
+        {
+
+            
+            btnEdito.Show();
+            this.ArmaID = ArmaID;
+            this.EmriArmes = EmriArmes;
+            this.Kalibiri = Kalibiri;
+            this.MaxPlumba = MaxPlumba;
+            txtEmriArmes.Text = EmriArmes;
+            txtKalibri.Text = Kalibiri;
+            txtMaxPlumba.Text = MaxPlumba.ToString();
+            btnRegjistroArmen.Hide();
+            this.Show();
+
+
+
+
+        }
         private void jGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -122,6 +151,14 @@ namespace Poligoni
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEdito_Click(object sender, EventArgs e)
+        {
+            this.EmriArmes = txtEmriArmes.Text;
+            this.Kalibiri = txtKalibri.Text;
+            this.MaxPlumba = int.Parse(txtMaxPlumba.Text);
+            ArmaBO ndryshoArma = ArmaBLL.ndryshoArma(this.ArmaID,EmriArmes, Kalibiri, MaxPlumba);
         }
     }
 }

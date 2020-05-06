@@ -18,18 +18,19 @@ namespace Poligoni.DAL
 
             var cnn = DataConnection.GetConnection();
 
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = cnn;
-            //cmd.CommandText = "update from Userat where emri";
-            cmd.CommandText = "insert into Plumbat (Kalibri,Sasia,InsertBy) values (@kalibri,@sasia,@InsertBy)";
-            cmd.Parameters.AddWithValue("@kalibri", kalibri);
-            cmd.Parameters.AddWithValue("@sasia", sasia);
-            cmd.Parameters.AddWithValue("@InsertBy", UserSession1.CurrentUser.ID);            
-            cmd.CommandType = CommandType.Text;
-            cmd.ExecuteScalar();
-            cnn.Close();
-            cnn.Open();
-            return null;
+            using (var conn = DataConnection.GetConnection())
+            {
+
+                using (var cmd = DataConnection.Command(conn, "usp_regjistroplumba", CommandType.StoredProcedure))
+                {
+                    
+                    DataConnection.AddParameter(cmd, "@Kalibri", kalibri);
+                    DataConnection.AddParameter(cmd, "@Sasia", sasia);
+                    DataConnection.AddParameter(cmd, "@insertby", UserSession1.CurrentUser.ID);
+                    cmd.ExecuteNonQuery();
+                    return null;
+                }
+            }
 
 
             //try
@@ -92,7 +93,7 @@ namespace Poligoni.DAL
 
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = cnn;
-            //cmd.CommandText = "update from Userat where emri";
+            
             cmd.CommandText = "delete from plumbat where PlumbiID = @plumbiID";
             cmd.Parameters.AddWithValue("@plumbiID", d);
             cmd.CommandType = CommandType.Text;
@@ -108,11 +109,12 @@ namespace Poligoni.DAL
             using (var conn = DataConnection.GetConnection())
             {
 
-                using (var cmd = DataConnection.Command(conn, "STOREDPROCEDURA", CommandType.StoredProcedure))
+                using (var cmd = DataConnection.Command(conn, "usp_ndryshoPlumba", CommandType.StoredProcedure))
                 {
-                    DataConnection.AddParameter(cmd, "@userID", PlumbiID);
-                    DataConnection.AddParameter(cmd, "@emri", Kalibri);
-                    DataConnection.AddParameter(cmd, "@mbiemri", Sasia);
+                    DataConnection.AddParameter(cmd, "@PlumbiID", PlumbiID);
+                    DataConnection.AddParameter(cmd, "@Kalibri", Kalibri);
+                    DataConnection.AddParameter(cmd, "@Sasia", Sasia);
+                    DataConnection.AddParameter(cmd, "@InsertBy", UserSession1.CurrentUser.ID);
                     cmd.ExecuteNonQuery();
                     return null;
                 }

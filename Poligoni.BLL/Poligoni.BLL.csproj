@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArmaBLL.cs" />
+    <Compile Include="dashboardStatistikat.cs" />
     <Compile Include="RegjistroPlumbatBLL.cs" />
     <Compile Include="UserBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

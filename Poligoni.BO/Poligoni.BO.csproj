@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dashboardStatistikatBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ArmaBO.cs" />
     <Compile Include="RegjistroPlumbatBO.cs" />

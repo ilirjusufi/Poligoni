@@ -73,8 +73,8 @@
             // 
             // jGradientPanel1
             // 
-            this.jGradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
-            this.jGradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
+            this.jGradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.jGradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
             this.jGradientPanel1.Controls.Add(this.lblNdryshimi);
             this.jGradientPanel1.Controls.Add(this.btnNdryshoPlumbat);
             this.jGradientPanel1.Controls.Add(this.pictureBox1);
@@ -120,7 +120,7 @@
             this.btnNdryshoPlumbat.ImageLeft = ((System.Drawing.Image)(resources.GetObject("btnNdryshoPlumbat.ImageLeft")));
             this.btnNdryshoPlumbat.ImageRight = null;
             this.btnNdryshoPlumbat.LeftPictureColor = System.Drawing.Color.Transparent;
-            this.btnNdryshoPlumbat.Location = new System.Drawing.Point(229, 292);
+            this.btnNdryshoPlumbat.Location = new System.Drawing.Point(230, 292);
             this.btnNdryshoPlumbat.Name = "btnNdryshoPlumbat";
             this.btnNdryshoPlumbat.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
             this.btnNdryshoPlumbat.PaddingRightPicture = new System.Windows.Forms.Padding(0);
@@ -230,6 +230,7 @@
             this.MaximumSize = new System.Drawing.Size(712, 511);
             this.MinimumSize = new System.Drawing.Size(712, 511);
             this.Name = "frmRegjistrimiPlumbave";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRegjistrimiPlumbave";
             this.Load += new System.EventHandler(this.frmRegjistrimiPlumbave_Load);
             this.jGradientPanel1.ResumeLayout(false);

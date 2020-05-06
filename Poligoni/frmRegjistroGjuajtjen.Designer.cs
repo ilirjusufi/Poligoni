@@ -55,9 +55,9 @@
             // 
             // jGradientPanel1
             // 
-            this.jGradientPanel1.BackColor = System.Drawing.Color.DarkCyan;
-            this.jGradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
-            this.jGradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
+            this.jGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.jGradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.jGradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
             this.jGradientPanel1.Controls.Add(this.label2);
             this.jGradientPanel1.Controls.Add(this.pictureBox5);
             this.jGradientPanel1.Controls.Add(this.pictureBox3);
@@ -286,6 +286,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.jGradientPanel1);
             this.Name = "frmRegjistroGjuajtjen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRegjistroGjuajtjen";
             this.jGradientPanel1.ResumeLayout(false);
             this.jGradientPanel1.PerformLayout();

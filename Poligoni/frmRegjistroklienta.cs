@@ -58,6 +58,7 @@ namespace Poligoni
         {
             
             btnShto.Hide();
+            Btnusername.Enabled = false;
             label6.Text = "Edito Klient";
             btnEdito.Show();
             string edito = emri;

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,6 +12,7 @@ namespace Poligoni.BO
             public int ArmaID { get; set; }
             public string EmriArmes { get; set; }
             public int Sasia { get; set; }
+            public string Kalibiri { get; set; }
             public int MaxPlumba { get; set; }
             public string InsertBy { get; set; }
             public DateTime InsertDate { get; set; }

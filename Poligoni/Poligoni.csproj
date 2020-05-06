@@ -112,6 +112,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmmenagjoArmet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmenagjoArmet.Designer.cs">
+      <DependentUpon>frmmenagjoArmet.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRegjistrimiPlumbave.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmenagjoArmet.resx">
+      <DependentUpon>frmmenagjoArmet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegjistrimiPlumbave.resx">
       <DependentUpon>frmRegjistrimiPlumbave.cs</DependentUpon>

@@ -27,6 +27,7 @@ namespace Poligoni
 			LoadData();
 		}
 
+
 		private void panel1_Paint(object sender, PaintEventArgs e)
 		{
 
@@ -53,42 +54,16 @@ namespace Poligoni
 
 		private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
-			if (e.ColumnIndex == ListoPlumbatGrid.Columns["Edito"].Index && e.RowIndex >= 0)
-			{
+			
 
 
 
-				frmRegjistrimiPlumbave frmRegjistrimiPlumbave = new frmRegjistrimiPlumbave();
-				if (this.ListoPlumbatGrid[3, ListoPlumbatGrid.CurrentCell.RowIndex].Value.ToString() != null)
-				{
-
-					var d = new RegjistroPlumbatBO();
-					int PlumbiID = Convert.ToInt32(this.ListoPlumbatGrid[0, ListoPlumbatGrid.CurrentCell.RowIndex].Value);
-					int Kalibri = Convert.ToInt32(this.ListoPlumbatGrid[1, ListoPlumbatGrid.CurrentCell.RowIndex].Value);
-					int Sasia = Convert.ToInt32(this.ListoPlumbatGrid[1, ListoPlumbatGrid.CurrentCell.RowIndex].Value);
-					frmRegjistrimiPlumbave.NdryshoPlumbat(PlumbiID, Kalibri, Sasia);
-				}
-			}
+				
 
 
-
-			else
-		   if (e.ColumnIndex == ListoPlumbatGrid.Columns["Fshij"].Index && e.RowIndex >= 0)
-			{
-				if (this.ListoPlumbatGrid[1, ListoPlumbatGrid.CurrentCell.RowIndex].Value.ToString() != null)
-				{
-					var d = new RegjistroPlumbatBO();
-
-					d.PlumbiID = Convert.ToInt32(this.ListoPlumbatGrid[0, ListoPlumbatGrid.CurrentCell.RowIndex].Value);
-
-					int qo = d.PlumbiID;
-
-					RegjistroPlumbatDAL.fshij(qo);
-
-					LoadData();
-
-				}
-			}
+			
+				
+			
 		}
 
 		private void button1_Click(object sender, EventArgs e)
@@ -137,6 +112,16 @@ namespace Poligoni
 				this.bindingSource1.Add(d);
 
 			});
+		}
+
+		private void panel4_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void frmListoPlumbat_Load(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

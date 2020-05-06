@@ -70,9 +70,6 @@ namespace Poligoni.DAL
                     DataConnection.AddParameter(cmd, "@insertby", UserSession1.CurrentUser.ID);
                     cmd.ExecuteNonQuery();
                     return users;
-
-
-
                 }
 
 

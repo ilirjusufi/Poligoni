@@ -60,10 +60,12 @@ namespace Poligoni
 
         private void btnNdryshoPlumbat_Click(object sender, EventArgs e)
         {
-
+            FrmDashboard frm = new FrmDashboard();
             this.Kalibri = int.Parse(txtKalibri.Text);
             this.Sasia = int.Parse(txtSasia.Text);
             RegjistroPlumbatBO NdryshoPlumbat = RegjistroPlumbatBLL.ndryshoPlumbat(PlumbiID, Kalibri, Sasia);
+            
+            
         }
 
         private void frmRegjistrimiPlumbave_Load(object sender, EventArgs e)

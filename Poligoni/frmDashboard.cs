@@ -12,18 +12,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Poligoni.BLL;
 using Poligoni.BO;
-
+using Poligoni.DAL;
 
 namespace Poligoni
 {
 
     public partial class FrmDashboard : Form
     {
+        private dashboardStatistikatBO merre;
 
-
+        public dashboardStatistikatBO merr { get; set; }
         public FrmDashboard()
         {
             InitializeComponent();
+            merre = new dashboardStatistikatBO();
         }
 
 
@@ -59,6 +61,11 @@ namespace Poligoni
 
         private void FrmDashboard_Load(object sender, EventArgs e)
         {
+
+            loadData();
+
+
+
 
             timer1.Start();
 
@@ -105,6 +112,17 @@ namespace Poligoni
             // ndryshimi i userave
         }
 
+        public  void loadData()
+        {
+            
+            
+            merre = dashboardStatistikatDAL.MerrStatistika();
+            
+            lblklientaregjistrum.Text = merre.klientateRegjistrua.ToString();
+            lblplumbastok.Text = merre.plumbaStok.ToString();
+            lblgjuajtjet.Text = merre.gjuajtjaTotale.ToString();
+          
+        }
         private void FrmDashboard_Load_1(object sender, EventArgs e)
         {
 
@@ -313,11 +331,13 @@ namespace Poligoni
 
         }
 
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             DateTime dateTime = DateTime.Now;
             lbldata.Text = dateTime.ToString();
             lbldata.Update();
+            
         }
 
         private void listoKlientToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -376,6 +396,25 @@ namespace Poligoni
             {
 
             }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menaxhoArmetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmmenagjoArmet frmmenagjoArmet = new frmmenagjoArmet();
+            if (frmmenagjoArmet.ShowDialog() == DialogResult.Abort)
+            {
+
+            }
+        }
+
+        private void ndyshoStafToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="dashboardStatistikatDAL.cs" />
     <Compile Include="DataConnection.cs" />
     <Compile Include="listoKlient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
