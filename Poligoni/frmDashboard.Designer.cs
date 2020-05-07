@@ -98,6 +98,7 @@
             this.listoTeGjithaGjuajtjetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.raportetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.jGradientPanel1.SuspendLayout();
@@ -116,6 +117,7 @@
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
+            this.panel4.Controls.Add(this.guna2Button1);
             this.panel4.Controls.Add(this.btnRegjistroGjuajtje);
             this.panel4.Controls.Add(this.btnregjistroplumba);
             this.panel4.Controls.Add(this.btnregjistoklienta);
@@ -735,7 +737,7 @@
             // 
             this.regjistroStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroStafToolStripMenuItem.Image")));
             this.regjistroStafToolStripMenuItem.Name = "regjistroStafToolStripMenuItem";
-            this.regjistroStafToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.regjistroStafToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.regjistroStafToolStripMenuItem.Text = "Regjistro Staf";
             this.regjistroStafToolStripMenuItem.Click += new System.EventHandler(this.regjistroStafToolStripMenuItem_Click);
             // 
@@ -743,7 +745,7 @@
             // 
             this.ndyshoStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ndyshoStafToolStripMenuItem.Image")));
             this.ndyshoStafToolStripMenuItem.Name = "ndyshoStafToolStripMenuItem";
-            this.ndyshoStafToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ndyshoStafToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.ndyshoStafToolStripMenuItem.Text = "Ndysho Staf";
             this.ndyshoStafToolStripMenuItem.Click += new System.EventHandler(this.ndyshoStafToolStripMenuItem_Click);
             // 
@@ -875,6 +877,22 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(0, 598);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(51, 29);
+            this.guna2Button1.TabIndex = 6;
+            this.guna2Button1.Text = "Qkyqu";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // FrmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -981,5 +999,6 @@
 		private System.Windows.Forms.ToolStripMenuItem plumbatToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem regjistroPlumbaToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem menaxhoPlumbatToolStripMenuItem;
-	}
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+    }
 }

@@ -106,6 +106,12 @@
     <Compile Include="frmListoPlumbat.Designer.cs">
       <DependentUpon>frmListoPlumbat.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListoStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListoStaff.Designer.cs">
+      <DependentUpon>frmListoStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>

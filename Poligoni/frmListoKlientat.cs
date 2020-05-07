@@ -18,23 +18,26 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace Poligoni
 {
+    
     public partial class frmListoKlientat : Form
     {
+        public int rolet { get; set; }
         private List<Users> listoKlientat;
         public frmListoKlientat()
         {
             InitializeComponent();
             listoKlientat = new List<Users>();
-            LoadData();
+           
+            
         }
-        public void LoadData()
+
+        
+        public void LoadData(int roli)
         {
             listoKlientat.Clear();
-
-            listoKlientat = listoKlient.listoLlientat("dfdfd", "j");
-
+            listoKlientat = listoKlient.listoLlientat(roli,"dfdfd", "j");
             this.bindingSource1.Clear();
-
+            this.rolet = roli;
             listoKlientat.ForEach(delegate (Users d)
             {
                 this.bindingSource1.Add(d);
@@ -43,9 +46,12 @@ namespace Poligoni
         }
         private void listoklientat_Load(object sender, EventArgs e)
         {
+            if (rolet == 2)
+            {
+                label1.Text = "Listo,fshij,kerko staf";
+            }
 
-            
-            listoKlient.listoLlientat("dsffd", "2");
+            listoKlient.listoLlientat(rolet,"dsffd", "2");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,7 +59,7 @@ namespace Poligoni
             string search;
             search = textkos.Text;
 
-            listoKlientat = listoKlient.listoLlientat(search, "p");
+            listoKlientat = listoKlient.listoLlientat(rolet,search, "p");
 
             this.bindingSource1.Clear();
 
@@ -102,7 +108,7 @@ namespace Poligoni
 
                 listoKlient.fshij(qo);
 
-                LoadData();
+                LoadData(rolet);
 
             }
             }
@@ -127,7 +133,7 @@ namespace Poligoni
 
                 listoKlient.fshij(qo);
 
-                LoadData();
+                LoadData(3);
 
             }
         }
@@ -154,7 +160,7 @@ namespace Poligoni
             string search;
             search = textkos.Text;
 
-            listoKlientat = listoKlient.listoLlientat(search, "p");
+            listoKlientat = listoKlient.listoLlientat(rolet,search, "p");
 
             this.bindingSource1.Clear();
 

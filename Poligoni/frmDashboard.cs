@@ -65,12 +65,12 @@ namespace Poligoni
 
             
 
-
+            a:
 
             timer1.Start();
 
             this.StartPosition = FormStartPosition.CenterParent;
-
+            
             frmLogin frlogin = new frmLogin();
             if (frlogin.ShowDialog() == DialogResult.OK)
             {
@@ -93,7 +93,7 @@ namespace Poligoni
                 if (UserSession1.CurrentUser.UserRoleID == 2)
                 {
                     menuStrip1.Items[0].Visible = false;
-                    menuStrip1.Items[3].Visible = false;
+                   
                     //tesrde
                 }
                 else
@@ -342,10 +342,10 @@ namespace Poligoni
         private void listoKlientToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             frmListoKlientat frmListoKlientat = new frmListoKlientat();
-
-            if(frmListoKlientat.ShowDialog() == DialogResult.Abort)
+            frmListoKlientat.LoadData(3);
+            if (frmListoKlientat.ShowDialog() == DialogResult.Abort)
             {
-
+                
             }
         }
 
@@ -413,7 +413,19 @@ namespace Poligoni
 
         private void ndyshoStafToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            frmListoKlientat frmListoKlientat = new frmListoKlientat();
+            frmListoKlientat.LoadData(2);
+            if (frmListoKlientat.ShowDialog() == DialogResult.Abort)
+            {
+                
+                
+            }
+        }
 
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Refresh();
+            Application.Restart();
         }
     }
 }

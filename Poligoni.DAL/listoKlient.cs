@@ -13,7 +13,7 @@ namespace Poligoni.DAL
    public class listoKlient
     {
 
-       public static List<Users> listoLlientat(string kerko,string po)
+       public static List<Users> listoLlientat(int roli,string kerko,string po)
         {
             List<Users> lst = new List<Users>();
 
@@ -27,7 +27,12 @@ namespace Poligoni.DAL
                 cmd.Parameters.AddWithValue("@kerko", kerko );
             }
             else
+            if(roli ==3)
             cmd.CommandText = "select UserID,Emri,Mbiemri,Username,Email from Userat where RoliID = 3";
+            else
+                if(roli ==2)
+                cmd.CommandText = "select UserID,Emri,Mbiemri,Username,Email from Userat where RoliID = 2";
+            else
             cmd.CommandType = CommandType.Text;
             cnn.Close();
             cnn.Open();
