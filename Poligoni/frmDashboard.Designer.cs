@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDashboard));
             this.panel4 = new System.Windows.Forms.Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btnRegjistroGjuajtje = new Guna.UI2.WinForms.Guna2Button();
             this.btnregjistroplumba = new Guna.UI2.WinForms.Guna2Button();
             this.btnregjistoklienta = new Guna.UI2.WinForms.Guna2Button();
@@ -98,7 +99,6 @@
             this.listoTeGjithaGjuajtjetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.raportetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.jGradientPanel1.SuspendLayout();
@@ -130,6 +130,22 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(209, 715);
             this.panel4.TabIndex = 2;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(0, 598);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(51, 29);
+            this.guna2Button1.TabIndex = 6;
+            this.guna2Button1.Text = "Qkyqu";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // btnRegjistroGjuajtje
             // 
@@ -303,11 +319,11 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.LightGray;
             this.label15.Location = new System.Drawing.Point(16, 14);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(149, 23);
+            this.label15.Size = new System.Drawing.Size(127, 24);
             this.label15.TabIndex = 1;
             this.label15.Text = "Te hyrat totale";
             // 
@@ -372,11 +388,11 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.LightGray;
             this.label14.Location = new System.Drawing.Point(16, 14);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(278, 23);
+            this.label14.Size = new System.Drawing.Size(240, 24);
             this.label14.TabIndex = 1;
             this.label14.Text = "Të hyrat totale në ketë muaj";
             // 
@@ -465,11 +481,11 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Montserrat", 9.749999F);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
             this.label12.ForeColor = System.Drawing.Color.LightGray;
             this.label12.Location = new System.Drawing.Point(9, 3);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(141, 16);
+            this.label12.Size = new System.Drawing.Size(124, 16);
             this.label12.TabIndex = 1;
             this.label12.Text = "Arme të regjistruara";
             // 
@@ -522,11 +538,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Montserrat", 9.749999F);
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
             this.label13.ForeColor = System.Drawing.Color.LightGray;
             this.label13.Location = new System.Drawing.Point(10, 5);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(111, 16);
+            this.label13.Size = new System.Drawing.Size(100, 16);
             this.label13.TabIndex = 1;
             this.label13.Text = "Plumba ne stok";
             // 
@@ -577,11 +593,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.LightGray;
             this.label6.Location = new System.Drawing.Point(11, 3);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(143, 16);
+            this.label6.Size = new System.Drawing.Size(124, 16);
             this.label6.TabIndex = 1;
             this.label6.Text = "Klienta të regjistruar";
             // 
@@ -640,11 +656,11 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Montserrat", 9.749999F);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
             this.label11.ForeColor = System.Drawing.Color.LightGray;
             this.label11.Location = new System.Drawing.Point(10, 3);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(101, 16);
+            this.label11.Size = new System.Drawing.Size(89, 16);
             this.label11.TabIndex = 1;
             this.label11.Text = "Gjuajtje totale";
             // 
@@ -662,51 +678,51 @@
             // lbldata
             // 
             this.lbldata.AutoSize = true;
-            this.lbldata.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldata.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldata.ForeColor = System.Drawing.Color.LightGray;
             this.lbldata.Location = new System.Drawing.Point(967, 35);
             this.lbldata.Name = "lbldata";
-            this.lbldata.Size = new System.Drawing.Size(55, 23);
+            this.lbldata.Size = new System.Drawing.Size(47, 24);
             this.lbldata.TabIndex = 1;
             this.lbldata.Text = "Data";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.LightGray;
-            this.label18.Location = new System.Drawing.Point(816, 35);
+            this.label18.Location = new System.Drawing.Point(834, 34);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(154, 23);
+            this.label18.Size = new System.Drawing.Size(136, 24);
             this.label18.TabIndex = 1;
             this.label18.Text = "Data dhe koha:";
             // 
             // lblemri
             // 
             this.lblemri.AutoSize = true;
-            this.lblemri.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblemri.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblemri.ForeColor = System.Drawing.Color.LightGray;
             this.lblemri.Location = new System.Drawing.Point(384, 36);
             this.lblemri.Name = "lblemri";
-            this.lblemri.Size = new System.Drawing.Size(77, 23);
+            this.lblemri.Size = new System.Drawing.Size(66, 24);
             this.lblemri.TabIndex = 1;
             this.lblemri.Text = "lblemri";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightGray;
             this.label1.Location = new System.Drawing.Point(239, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 23);
+            this.label1.Size = new System.Drawing.Size(122, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Pershendetje";
             // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
-            this.menuStrip1.Font = new System.Drawing.Font("Montserrat", 10F);
+            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.administrimiToolStripMenuItem,
             this.klientatToolStripMenuItem,
@@ -717,7 +733,7 @@
             this.raportetToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1210, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(1210, 25);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked_1);
@@ -730,14 +746,14 @@
             this.ndyshoStafToolStripMenuItem});
             this.administrimiToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.administrimiToolStripMenuItem.Name = "administrimiToolStripMenuItem";
-            this.administrimiToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.administrimiToolStripMenuItem.Size = new System.Drawing.Size(95, 21);
             this.administrimiToolStripMenuItem.Text = "Administrimi";
             // 
             // regjistroStafToolStripMenuItem
             // 
             this.regjistroStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroStafToolStripMenuItem.Image")));
             this.regjistroStafToolStripMenuItem.Name = "regjistroStafToolStripMenuItem";
-            this.regjistroStafToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.regjistroStafToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.regjistroStafToolStripMenuItem.Text = "Regjistro Staf";
             this.regjistroStafToolStripMenuItem.Click += new System.EventHandler(this.regjistroStafToolStripMenuItem_Click);
             // 
@@ -745,7 +761,7 @@
             // 
             this.ndyshoStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ndyshoStafToolStripMenuItem.Image")));
             this.ndyshoStafToolStripMenuItem.Name = "ndyshoStafToolStripMenuItem";
-            this.ndyshoStafToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.ndyshoStafToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.ndyshoStafToolStripMenuItem.Text = "Ndysho Staf";
             this.ndyshoStafToolStripMenuItem.Click += new System.EventHandler(this.ndyshoStafToolStripMenuItem_Click);
             // 
@@ -756,14 +772,14 @@
             this.listoKlientToolStripMenuItem1});
             this.klientatToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.klientatToolStripMenuItem.Name = "klientatToolStripMenuItem";
-            this.klientatToolStripMenuItem.Size = new System.Drawing.Size(76, 22);
+            this.klientatToolStripMenuItem.Size = new System.Drawing.Size(67, 21);
             this.klientatToolStripMenuItem.Text = "Klientat";
             // 
             // regjistroKlientToolStripMenuItem
             // 
             this.regjistroKlientToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroKlientToolStripMenuItem.Image")));
             this.regjistroKlientToolStripMenuItem.Name = "regjistroKlientToolStripMenuItem";
-            this.regjistroKlientToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.regjistroKlientToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.regjistroKlientToolStripMenuItem.Text = "Regjistro Klient";
             this.regjistroKlientToolStripMenuItem.Click += new System.EventHandler(this.regjistroKlientToolStripMenuItem_Click_4);
             // 
@@ -771,7 +787,7 @@
             // 
             this.listoKlientToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("listoKlientToolStripMenuItem1.Image")));
             this.listoKlientToolStripMenuItem1.Name = "listoKlientToolStripMenuItem1";
-            this.listoKlientToolStripMenuItem1.Size = new System.Drawing.Size(202, 22);
+            this.listoKlientToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
             this.listoKlientToolStripMenuItem1.Text = "Menaxho Klientat";
             this.listoKlientToolStripMenuItem1.Click += new System.EventHandler(this.listoKlientToolStripMenuItem1_Click);
             // 
@@ -782,14 +798,14 @@
             this.menaxhoArmetToolStripMenuItem});
             this.armetToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.armetToolStripMenuItem.Name = "armetToolStripMenuItem";
-            this.armetToolStripMenuItem.Size = new System.Drawing.Size(65, 22);
+            this.armetToolStripMenuItem.Size = new System.Drawing.Size(57, 21);
             this.armetToolStripMenuItem.Text = "Armet";
             // 
             // regjistroToolStripMenuItem
             // 
             this.regjistroToolStripMenuItem.Image = global::Poligoni.Properties.Resources.gun;
             this.regjistroToolStripMenuItem.Name = "regjistroToolStripMenuItem";
-            this.regjistroToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.regjistroToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.regjistroToolStripMenuItem.Text = "Regjistro Armë";
             this.regjistroToolStripMenuItem.Click += new System.EventHandler(this.regjistroToolStripMenuItem_Click);
             // 
@@ -797,7 +813,7 @@
             // 
             this.menaxhoArmetToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("menaxhoArmetToolStripMenuItem.Image")));
             this.menaxhoArmetToolStripMenuItem.Name = "menaxhoArmetToolStripMenuItem";
-            this.menaxhoArmetToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.menaxhoArmetToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.menaxhoArmetToolStripMenuItem.Text = "Menaxho Armet";
             this.menaxhoArmetToolStripMenuItem.Click += new System.EventHandler(this.menaxhoArmetToolStripMenuItem_Click);
             // 
@@ -808,14 +824,14 @@
             this.menaxhoPlumbatToolStripMenuItem});
             this.plumbatToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.plumbatToolStripMenuItem.Name = "plumbatToolStripMenuItem";
-            this.plumbatToolStripMenuItem.Size = new System.Drawing.Size(80, 22);
+            this.plumbatToolStripMenuItem.Size = new System.Drawing.Size(71, 21);
             this.plumbatToolStripMenuItem.Text = "Plumbat";
             // 
             // regjistroPlumbaToolStripMenuItem
             // 
             this.regjistroPlumbaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroPlumbaToolStripMenuItem.Image")));
             this.regjistroPlumbaToolStripMenuItem.Name = "regjistroPlumbaToolStripMenuItem";
-            this.regjistroPlumbaToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.regjistroPlumbaToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.regjistroPlumbaToolStripMenuItem.Text = "Regjistro Plumba";
             this.regjistroPlumbaToolStripMenuItem.Click += new System.EventHandler(this.regjistroPlumbaToolStripMenuItem_Click);
             // 
@@ -823,7 +839,7 @@
             // 
             this.menaxhoPlumbatToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("menaxhoPlumbatToolStripMenuItem.Image")));
             this.menaxhoPlumbatToolStripMenuItem.Name = "menaxhoPlumbatToolStripMenuItem";
-            this.menaxhoPlumbatToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.menaxhoPlumbatToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.menaxhoPlumbatToolStripMenuItem.Text = "Menaxho Plumbat";
             this.menaxhoPlumbatToolStripMenuItem.Click += new System.EventHandler(this.menaxhoPlumbatToolStripMenuItem_Click);
             // 
@@ -831,7 +847,7 @@
             // 
             this.rankimiToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.rankimiToolStripMenuItem.Name = "rankimiToolStripMenuItem";
-            this.rankimiToolStripMenuItem.Size = new System.Drawing.Size(61, 22);
+            this.rankimiToolStripMenuItem.Size = new System.Drawing.Size(56, 21);
             this.rankimiToolStripMenuItem.Text = "Stoku";
             // 
             // gjuajtjaToolStripMenuItem
@@ -842,56 +858,40 @@
             this.listoTeGjithaGjuajtjetToolStripMenuItem1});
             this.gjuajtjaToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.gjuajtjaToolStripMenuItem.Name = "gjuajtjaToolStripMenuItem";
-            this.gjuajtjaToolStripMenuItem.Size = new System.Drawing.Size(74, 22);
+            this.gjuajtjaToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.gjuajtjaToolStripMenuItem.Text = "Gjuajtja";
             // 
             // regjistroGjuajtjenToolStripMenuItem
             // 
             this.regjistroGjuajtjenToolStripMenuItem.Image = global::Poligoni.Properties.Resources._4;
             this.regjistroGjuajtjenToolStripMenuItem.Name = "regjistroGjuajtjenToolStripMenuItem";
-            this.regjistroGjuajtjenToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.regjistroGjuajtjenToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.regjistroGjuajtjenToolStripMenuItem.Text = "Regjistro gjuajtjen";
             this.regjistroGjuajtjenToolStripMenuItem.Click += new System.EventHandler(this.regjistroGjuajtjenToolStripMenuItem_Click);
             // 
             // listoTeGjithaGjuajtjetToolStripMenuItem
             // 
             this.listoTeGjithaGjuajtjetToolStripMenuItem.Name = "listoTeGjithaGjuajtjetToolStripMenuItem";
-            this.listoTeGjithaGjuajtjetToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.listoTeGjithaGjuajtjetToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.listoTeGjithaGjuajtjetToolStripMenuItem.Text = "Ndrysho gjuajtjen";
             // 
             // listoTeGjithaGjuajtjetToolStripMenuItem1
             // 
             this.listoTeGjithaGjuajtjetToolStripMenuItem1.Name = "listoTeGjithaGjuajtjetToolStripMenuItem1";
-            this.listoTeGjithaGjuajtjetToolStripMenuItem1.Size = new System.Drawing.Size(236, 22);
+            this.listoTeGjithaGjuajtjetToolStripMenuItem1.Size = new System.Drawing.Size(213, 22);
             this.listoTeGjithaGjuajtjetToolStripMenuItem1.Text = "Listo te gjitha gjuajtjet";
             // 
             // raportetToolStripMenuItem
             // 
             this.raportetToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.raportetToolStripMenuItem.Name = "raportetToolStripMenuItem";
-            this.raportetToolStripMenuItem.Size = new System.Drawing.Size(83, 22);
+            this.raportetToolStripMenuItem.Size = new System.Drawing.Size(75, 21);
             this.raportetToolStripMenuItem.Text = "Raportet";
             this.raportetToolStripMenuItem.Click += new System.EventHandler(this.raportetToolStripMenuItem_Click);
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(0, 598);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(51, 29);
-            this.guna2Button1.TabIndex = 6;
-            this.guna2Button1.Text = "Qkyqu";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // FrmDashboard
             // 

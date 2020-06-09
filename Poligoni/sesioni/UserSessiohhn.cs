@@ -6,12 +6,7 @@ namespace Poligoni
 {
     public class UserSession
     {
-  
-        public static Users CurrentUser = null;
-      
-
+        public static Users CurrentUser = null;   
     }
-    
-
     
 }

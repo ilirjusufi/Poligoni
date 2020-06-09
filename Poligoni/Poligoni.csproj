@@ -52,10 +52,10 @@
       <HintPath>..\JControls\FlatButton.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\..\Guna.UI.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI_WinForms\.net 3.5\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2">
-      <HintPath>..\..\..\..\Desktop\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 3.5\Guna.UI2.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI2_WinFroms\.net 3.5\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="JDragControl">
       <HintPath>..\JControls\JDragControl.dll</HintPath>
@@ -169,7 +169,7 @@
     <Compile Include="frmRegjistrimiArmes.Designer.cs">
       <DependentUpon>frmRegjistrimiArmes.cs</DependentUpon>
     </Compile>
-    <Compile Include="sesioni\UserSession.cs" />
+    <Compile Include="sesioni\UserSessiohhn.cs" />
     <Compile Include="sqllidhja.cs" />
     <EmbeddedResource Include="frmListoPlumbat.resx">
       <DependentUpon>frmListoPlumbat.cs</DependentUpon>
