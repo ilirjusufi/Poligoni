@@ -8,10 +8,10 @@ namespace Poligoni.BO
 {
   public class gjuajtja
     {
-        public static string kalbri;
-        public static string distanca;
-        public static string maxplumba;
-        public static string klienti;
-        public static string Arma;
+        public int  PiketEshenuara { get; set; }
+        public string distanca { get; set; }
+        public string plumbashfryzuar { get; set; }
+        public string klienti { get; set; }
+        public string Arma { get; set; }
     }
 }

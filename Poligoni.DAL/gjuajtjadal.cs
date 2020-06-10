@@ -12,7 +12,7 @@ namespace Poligoni.DAL
     public class gjuajtjadal
     {
         gjuajtja ngarko = new gjuajtja();
-        public gjuajtja regjistrogjuajten(string a)
+        public gjuajtja regjistrogjuajten(string kalbri, string distanca, string maxplumba, string klienti, string Arma)
         {
 
             using (var conn = DataConnection.GetConnection())
@@ -21,16 +21,21 @@ namespace Poligoni.DAL
                 using (var cmd = DataConnection.Command(conn, "usp_Gjuajtja", CommandType.StoredProcedure))
                 {
 
-                    DataConnection.AddParameter(cmd, "@Aarma", gjuajtja.Arma);
-                    DataConnection.AddParameter(cmd, "@klienti", gjuajtja.klienti);
-                    DataConnection.AddParameter(cmd, "@Distanca", gjuajtja.distanca);
-                    DataConnection.AddParameter(cmd, "@pshenuara", gjuajtja.kalbri);
-                    DataConnection.AddParameter(cmd, "@plumbashfryzuar", gjuajtja.maxplumba);
+                    DataConnection.AddParameter(cmd, "@Aarma", Arma);
+                    DataConnection.AddParameter(cmd, "@klienti", klienti);
+                    DataConnection.AddParameter(cmd, "@Distanca", distanca);
+                    DataConnection.AddParameter(cmd, "@pshenuara", kalbri);
+                    DataConnection.AddParameter(cmd, "@plumbashfryzuar", maxplumba);
                     DataConnection.AddParameter(cmd, "@insertby", UserSession1.CurrentUser.ID);
                     cmd.ExecuteNonQuery();
                     return null;
                 }
             }
+
         }
+
+      
     }
+
+
 }

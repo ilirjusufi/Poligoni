@@ -31,7 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegjistroGjuajtjen));
             this.jGradientPanel1 = new JGradient_Panel.JGradientPanel();
+            this.dropklientat = new System.Windows.Forms.ComboBox();
+            this.useratBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_A62C25_poligoniDataSet2 = new Poligoni.DB_A62C25_poligoniDataSet2();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.droparmet = new System.Windows.Forms.ComboBox();
+            this.armaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_A62C25_poligoniDataSet = new Poligoni.DB_A62C25_poligoniDataSet();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -45,32 +51,24 @@
             this.btnRegjistroGjuajtjen = new FlatButton.JFlatButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblArma = new System.Windows.Forms.Label();
-            this.dB_A62C25_poligoniDataSet = new Poligoni.DB_A62C25_poligoniDataSet();
-            this.armaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.armaTableAdapter = new Poligoni.DB_A62C25_poligoniDataSetTableAdapters.ArmaTableAdapter();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.dropklientat = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dB_A62C25_poligoniDataSet1 = new Poligoni.DB_A62C25_poligoniDataSet1();
+            this.lblArma = new System.Windows.Forms.Label();
+            this.armaTableAdapter = new Poligoni.DB_A62C25_poligoniDataSetTableAdapters.ArmaTableAdapter();
             this.useratBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.useratTableAdapter = new Poligoni.DB_A62C25_poligoniDataSet1TableAdapters.UseratTableAdapter();
-            this.dB_A62C25_poligoniDataSet2 = new Poligoni.DB_A62C25_poligoniDataSet2();
-            this.useratBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.useratTableAdapter1 = new Poligoni.DB_A62C25_poligoniDataSet2TableAdapters.UseratTableAdapter();
+            this.jFlatButton1 = new FlatButton.JFlatButton();
             this.jGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.useratBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_A62C25_poligoniDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.armaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_A62C25_poligoniDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_A62C25_poligoniDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.armaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_A62C25_poligoniDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.useratBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_A62C25_poligoniDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.useratBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // jGradientPanel1
@@ -78,6 +76,7 @@
             this.jGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
             this.jGradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
             this.jGradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.jGradientPanel1.Controls.Add(this.jFlatButton1);
             this.jGradientPanel1.Controls.Add(this.dropklientat);
             this.jGradientPanel1.Controls.Add(this.pictureBox6);
             this.jGradientPanel1.Controls.Add(this.droparmet);
@@ -101,6 +100,43 @@
             this.jGradientPanel1.Name = "jGradientPanel1";
             this.jGradientPanel1.Size = new System.Drawing.Size(792, 450);
             this.jGradientPanel1.TabIndex = 8;
+            this.jGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.jGradientPanel1_Paint);
+            // 
+            // dropklientat
+            // 
+            this.dropklientat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
+            this.dropklientat.DataSource = this.useratBindingSource1;
+            this.dropklientat.DisplayMember = "Username";
+            this.dropklientat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.dropklientat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.dropklientat.ForeColor = System.Drawing.SystemColors.Info;
+            this.dropklientat.FormattingEnabled = true;
+            this.dropklientat.Location = new System.Drawing.Point(287, 84);
+            this.dropklientat.Name = "dropklientat";
+            this.dropklientat.Size = new System.Drawing.Size(248, 21);
+            this.dropklientat.TabIndex = 39;
+            this.dropklientat.ValueMember = "Username";
+            // 
+            // useratBindingSource1
+            // 
+            this.useratBindingSource1.DataMember = "Userat";
+            this.useratBindingSource1.DataSource = this.dB_A62C25_poligoniDataSet2;
+            // 
+            // dB_A62C25_poligoniDataSet2
+            // 
+            this.dB_A62C25_poligoniDataSet2.DataSetName = "DB_A62C25_poligoniDataSet2";
+            this.dB_A62C25_poligoniDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::Poligoni.Properties.Resources._3;
+            this.pictureBox6.Location = new System.Drawing.Point(245, 81);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(31, 32);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 38;
+            this.pictureBox6.TabStop = false;
             // 
             // droparmet
             // 
@@ -115,6 +151,16 @@
             this.droparmet.Size = new System.Drawing.Size(254, 21);
             this.droparmet.TabIndex = 27;
             this.droparmet.ValueMember = "EmriArmes";
+            // 
+            // armaBindingSource
+            // 
+            this.armaBindingSource.DataMember = "Arma";
+            this.armaBindingSource.DataSource = this.dB_A62C25_poligoniDataSet;
+            // 
+            // dB_A62C25_poligoniDataSet
+            // 
+            this.dB_A62C25_poligoniDataSet.DataSetName = "DB_A62C25_poligoniDataSet";
+            this.dB_A62C25_poligoniDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label2
             // 
@@ -288,58 +334,6 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Piket e shenuara";
             // 
-            // lblArma
-            // 
-            this.lblArma.AutoSize = true;
-            this.lblArma.BackColor = System.Drawing.Color.Transparent;
-            this.lblArma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArma.ForeColor = System.Drawing.Color.White;
-            this.lblArma.Location = new System.Drawing.Point(112, 139);
-            this.lblArma.Name = "lblArma";
-            this.lblArma.Size = new System.Drawing.Size(114, 20);
-            this.lblArma.TabIndex = 8;
-            this.lblArma.Text = "Selekto Armen";
-            // 
-            // dB_A62C25_poligoniDataSet
-            // 
-            this.dB_A62C25_poligoniDataSet.DataSetName = "DB_A62C25_poligoniDataSet";
-            this.dB_A62C25_poligoniDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // armaBindingSource
-            // 
-            this.armaBindingSource.DataMember = "Arma";
-            this.armaBindingSource.DataSource = this.dB_A62C25_poligoniDataSet;
-            // 
-            // armaTableAdapter
-            // 
-            this.armaTableAdapter.ClearBeforeFill = true;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::Poligoni.Properties.Resources._3;
-            this.pictureBox6.Location = new System.Drawing.Point(245, 81);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(31, 32);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 38;
-            this.pictureBox6.TabStop = false;
-            // 
-            // dropklientat
-            // 
-            this.dropklientat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.dropklientat.DataSource = this.useratBindingSource1;
-            this.dropklientat.DisplayMember = "Username";
-            this.dropklientat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.dropklientat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.dropklientat.ForeColor = System.Drawing.SystemColors.Info;
-            this.dropklientat.FormattingEnabled = true;
-            this.dropklientat.Location = new System.Drawing.Point(287, 84);
-            this.dropklientat.Name = "dropklientat";
-            this.dropklientat.Size = new System.Drawing.Size(248, 21);
-            this.dropklientat.TabIndex = 39;
-            this.dropklientat.ValueMember = "Username";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -352,33 +346,52 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Selekto Klientin";
             // 
-            // dB_A62C25_poligoniDataSet1
+            // lblArma
             // 
-            this.dB_A62C25_poligoniDataSet1.DataSetName = "DB_A62C25_poligoniDataSet1";
-            this.dB_A62C25_poligoniDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.lblArma.AutoSize = true;
+            this.lblArma.BackColor = System.Drawing.Color.Transparent;
+            this.lblArma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArma.ForeColor = System.Drawing.Color.White;
+            this.lblArma.Location = new System.Drawing.Point(112, 139);
+            this.lblArma.Name = "lblArma";
+            this.lblArma.Size = new System.Drawing.Size(114, 20);
+            this.lblArma.TabIndex = 8;
+            this.lblArma.Text = "Selekto Armen";
             // 
-            // useratBindingSource
+            // armaTableAdapter
             // 
-            this.useratBindingSource.DataMember = "Userat";
-            this.useratBindingSource.DataSource = this.dB_A62C25_poligoniDataSet1;
-            // 
-            // useratTableAdapter
-            // 
-            this.useratTableAdapter.ClearBeforeFill = true;
-            // 
-            // dB_A62C25_poligoniDataSet2
-            // 
-            this.dB_A62C25_poligoniDataSet2.DataSetName = "DB_A62C25_poligoniDataSet2";
-            this.dB_A62C25_poligoniDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // useratBindingSource1
-            // 
-            this.useratBindingSource1.DataMember = "Userat";
-            this.useratBindingSource1.DataSource = this.dB_A62C25_poligoniDataSet2;
+            this.armaTableAdapter.ClearBeforeFill = true;
             // 
             // useratTableAdapter1
             // 
             this.useratTableAdapter1.ClearBeforeFill = true;
+            // 
+            // jFlatButton1
+            // 
+            this.jFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
+            this.jFlatButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
+            this.jFlatButton1.ButtonText = "Regjistro Gjuajtjen";
+            this.jFlatButton1.CausesValidation = false;
+            this.jFlatButton1.ErrorImageLeft = ((System.Drawing.Image)(resources.GetObject("jFlatButton1.ErrorImageLeft")));
+            this.jFlatButton1.ErrorImageRight = ((System.Drawing.Image)(resources.GetObject("jFlatButton1.ErrorImageRight")));
+            this.jFlatButton1.FocusBackground = System.Drawing.Color.Empty;
+            this.jFlatButton1.FocusFontColor = System.Drawing.Color.Empty;
+            this.jFlatButton1.ForeColors = System.Drawing.Color.White;
+            this.jFlatButton1.HoverBackground = System.Drawing.Color.DarkSlateGray;
+            this.jFlatButton1.HoverFontColor = System.Drawing.Color.Transparent;
+            this.jFlatButton1.ImageLeft = ((System.Drawing.Image)(resources.GetObject("jFlatButton1.ImageLeft")));
+            this.jFlatButton1.ImageRight = null;
+            this.jFlatButton1.LeftPictureColor = System.Drawing.Color.Transparent;
+            this.jFlatButton1.Location = new System.Drawing.Point(12, 379);
+            this.jFlatButton1.Name = "jFlatButton1";
+            this.jFlatButton1.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
+            this.jFlatButton1.PaddingRightPicture = new System.Windows.Forms.Padding(0);
+            this.jFlatButton1.RightPictureColor = System.Drawing.Color.Transparent;
+            this.jFlatButton1.Size = new System.Drawing.Size(254, 43);
+            this.jFlatButton1.SizeModeLeft = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.jFlatButton1.SizeModeRight = System.Windows.Forms.PictureBoxSizeMode.Normal;
+            this.jFlatButton1.TabIndex = 40;
+            this.jFlatButton1.Click += new System.EventHandler(this.jFlatButton1_Click);
             // 
             // frmRegjistroGjuajtjen
             // 
@@ -392,18 +405,17 @@
             this.Load += new System.EventHandler(this.frmRegjistroGjuajtjen_Load);
             this.jGradientPanel1.ResumeLayout(false);
             this.jGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.useratBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_A62C25_poligoniDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.armaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_A62C25_poligoniDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_A62C25_poligoniDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.armaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_A62C25_poligoniDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.useratBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_A62C25_poligoniDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.useratBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
 		}
@@ -432,11 +444,12 @@
         private System.Windows.Forms.ComboBox dropklientat;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label3;
-        private DB_A62C25_poligoniDataSet1 dB_A62C25_poligoniDataSet1;
+
         private System.Windows.Forms.BindingSource useratBindingSource;
-        private DB_A62C25_poligoniDataSet1TableAdapters.UseratTableAdapter useratTableAdapter;
+
         private DB_A62C25_poligoniDataSet2 dB_A62C25_poligoniDataSet2;
         private System.Windows.Forms.BindingSource useratBindingSource1;
         private DB_A62C25_poligoniDataSet2TableAdapters.UseratTableAdapter useratTableAdapter1;
+        private FlatButton.JFlatButton jFlatButton1;
     }
 }

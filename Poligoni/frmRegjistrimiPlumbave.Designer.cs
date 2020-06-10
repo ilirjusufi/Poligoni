@@ -51,11 +51,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(129, 243);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 19);
+            this.label5.Size = new System.Drawing.Size(49, 20);
             this.label5.TabIndex = 16;
             this.label5.Text = "Sasia";
             // 
@@ -63,11 +63,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(120, 184);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 19);
+            this.label6.Size = new System.Drawing.Size(51, 20);
             this.label6.TabIndex = 15;
             this.label6.Text = "Kalibri";
             // 
@@ -96,11 +96,11 @@
             // 
             this.lblNdryshimi.AutoSize = true;
             this.lblNdryshimi.BackColor = System.Drawing.Color.Transparent;
-            this.lblNdryshimi.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNdryshimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNdryshimi.ForeColor = System.Drawing.Color.White;
             this.lblNdryshimi.Location = new System.Drawing.Point(249, 113);
             this.lblNdryshimi.Name = "lblNdryshimi";
-            this.lblNdryshimi.Size = new System.Drawing.Size(220, 23);
+            this.lblNdryshimi.Size = new System.Drawing.Size(192, 24);
             this.lblNdryshimi.TabIndex = 46;
             this.lblNdryshimi.Text = "Ndryshimi i Plumbave";
             // 
@@ -120,7 +120,7 @@
             this.btnNdryshoPlumbat.ImageLeft = ((System.Drawing.Image)(resources.GetObject("btnNdryshoPlumbat.ImageLeft")));
             this.btnNdryshoPlumbat.ImageRight = null;
             this.btnNdryshoPlumbat.LeftPictureColor = System.Drawing.Color.Transparent;
-            this.btnNdryshoPlumbat.Location = new System.Drawing.Point(230, 292);
+            this.btnNdryshoPlumbat.Location = new System.Drawing.Point(230, 367);
             this.btnNdryshoPlumbat.Name = "btnNdryshoPlumbat";
             this.btnNdryshoPlumbat.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
             this.btnNdryshoPlumbat.PaddingRightPicture = new System.Windows.Forms.Padding(0);
@@ -156,7 +156,7 @@
             // txtSasia
             // 
             this.txtSasia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.txtSasia.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSasia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSasia.ForeColor = System.Drawing.Color.White;
             this.txtSasia.Location = new System.Drawing.Point(229, 233);
             this.txtSasia.Multiline = true;
@@ -168,7 +168,7 @@
             // txtKalibri
             // 
             this.txtKalibri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.txtKalibri.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKalibri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKalibri.ForeColor = System.Drawing.Color.White;
             this.txtKalibri.Location = new System.Drawing.Point(229, 174);
             this.txtKalibri.Multiline = true;
@@ -181,11 +181,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(249, 113);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 23);
+            this.label1.Size = new System.Drawing.Size(194, 24);
             this.label1.TabIndex = 21;
             this.label1.Text = "Regjistrimi i Plumbave";
             // 

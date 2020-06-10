@@ -54,16 +54,7 @@ namespace Poligoni
 
 		private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
-			
 
-
-
-				
-
-
-			
-				
-			
 		}
 
 		private void button1_Click(object sender, EventArgs e)
@@ -123,5 +114,10 @@ namespace Poligoni
 		{
 
 		}
-	}
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+    }
 }

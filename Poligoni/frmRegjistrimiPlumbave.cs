@@ -50,7 +50,6 @@ namespace Poligoni
             btnNdryshoPlumbat.Show();
             txtKalibri.Text = Convert.ToString(kalibri);
             txtSasia.Text = Convert.ToString(sasia);
-            
             this.PlumbiID = PlumbiID;
             this.Kalibri = kalibri;
             this.Sasia = sasia;

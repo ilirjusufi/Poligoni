@@ -15,9 +15,9 @@ namespace Poligoni.BLL
         static gjuajtjadal gjuajtjadal = new gjuajtjadal();
         
         
-        public static gjuajtja gjuaje(string a)
+        public static gjuajtja gjuaje(string kalbri, string distanca, string maxplumba, string klienti, string Arma)
         {
-            return gjuajtjadal.regjistrogjuajten(a);
+            return gjuajtjadal.regjistrogjuajten(kalbri, distanca, maxplumba, klienti, Arma);
         }
     }
 }

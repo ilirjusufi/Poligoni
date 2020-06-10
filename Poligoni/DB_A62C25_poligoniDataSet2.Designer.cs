@@ -1261,7 +1261,8 @@ namespace Poligoni.DB_A62C25_poligoniDataSet2TableAdapters {
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Userat] ([Emri], [Mbiemri], [Username], [Password], [Email], [RoliID], [InserBy], [InsertDate], [Lub], [Lud], [Lun]) VALUES (@Emri, @Mbiemri, @Username, @Password, @Email, @RoliID, @InserBy, @InsertDate, @Lub, @Lud, @Lun);
-SELECT UserID, Emri, Mbiemri, Username, Password, Email, RoliID, InserBy, InsertDate, Lub, Lud, Lun FROM Userat WHERE (UserID = SCOPE_IDENTITY())";
+
+ECT UserID, Emri, Mbiemri, Username, Password, Email, RoliID, InserBy, InsertDate, Lub, Lud, Lun FROM Userat WHERE (UserID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Emri", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Emri", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Mbiemri", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Mbiemri", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));

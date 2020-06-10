@@ -430,7 +430,11 @@ namespace Poligoni
 
         private void listoTeGjithaGjuajtjetToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            frmMenagjogjuajtjen femMenagjogjuajtjen = new frmMenagjogjuajtjen();
+            if (femMenagjogjuajtjen.ShowDialog() == DialogResult.Abort)
+            {
 
+            }
         }
     }
 }
