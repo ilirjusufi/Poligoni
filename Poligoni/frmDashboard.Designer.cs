@@ -92,11 +92,9 @@
             this.plumbatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regjistroPlumbaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menaxhoPlumbatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rankimiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gjuajtjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regjistroGjuajtjenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listoTeGjithaGjuajtjetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listoTeGjithaGjuajtjetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.raportetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel4.SuspendLayout();
@@ -728,7 +726,6 @@
             this.klientatToolStripMenuItem,
             this.armetToolStripMenuItem,
             this.plumbatToolStripMenuItem,
-            this.rankimiToolStripMenuItem,
             this.gjuajtjaToolStripMenuItem,
             this.raportetToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -753,7 +750,7 @@
             // 
             this.regjistroStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroStafToolStripMenuItem.Image")));
             this.regjistroStafToolStripMenuItem.Name = "regjistroStafToolStripMenuItem";
-            this.regjistroStafToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.regjistroStafToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.regjistroStafToolStripMenuItem.Text = "Regjistro Staf";
             this.regjistroStafToolStripMenuItem.Click += new System.EventHandler(this.regjistroStafToolStripMenuItem_Click);
             // 
@@ -761,7 +758,7 @@
             // 
             this.ndyshoStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ndyshoStafToolStripMenuItem.Image")));
             this.ndyshoStafToolStripMenuItem.Name = "ndyshoStafToolStripMenuItem";
-            this.ndyshoStafToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.ndyshoStafToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ndyshoStafToolStripMenuItem.Text = "Ndysho Staf";
             this.ndyshoStafToolStripMenuItem.Click += new System.EventHandler(this.ndyshoStafToolStripMenuItem_Click);
             // 
@@ -805,7 +802,7 @@
             // 
             this.regjistroToolStripMenuItem.Image = global::Poligoni.Properties.Resources.gun;
             this.regjistroToolStripMenuItem.Name = "regjistroToolStripMenuItem";
-            this.regjistroToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.regjistroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.regjistroToolStripMenuItem.Text = "Regjistro Armë";
             this.regjistroToolStripMenuItem.Click += new System.EventHandler(this.regjistroToolStripMenuItem_Click);
             // 
@@ -813,7 +810,7 @@
             // 
             this.menaxhoArmetToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("menaxhoArmetToolStripMenuItem.Image")));
             this.menaxhoArmetToolStripMenuItem.Name = "menaxhoArmetToolStripMenuItem";
-            this.menaxhoArmetToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.menaxhoArmetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.menaxhoArmetToolStripMenuItem.Text = "Menaxho Armet";
             this.menaxhoArmetToolStripMenuItem.Click += new System.EventHandler(this.menaxhoArmetToolStripMenuItem_Click);
             // 
@@ -843,19 +840,11 @@
             this.menaxhoPlumbatToolStripMenuItem.Text = "Menaxho Plumbat";
             this.menaxhoPlumbatToolStripMenuItem.Click += new System.EventHandler(this.menaxhoPlumbatToolStripMenuItem_Click);
             // 
-            // rankimiToolStripMenuItem
-            // 
-            this.rankimiToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
-            this.rankimiToolStripMenuItem.Name = "rankimiToolStripMenuItem";
-            this.rankimiToolStripMenuItem.Size = new System.Drawing.Size(56, 21);
-            this.rankimiToolStripMenuItem.Text = "Stoku";
-            // 
             // gjuajtjaToolStripMenuItem
             // 
             this.gjuajtjaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.regjistroGjuajtjenToolStripMenuItem,
-            this.listoTeGjithaGjuajtjetToolStripMenuItem,
-            this.listoTeGjithaGjuajtjetToolStripMenuItem1});
+            this.listoTeGjithaGjuajtjetToolStripMenuItem});
             this.gjuajtjaToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.gjuajtjaToolStripMenuItem.Name = "gjuajtjaToolStripMenuItem";
             this.gjuajtjaToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
@@ -872,14 +861,9 @@
             // listoTeGjithaGjuajtjetToolStripMenuItem
             // 
             this.listoTeGjithaGjuajtjetToolStripMenuItem.Name = "listoTeGjithaGjuajtjetToolStripMenuItem";
-            this.listoTeGjithaGjuajtjetToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.listoTeGjithaGjuajtjetToolStripMenuItem.Text = "Ndrysho gjuajtjen";
-            // 
-            // listoTeGjithaGjuajtjetToolStripMenuItem1
-            // 
-            this.listoTeGjithaGjuajtjetToolStripMenuItem1.Name = "listoTeGjithaGjuajtjetToolStripMenuItem1";
-            this.listoTeGjithaGjuajtjetToolStripMenuItem1.Size = new System.Drawing.Size(213, 22);
-            this.listoTeGjithaGjuajtjetToolStripMenuItem1.Text = "Listo te gjitha gjuajtjet";
+            this.listoTeGjithaGjuajtjetToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.listoTeGjithaGjuajtjetToolStripMenuItem.Text = "Menagjo gjuajtjen";
+            this.listoTeGjithaGjuajtjetToolStripMenuItem.Click += new System.EventHandler(this.listoTeGjithaGjuajtjetToolStripMenuItem_Click);
             // 
             // raportetToolStripMenuItem
             // 
@@ -984,14 +968,12 @@
         private System.Windows.Forms.ToolStripMenuItem klientatToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem regjistroKlientToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listoKlientToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem rankimiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem raportetToolStripMenuItem;
         private System.Windows.Forms.Label lblemri;
 		private Guna.UI2.WinForms.Guna2Button btnRegjistroGjuajtje;
 		private System.Windows.Forms.ToolStripMenuItem gjuajtjaToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem regjistroGjuajtjenToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem listoTeGjithaGjuajtjetToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem listoTeGjithaGjuajtjetToolStripMenuItem1;
         private System.Windows.Forms.Timer timer1;
 		private System.Windows.Forms.ToolStripMenuItem armetToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem regjistroToolStripMenuItem;

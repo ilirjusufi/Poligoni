@@ -427,5 +427,10 @@ namespace Poligoni
             this.Refresh();
             Application.Restart();
         }
+
+        private void listoTeGjithaGjuajtjetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

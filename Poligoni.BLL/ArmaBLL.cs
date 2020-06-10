@@ -12,6 +12,7 @@ namespace Poligoni.BLL
     {
         private static ArmaDAL ArmaDAL = new ArmaDAL();
        
+        
 
         public static ArmaBO RegjistroArmen(string emriarmes,int kalibri, int maxplumba)
         {

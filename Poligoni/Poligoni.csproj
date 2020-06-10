@@ -100,6 +100,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB_A62C25_poligoniDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_A62C25_poligoniDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_A62C25_poligoniDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_A62C25_poligoniDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_A62C25_poligoniDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_A62C25_poligoniDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmListoPlumbat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +138,12 @@
     </Compile>
     <Compile Include="frmmenagjoArmet.Designer.cs">
       <DependentUpon>frmmenagjoArmet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenagjogjuajtjen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenagjogjuajtjen.Designer.cs">
+      <DependentUpon>frmMenagjogjuajtjen.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRegjistrimiPlumbave.cs">
       <SubType>Form</SubType>
@@ -180,6 +201,9 @@
     <EmbeddedResource Include="frmmenagjoArmet.resx">
       <DependentUpon>frmmenagjoArmet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMenagjogjuajtjen.resx">
+      <DependentUpon>frmMenagjogjuajtjen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRegjistrimiPlumbave.resx">
       <DependentUpon>frmRegjistrimiPlumbave.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +235,39 @@
     <EmbeddedResource Include="frmRegjistrimiArmes.resx">
       <DependentUpon>frmRegjistrimiArmes.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DB_A62C25_poligoniDataSet.xsc">
+      <DependentUpon>DB_A62C25_poligoniDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_A62C25_poligoniDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_A62C25_poligoniDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_A62C25_poligoniDataSet.xss">
+      <DependentUpon>DB_A62C25_poligoniDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_A62C25_poligoniDataSet1.xsc">
+      <DependentUpon>DB_A62C25_poligoniDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_A62C25_poligoniDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_A62C25_poligoniDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_A62C25_poligoniDataSet1.xss">
+      <DependentUpon>DB_A62C25_poligoniDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_A62C25_poligoniDataSet2.xsc">
+      <DependentUpon>DB_A62C25_poligoniDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_A62C25_poligoniDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_A62C25_poligoniDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_A62C25_poligoniDataSet2.xss">
+      <DependentUpon>DB_A62C25_poligoniDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\DataSources\Poligoni.BO.Users.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
