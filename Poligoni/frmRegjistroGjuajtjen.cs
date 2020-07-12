@@ -23,9 +23,11 @@ namespace Poligoni
         public frmRegjistroGjuajtjen()
 
 		{
-			
+            
 			InitializeComponent();
-		}
+            btneditogjujtjen.Hide();
+
+        }
 
 		private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
 		{
@@ -68,20 +70,35 @@ namespace Poligoni
 
         private void jFlatButton1_Click(object sender, EventArgs e)
         {
+            FrmDashboard frm = new FrmDashboard();
 
+            this.klienti = dropklientat.Text;
+            this.Arma = droparmet.Text;
+            this.PiketEshenuara = Convert.ToInt32(txtKalibri.Text);
+            this.distanca = Txtdistanca.Text;
+            this.plumbashfryzuar = txtMaxPlumba.Text;
+
+            gjuajtja ndryshoHjuajte = gjuajtjabll.ndryshogjuajte(klienti, Arma, distanca, plumbashfryzuar, PiketEshenuara);
+
+
+            MessageBox.Show("Editimi u krye");
         }
-        public void Editogjuajten(string kalbri, string distanca, string maxplumba, string klienti, string Arma)
+        public void Editogjuajten(string klienti, string Arma, string distanca, string plumbashfryzuar, int PiketEshenuara)
         {
 
-            label1.Hide();
-            btnRegjistroPlumbat.Hide();
-            lblNdryshimi.Show();
-            btnNdryshoPlumbat.Show();
-            txtKalibri.Text = Convert.ToString(kalibri);
-            txtSasia.Text = Convert.ToString(sasia);
-            this.PlumbiID = PlumbiID;
-            this.Kalibri = kalibri;
-            this.Sasia = sasia;
+            btnRegjistroGjuajtjen.Hide();
+            label2.Text = "Edito Gjuajtjen";
+            btneditogjujtjen.Show();
+            dropklientat.Text = klienti;
+            droparmet.Text = Arma;
+            txtKalibri.Text = PiketEshenuara.ToString();
+            Txtdistanca.Text = distanca;
+            txtMaxPlumba.Text = plumbashfryzuar;
+            this.klienti = klienti;
+            this.Arma = Arma;
+            this.distanca = distanca;
+            this.plumbashfryzuar = plumbashfryzuar;
+            this.PiketEshenuara = PiketEshenuara;
 
             this.Show();
         }

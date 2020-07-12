@@ -81,10 +81,14 @@ namespace Poligoni
                     Thread.Sleep(slep);
                     guna2CircleProgressBar2.Value = i;
                     guna2CircleProgressBar2.Update();
-                    lblfinancat.Text = i.ToString() + " €";
-                    lblfinancat.Update();
+                  
+                    
                 }
-                loadData();
+                guna2CircleProgressBar2.Value = 2;
+                guna2CircleProgressBar2.Update();
+
+
+
 
                 lblemrimbiemri.Text = UserSession1.CurrentUser.Username.ToString();
                 frlogin.Hide();
@@ -117,10 +121,13 @@ namespace Poligoni
             merre = dashboardStatistikatDAL.MerrStatistika();
             
             lblklientaregjistrum.Text = merre.klientateRegjistrua.ToString();
-            lblplumbastok.Text = merre.plumbaStok.ToString();
+           
             lblgjuajtjet.Text = merre.gjuajtjaTotale.ToString();
-         
           
+            lblklientamuaj.Text = merre.Klientatmuaj.ToString();
+            
+
+
         }
         private void FrmDashboard_Load_1(object sender, EventArgs e)
         {
@@ -334,9 +341,7 @@ namespace Poligoni
         private void timer1_Tick(object sender, EventArgs e)
         {
             DateTime dateTime = DateTime.Now;
-            lbldata.Text = dateTime.ToString();
-            lbldata.Update();
-            
+          
         }
 
         private void listoKlientToolStripMenuItem1_Click(object sender, EventArgs e)

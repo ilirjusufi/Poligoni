@@ -56,7 +56,7 @@
             this.armaTableAdapter = new Poligoni.DB_A62C25_poligoniDataSetTableAdapters.ArmaTableAdapter();
             this.useratBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.useratTableAdapter1 = new Poligoni.DB_A62C25_poligoniDataSet2TableAdapters.UseratTableAdapter();
-            this.jFlatButton1 = new FlatButton.JFlatButton();
+            this.btneditogjujtjen = new FlatButton.JFlatButton();
             this.jGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.useratBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dB_A62C25_poligoniDataSet2)).BeginInit();
@@ -76,7 +76,7 @@
             this.jGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
             this.jGradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
             this.jGradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
-            this.jGradientPanel1.Controls.Add(this.jFlatButton1);
+            this.jGradientPanel1.Controls.Add(this.btneditogjujtjen);
             this.jGradientPanel1.Controls.Add(this.dropklientat);
             this.jGradientPanel1.Controls.Add(this.pictureBox6);
             this.jGradientPanel1.Controls.Add(this.droparmet);
@@ -366,32 +366,32 @@
             // 
             this.useratTableAdapter1.ClearBeforeFill = true;
             // 
-            // jFlatButton1
+            // btneditogjujtjen
             // 
-            this.jFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.jFlatButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.jFlatButton1.ButtonText = "Regjistro Gjuajtjen";
-            this.jFlatButton1.CausesValidation = false;
-            this.jFlatButton1.ErrorImageLeft = ((System.Drawing.Image)(resources.GetObject("jFlatButton1.ErrorImageLeft")));
-            this.jFlatButton1.ErrorImageRight = ((System.Drawing.Image)(resources.GetObject("jFlatButton1.ErrorImageRight")));
-            this.jFlatButton1.FocusBackground = System.Drawing.Color.Empty;
-            this.jFlatButton1.FocusFontColor = System.Drawing.Color.Empty;
-            this.jFlatButton1.ForeColors = System.Drawing.Color.White;
-            this.jFlatButton1.HoverBackground = System.Drawing.Color.DarkSlateGray;
-            this.jFlatButton1.HoverFontColor = System.Drawing.Color.Transparent;
-            this.jFlatButton1.ImageLeft = ((System.Drawing.Image)(resources.GetObject("jFlatButton1.ImageLeft")));
-            this.jFlatButton1.ImageRight = null;
-            this.jFlatButton1.LeftPictureColor = System.Drawing.Color.Transparent;
-            this.jFlatButton1.Location = new System.Drawing.Point(12, 379);
-            this.jFlatButton1.Name = "jFlatButton1";
-            this.jFlatButton1.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
-            this.jFlatButton1.PaddingRightPicture = new System.Windows.Forms.Padding(0);
-            this.jFlatButton1.RightPictureColor = System.Drawing.Color.Transparent;
-            this.jFlatButton1.Size = new System.Drawing.Size(254, 43);
-            this.jFlatButton1.SizeModeLeft = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.jFlatButton1.SizeModeRight = System.Windows.Forms.PictureBoxSizeMode.Normal;
-            this.jFlatButton1.TabIndex = 40;
-            this.jFlatButton1.Click += new System.EventHandler(this.jFlatButton1_Click);
+            this.btneditogjujtjen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
+            this.btneditogjujtjen.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
+            this.btneditogjujtjen.ButtonText = "Edito Gjuajtjen";
+            this.btneditogjujtjen.CausesValidation = false;
+            this.btneditogjujtjen.ErrorImageLeft = ((System.Drawing.Image)(resources.GetObject("btneditogjujtjen.ErrorImageLeft")));
+            this.btneditogjujtjen.ErrorImageRight = ((System.Drawing.Image)(resources.GetObject("btneditogjujtjen.ErrorImageRight")));
+            this.btneditogjujtjen.FocusBackground = System.Drawing.Color.Empty;
+            this.btneditogjujtjen.FocusFontColor = System.Drawing.Color.Empty;
+            this.btneditogjujtjen.ForeColors = System.Drawing.Color.White;
+            this.btneditogjujtjen.HoverBackground = System.Drawing.Color.DarkSlateGray;
+            this.btneditogjujtjen.HoverFontColor = System.Drawing.Color.Transparent;
+            this.btneditogjujtjen.ImageLeft = ((System.Drawing.Image)(resources.GetObject("btneditogjujtjen.ImageLeft")));
+            this.btneditogjujtjen.ImageRight = null;
+            this.btneditogjujtjen.LeftPictureColor = System.Drawing.Color.Transparent;
+            this.btneditogjujtjen.Location = new System.Drawing.Point(281, 379);
+            this.btneditogjujtjen.Name = "btneditogjujtjen";
+            this.btneditogjujtjen.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
+            this.btneditogjujtjen.PaddingRightPicture = new System.Windows.Forms.Padding(0);
+            this.btneditogjujtjen.RightPictureColor = System.Drawing.Color.Transparent;
+            this.btneditogjujtjen.Size = new System.Drawing.Size(254, 43);
+            this.btneditogjujtjen.SizeModeLeft = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btneditogjujtjen.SizeModeRight = System.Windows.Forms.PictureBoxSizeMode.Normal;
+            this.btneditogjujtjen.TabIndex = 40;
+            this.btneditogjujtjen.Click += new System.EventHandler(this.jFlatButton1_Click);
             // 
             // frmRegjistroGjuajtjen
             // 
@@ -450,6 +450,6 @@
         private DB_A62C25_poligoniDataSet2 dB_A62C25_poligoniDataSet2;
         private System.Windows.Forms.BindingSource useratBindingSource1;
         private DB_A62C25_poligoniDataSet2TableAdapters.UseratTableAdapter useratTableAdapter1;
-        private FlatButton.JFlatButton jFlatButton1;
+        private FlatButton.JFlatButton btneditogjujtjen;
     }
 }

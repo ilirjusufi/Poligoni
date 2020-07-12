@@ -19,5 +19,11 @@ namespace Poligoni.BLL
         {
             return gjuajtjadal.regjistrogjuajten(kalbri, distanca, maxplumba, klienti, Arma);
         }
+
+
+        public static gjuajtja ndryshogjuajte(string klienti, string Arma, string distanca, string plumbashfryzuar, int PiketEshenuara)
+        {
+            return gjuajtjadal.editoGjuajtje(klienti, Arma, distanca, plumbashfryzuar, PiketEshenuara);
+        }
     }
 }

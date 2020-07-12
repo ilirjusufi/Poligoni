@@ -120,7 +120,7 @@
             this.btnNdryshoPlumbat.ImageLeft = ((System.Drawing.Image)(resources.GetObject("btnNdryshoPlumbat.ImageLeft")));
             this.btnNdryshoPlumbat.ImageRight = null;
             this.btnNdryshoPlumbat.LeftPictureColor = System.Drawing.Color.Transparent;
-            this.btnNdryshoPlumbat.Location = new System.Drawing.Point(230, 367);
+            this.btnNdryshoPlumbat.Location = new System.Drawing.Point(230, 323);
             this.btnNdryshoPlumbat.Name = "btnNdryshoPlumbat";
             this.btnNdryshoPlumbat.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
             this.btnNdryshoPlumbat.PaddingRightPicture = new System.Windows.Forms.Padding(0);
@@ -205,7 +205,7 @@
             this.btnRegjistroPlumbat.ImageLeft = ((System.Drawing.Image)(resources.GetObject("btnRegjistroPlumbat.ImageLeft")));
             this.btnRegjistroPlumbat.ImageRight = null;
             this.btnRegjistroPlumbat.LeftPictureColor = System.Drawing.Color.Transparent;
-            this.btnRegjistroPlumbat.Location = new System.Drawing.Point(230, 292);
+            this.btnRegjistroPlumbat.Location = new System.Drawing.Point(230, 323);
             this.btnRegjistroPlumbat.Name = "btnRegjistroPlumbat";
             this.btnRegjistroPlumbat.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
             this.btnRegjistroPlumbat.PaddingRightPicture = new System.Windows.Forms.Padding(0);

@@ -34,7 +34,28 @@ namespace Poligoni.DAL
 
         }
 
-      
+        public gjuajtja editoGjuajtje(string klienti, string Arma, string distanca, string plumbashfryzuar, int PiketEshenuara)
+        {
+            var cnn = DataConnection.GetConnection();
+
+            using (var conn = DataConnection.GetConnection())
+            {
+
+                using (var cmd = DataConnection.Command(conn, "usp_editpGjuajtja", CommandType.StoredProcedure))
+                {
+                    DataConnection.AddParameter(cmd, "@Aarma", Arma);
+                    DataConnection.AddParameter(cmd, "@klienti", klienti);
+                    DataConnection.AddParameter(cmd, "@Distanca", distanca);
+                    DataConnection.AddParameter(cmd, "@pshenuara", PiketEshenuara);
+                    DataConnection.AddParameter(cmd, "@plumbashfryzuar", plumbashfryzuar);
+                    DataConnection.AddParameter(cmd, "@insertby", UserSession1.CurrentUser.ID);
+                    cmd.ExecuteNonQuery();
+                    return null;
+                }
+            }
+        }
+
+
     }
 
 

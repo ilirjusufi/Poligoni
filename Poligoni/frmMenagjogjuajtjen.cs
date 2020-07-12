@@ -84,9 +84,9 @@ namespace Poligoni
                 var d = new RegjistroPlumbatBO();
                 string klienti = this.Gridlistogjuajtien[0, Gridlistogjuajtien.CurrentCell.RowIndex].Value.ToString();
                 string  Arma = this.Gridlistogjuajtien[1, Gridlistogjuajtien.CurrentCell.RowIndex].Value.ToString();
-                string distanca = this.Gridlistogjuajtien[0, Gridlistogjuajtien.CurrentCell.RowIndex].Value.ToString();
-                string plumbashfryzuar = this.Gridlistogjuajtien[1, Gridlistogjuajtien.CurrentCell.RowIndex].Value.ToString();
-                int PiketEshenuara = Convert.ToInt32(this.Gridlistogjuajtien[2, Gridlistogjuajtien.CurrentCell.RowIndex].Value) ;
+                string distanca = this.Gridlistogjuajtien[2, Gridlistogjuajtien.CurrentCell.RowIndex].Value.ToString();
+                string plumbashfryzuar = this.Gridlistogjuajtien[3, Gridlistogjuajtien.CurrentCell.RowIndex].Value.ToString();
+                int PiketEshenuara = Convert.ToInt32(this.Gridlistogjuajtien[4, Gridlistogjuajtien.CurrentCell.RowIndex].Value) ;
                 frmRegjistroGjuajtjen.Editogjuajten(klienti, Arma, distanca, plumbashfryzuar, PiketEshenuara);
             }
         }

@@ -159,6 +159,8 @@ namespace Poligoni
             this.Kalibiri = txtKalibri.Text;
             this.MaxPlumba = int.Parse(txtMaxPlumba.Text);
             ArmaBO ndryshoArma = ArmaBLL.ndryshoArma(this.ArmaID,EmriArmes, Kalibiri, MaxPlumba);
+
+           
         }
     }
 }
