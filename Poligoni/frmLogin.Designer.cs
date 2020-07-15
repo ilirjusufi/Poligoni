@@ -40,6 +40,7 @@
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.txtuser1 = new System.Windows.Forms.TextBox();
             this.btnanuloo = new System.Windows.Forms.Button();
             this.txtpass2 = new System.Windows.Forms.TextBox();
@@ -50,6 +51,7 @@
             this.jGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox3
@@ -144,11 +146,12 @@
             // jGradientPanel1
             // 
             this.jGradientPanel1.BackColor = System.Drawing.SystemColors.GrayText;
-            this.jGradientPanel1.ColorBottom = System.Drawing.Color.PapayaWhip;
-            this.jGradientPanel1.ColorTop = System.Drawing.Color.Olive;
+            this.jGradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
+            this.jGradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
             this.jGradientPanel1.Controls.Add(this.gunaControlBox1);
             this.jGradientPanel1.Controls.Add(this.pictureBox4);
             this.jGradientPanel1.Controls.Add(this.pictureBox5);
+            this.jGradientPanel1.Controls.Add(this.pictureBox6);
             this.jGradientPanel1.Controls.Add(this.txtuser1);
             this.jGradientPanel1.Controls.Add(this.btnanuloo);
             this.jGradientPanel1.Controls.Add(this.txtpass2);
@@ -179,7 +182,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(126, 221);
+            this.pictureBox4.Location = new System.Drawing.Point(117, 327);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(28, 31);
             this.pictureBox4.TabIndex = 4;
@@ -189,19 +192,31 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(126, 175);
+            this.pictureBox5.Location = new System.Drawing.Point(117, 281);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(28, 31);
             this.pictureBox5.TabIndex = 3;
             this.pictureBox5.TabStop = false;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(160, 102);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(139, 138);
+            this.pictureBox6.TabIndex = 2;
+            this.pictureBox6.TabStop = false;
+            // 
             // txtuser1
             // 
-            this.txtuser1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtuser1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
             this.txtuser1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtuser1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtuser1.ForeColor = System.Drawing.Color.Black;
-            this.txtuser1.Location = new System.Drawing.Point(154, 175);
+            this.txtuser1.ForeColor = System.Drawing.Color.White;
+            this.txtuser1.Location = new System.Drawing.Point(145, 281);
             this.txtuser1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.txtuser1.Multiline = true;
             this.txtuser1.Name = "txtuser1";
@@ -211,13 +226,13 @@
             // 
             // btnanuloo
             // 
-            this.btnanuloo.BackColor = System.Drawing.Color.Silver;
+            this.btnanuloo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
             this.btnanuloo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnanuloo.FlatAppearance.BorderSize = 2;
             this.btnanuloo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnanuloo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnanuloo.ForeColor = System.Drawing.Color.White;
-            this.btnanuloo.Location = new System.Drawing.Point(270, 279);
+            this.btnanuloo.Location = new System.Drawing.Point(261, 385);
             this.btnanuloo.Name = "btnanuloo";
             this.btnanuloo.Size = new System.Drawing.Size(98, 42);
             this.btnanuloo.TabIndex = 1;
@@ -226,11 +241,11 @@
             // 
             // txtpass2
             // 
-            this.txtpass2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtpass2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
             this.txtpass2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpass2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpass2.ForeColor = System.Drawing.Color.Black;
-            this.txtpass2.Location = new System.Drawing.Point(154, 223);
+            this.txtpass2.ForeColor = System.Drawing.Color.White;
+            this.txtpass2.Location = new System.Drawing.Point(145, 329);
             this.txtpass2.Multiline = true;
             this.txtpass2.Name = "txtpass2";
             this.txtpass2.PasswordChar = '*';
@@ -240,13 +255,13 @@
             // 
             // btnkyquu
             // 
-            this.btnkyquu.BackColor = System.Drawing.Color.Silver;
+            this.btnkyquu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
             this.btnkyquu.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnkyquu.FlatAppearance.BorderSize = 2;
             this.btnkyquu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnkyquu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnkyquu.ForeColor = System.Drawing.Color.White;
-            this.btnkyquu.Location = new System.Drawing.Point(107, 279);
+            this.btnkyquu.Location = new System.Drawing.Point(98, 385);
             this.btnkyquu.Name = "btnkyquu";
             this.btnkyquu.Size = new System.Drawing.Size(98, 42);
             this.btnkyquu.TabIndex = 1;
@@ -281,6 +296,7 @@
             this.jGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,6 +314,7 @@
 		private JGradient_Panel.JGradientPanel jGradientPanel1;
 		private System.Windows.Forms.PictureBox pictureBox4;
 		private System.Windows.Forms.PictureBox pictureBox5;
+		private System.Windows.Forms.PictureBox pictureBox6;
 		private System.Windows.Forms.TextBox txtuser1;
 		private System.Windows.Forms.Button btnanuloo;
 		private System.Windows.Forms.TextBox txtpass2;

@@ -121,11 +121,12 @@ namespace Poligoni
             merre = dashboardStatistikatDAL.MerrStatistika();
             
             lblklientaregjistrum.Text = merre.klientateRegjistrua.ToString();
-           
+            lblplumbastok.Text = merre.plumbaStok.ToString();
             lblgjuajtjet.Text = merre.gjuajtjaTotale.ToString();
-          
+            lblaremtregjistruar.Text = merre.armeRegjisstruar.ToString();
             lblklientamuaj.Text = merre.Klientatmuaj.ToString();
-            
+            lblgjuajtjemuaj.Text = merre.Gjuajtjamuaj.ToString();
+
 
 
         }
@@ -341,7 +342,9 @@ namespace Poligoni
         private void timer1_Tick(object sender, EventArgs e)
         {
             DateTime dateTime = DateTime.Now;
-          
+            lbldata.Text = dateTime.ToString();
+            lbldata.Update();
+            
         }
 
         private void listoKlientToolStripMenuItem1_Click(object sender, EventArgs e)
