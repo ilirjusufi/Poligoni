@@ -16,16 +16,22 @@ using Poligoni.DAL;
 
 namespace Poligoni
 {
+    
 
     public partial class FrmDashboard : Form
     {
+        string c;
         private dashboardStatistikatBO merre;
 
         public dashboardStatistikatBO merr { get; set; }
         public FrmDashboard()
         {
+
+
+            
+
             InitializeComponent();
-            merre = new dashboardStatistikatBO();
+            
         }
 
 
@@ -74,6 +80,30 @@ namespace Poligoni
             frmLogin frlogin = new frmLogin();
             if (frlogin.ShowDialog() == DialogResult.OK)
             {
+
+                if(gjuha.Gjuha == "en-au")
+                {
+                    label2.Text = "Dahboard";
+                    label18.Text = "Date and Time :";
+                    label1.Text = "Hello";
+                    label6.Text = "Registered clients";
+                    label11.Text = "Total shots";
+                    label12.Text = "Total weapons";
+                    label13.Text = "Total bullets";
+                    label14.Text = "Registered clients in this month";
+                    label15.Text = "Shots in this month";
+                    label4.Text = "Clients";
+                    label17.Text = "Shots";
+                    btnregjistoklienta.Text = "Client register";
+                    btnregjistroarm.Text = "Register weapons";
+                    btnregjistroplumba.Text = "Bullet regjister";
+                    btnRegjistroGjuajtje.Text = "Register shots";
+                    label2.Location = new Point(60, 8);
+                    lblemri.Location = new Point(297, 36);
+
+                }
+
+
                 loadData();
                 int slep = 2;
                 for (int i = 0; i < 100; i++)
@@ -126,9 +156,6 @@ namespace Poligoni
             lblaremtregjistruar.Text = merre.armeRegjisstruar.ToString();
             lblklientamuaj.Text = merre.Klientatmuaj.ToString();
             lblgjuajtjemuaj.Text = merre.Gjuajtjamuaj.ToString();
-
-
-
         }
         private void FrmDashboard_Load_1(object sender, EventArgs e)
         {
@@ -233,7 +260,11 @@ namespace Poligoni
         {
 
         }
-
+        public void Gjuha(string a)
+        {
+            this.c = a;
+            InitializeComponent();
+        }
         private void regjistroKlientToolStripMenuItem_Click_4(object sender, EventArgs e)
         {
             
@@ -443,6 +474,11 @@ namespace Poligoni
             {
 
             }
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

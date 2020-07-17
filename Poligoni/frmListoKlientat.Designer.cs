@@ -36,11 +36,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.textkos = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnkerko = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.gridiListo = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Userid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Emri = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Mbiemri = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,92 +49,61 @@
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edito = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Fshij = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridiListo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // textkos
             // 
+            resources.ApplyResources(this.textkos, "textkos");
             this.textkos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
             this.textkos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textkos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textkos.ForeColor = System.Drawing.Color.White;
-            this.textkos.Location = new System.Drawing.Point(48, 48);
-            this.textkos.Margin = new System.Windows.Forms.Padding(30, 5, 5, 0);
-            this.textkos.Multiline = true;
             this.textkos.Name = "textkos";
-            this.textkos.Size = new System.Drawing.Size(630, 29);
-            this.textkos.TabIndex = 1;
             this.textkos.TextChanged += new System.EventHandler(this.textkos_TextChanged);
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
             this.panel1.Controls.Add(this.guna2PictureBox1);
             this.panel1.Controls.Add(this.btnkerko);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.textkos);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 106);
-            this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 48);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(29, 29);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 6;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // btnkerko
             // 
+            resources.ApplyResources(this.btnkerko, "btnkerko");
             this.btnkerko.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
             this.btnkerko.CheckedState.Parent = this.btnkerko;
             this.btnkerko.CustomImages.Parent = this.btnkerko;
             this.btnkerko.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.btnkerko.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnkerko.ForeColor = System.Drawing.Color.White;
             this.btnkerko.HoverState.Parent = this.btnkerko;
-            this.btnkerko.Location = new System.Drawing.Point(686, 48);
             this.btnkerko.Name = "btnkerko";
             this.btnkerko.ShadowDecoration.Parent = this.btnkerko;
-            this.btnkerko.Size = new System.Drawing.Size(102, 29);
-            this.btnkerko.TabIndex = 5;
-            this.btnkerko.Text = "Kerko";
             this.btnkerko.Click += new System.EventHandler(this.btnkerko_Click);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 23);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Listo dhe kerko klienta";
             // 
             // panel2
             // 
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Controls.Add(this.gridiListo);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 106);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 344);
-            this.panel2.TabIndex = 5;
             // 
             // gridiListo
             // 
+            resources.ApplyResources(this.gridiListo, "gridiListo");
             this.gridiListo.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
             this.gridiListo.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
@@ -151,7 +121,6 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridiListo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gridiListo.ColumnHeadersHeight = 21;
             this.gridiListo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Userid,
             this.Emri,
@@ -169,15 +138,11 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gridiListo.DefaultCellStyle = dataGridViewCellStyle4;
-            this.gridiListo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridiListo.EnableHeadersVisualStyles = false;
             this.gridiListo.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(199)))), ((int)(((byte)(206)))));
-            this.gridiListo.Location = new System.Drawing.Point(0, 0);
             this.gridiListo.Name = "gridiListo";
             this.gridiListo.RowHeadersVisible = false;
             this.gridiListo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridiListo.Size = new System.Drawing.Size(800, 344);
-            this.gridiListo.TabIndex = 4;
             this.gridiListo.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.WetAsphalt;
             this.gridiListo.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(200)))), ((int)(((byte)(207)))));
             this.gridiListo.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -202,34 +167,41 @@
             this.gridiListo.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.gridiListo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridiListo_CellContentClick);
             // 
+            // guna2PictureBox1
+            // 
+            resources.ApplyResources(this.guna2PictureBox1, "guna2PictureBox1");
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // Userid
             // 
             this.Userid.DataPropertyName = "ID";
-            this.Userid.HeaderText = "userid";
+            resources.ApplyResources(this.Userid, "Userid");
             this.Userid.Name = "Userid";
             // 
             // Emri
             // 
             this.Emri.DataPropertyName = "Emri";
-            this.Emri.HeaderText = "Emri";
+            resources.ApplyResources(this.Emri, "Emri");
             this.Emri.Name = "Emri";
             // 
             // Mbiemri
             // 
             this.Mbiemri.DataPropertyName = "Mbiemri";
-            this.Mbiemri.HeaderText = "Mbiemri";
+            resources.ApplyResources(this.Mbiemri, "Mbiemri");
             this.Mbiemri.Name = "Mbiemri";
             // 
             // Username
             // 
             this.Username.DataPropertyName = "Username";
-            this.Username.HeaderText = "Username";
+            resources.ApplyResources(this.Username, "Username");
             this.Username.Name = "Username";
             // 
             // Email
             // 
             this.Email.DataPropertyName = "Email";
-            this.Email.HeaderText = "Email";
+            resources.ApplyResources(this.Email, "Email");
             this.Email.Name = "Email";
             // 
             // Edito
@@ -243,38 +215,33 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Edito.DefaultCellStyle = dataGridViewCellStyle3;
             this.Edito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Edito.HeaderText = "Edito";
+            resources.ApplyResources(this.Edito, "Edito");
             this.Edito.Name = "Edito";
-            this.Edito.Text = "Edito";
-            this.Edito.ToolTipText = "Edito";
+            this.Edito.Text = "Edit";
             this.Edito.UseColumnTextForButtonValue = true;
             // 
             // Fshij
             // 
-            this.Fshij.HeaderText = "Fshij";
+            resources.ApplyResources(this.Fshij, "Fshij");
             this.Fshij.Name = "Fshij";
-            this.Fshij.Text = "Fshij";
-            this.Fshij.ToolTipText = "Fshij";
+            this.Fshij.Text = "Delete";
             this.Fshij.UseColumnTextForButtonValue = true;
             // 
             // frmListoKlientat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "frmListoKlientat";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "listoklientat";
             this.Load += new System.EventHandler(this.listoklientat_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridiListo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -287,6 +254,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2DataGridView gridiListo;
+        private Guna.UI2.WinForms.Guna2Button btnkerko;
+		private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Userid;
         private System.Windows.Forms.DataGridViewTextBoxColumn Emri;
         private System.Windows.Forms.DataGridViewTextBoxColumn Mbiemri;
@@ -294,7 +263,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewButtonColumn Edito;
         private System.Windows.Forms.DataGridViewButtonColumn Fshij;
-        private Guna.UI2.WinForms.Guna2Button btnkerko;
-		private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-	}
+    }
 }

@@ -15,6 +15,7 @@ using System.Data.SqlClient;
 using Microsoft.Win32;
 using System.Configuration;
 using System.Security.Cryptography.X509Certificates;
+using System.Threading;
 
 namespace Poligoni
 {
@@ -25,6 +26,8 @@ namespace Poligoni
         private List<Users> listoKlientat;
         public frmListoKlientat()
         {
+
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(gjuha.Gjuha);
             InitializeComponent();
             listoKlientat = new List<Users>();
            

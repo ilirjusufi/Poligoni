@@ -111,8 +111,7 @@
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
             this.panel4.Controls.Add(this.guna2Button1);
             this.panel4.Controls.Add(this.btnRegjistroGjuajtje);
@@ -123,25 +122,19 @@
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Location = new System.Drawing.Point(3, 29);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(209, 715);
-            this.panel4.TabIndex = 2;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // guna2Button1
             // 
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            resources.ApplyResources(this.guna2Button1, "guna2Button1");
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(0, 598);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(51, 29);
-            this.guna2Button1.TabIndex = 6;
-            this.guna2Button1.Text = "Qkyqu";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // btnRegjistroGjuajtje
@@ -149,15 +142,11 @@
             this.btnRegjistroGjuajtje.CheckedState.Parent = this.btnRegjistroGjuajtje;
             this.btnRegjistroGjuajtje.CustomImages.Parent = this.btnRegjistroGjuajtje;
             this.btnRegjistroGjuajtje.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
-            this.btnRegjistroGjuajtje.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btnRegjistroGjuajtje, "btnRegjistroGjuajtje");
             this.btnRegjistroGjuajtje.ForeColor = System.Drawing.Color.White;
             this.btnRegjistroGjuajtje.HoverState.Parent = this.btnRegjistroGjuajtje;
-            this.btnRegjistroGjuajtje.Location = new System.Drawing.Point(13, 288);
             this.btnRegjistroGjuajtje.Name = "btnRegjistroGjuajtje";
             this.btnRegjistroGjuajtje.ShadowDecoration.Parent = this.btnRegjistroGjuajtje;
-            this.btnRegjistroGjuajtje.Size = new System.Drawing.Size(180, 45);
-            this.btnRegjistroGjuajtje.TabIndex = 4;
-            this.btnRegjistroGjuajtje.Text = "Regjistro gjuajtje";
             this.btnRegjistroGjuajtje.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnRegjistroGjuajtje.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.btnRegjistroGjuajtje.Click += new System.EventHandler(this.btnRegjistroGjuajtje_Click);
@@ -167,15 +156,11 @@
             this.btnregjistroplumba.CheckedState.Parent = this.btnregjistroplumba;
             this.btnregjistroplumba.CustomImages.Parent = this.btnregjistroplumba;
             this.btnregjistroplumba.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
-            this.btnregjistroplumba.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btnregjistroplumba, "btnregjistroplumba");
             this.btnregjistroplumba.ForeColor = System.Drawing.Color.White;
             this.btnregjistroplumba.HoverState.Parent = this.btnregjistroplumba;
-            this.btnregjistroplumba.Location = new System.Drawing.Point(13, 441);
             this.btnregjistroplumba.Name = "btnregjistroplumba";
             this.btnregjistroplumba.ShadowDecoration.Parent = this.btnregjistroplumba;
-            this.btnregjistroplumba.Size = new System.Drawing.Size(180, 45);
-            this.btnregjistroplumba.TabIndex = 3;
-            this.btnregjistroplumba.Text = "Regjistro plumba";
             this.btnregjistroplumba.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnregjistroplumba.Click += new System.EventHandler(this.btnregjistroplumba_Click);
             // 
@@ -184,15 +169,11 @@
             this.btnregjistoklienta.CheckedState.Parent = this.btnregjistoklienta;
             this.btnregjistoklienta.CustomImages.Parent = this.btnregjistoklienta;
             this.btnregjistoklienta.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
-            this.btnregjistoklienta.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btnregjistoklienta, "btnregjistoklienta");
             this.btnregjistoklienta.ForeColor = System.Drawing.Color.White;
             this.btnregjistoklienta.HoverState.Parent = this.btnregjistoklienta;
-            this.btnregjistoklienta.Location = new System.Drawing.Point(13, 339);
             this.btnregjistoklienta.Name = "btnregjistoklienta";
             this.btnregjistoklienta.ShadowDecoration.Parent = this.btnregjistoklienta;
-            this.btnregjistoklienta.Size = new System.Drawing.Size(180, 45);
-            this.btnregjistoklienta.TabIndex = 3;
-            this.btnregjistoklienta.Text = "Regjistro klienta";
             this.btnregjistoklienta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnregjistoklienta.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.btnregjistoklienta.Click += new System.EventHandler(this.btnregjistoklienta_Click);
@@ -202,58 +183,37 @@
             this.btnregjistroarm.CheckedState.Parent = this.btnregjistroarm;
             this.btnregjistroarm.CustomImages.Parent = this.btnregjistroarm;
             this.btnregjistroarm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
-            this.btnregjistroarm.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btnregjistroarm, "btnregjistroarm");
             this.btnregjistroarm.ForeColor = System.Drawing.Color.White;
             this.btnregjistroarm.HoverState.Parent = this.btnregjistroarm;
-            this.btnregjistroarm.Location = new System.Drawing.Point(13, 390);
             this.btnregjistroarm.Name = "btnregjistroarm";
             this.btnregjistroarm.ShadowDecoration.Parent = this.btnregjistroarm;
-            this.btnregjistroarm.Size = new System.Drawing.Size(180, 45);
-            this.btnregjistroarm.TabIndex = 2;
-            this.btnregjistroarm.Text = "Regjistro arme";
             this.btnregjistroarm.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnregjistroarm.Click += new System.EventHandler(this.btnregjistroarm_Click);
             // 
             // lblemrimbiemri
             // 
-            this.lblemrimbiemri.AutoSize = true;
-            this.lblemrimbiemri.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblemrimbiemri, "lblemrimbiemri");
             this.lblemrimbiemri.ForeColor = System.Drawing.Color.LightGray;
-            this.lblemrimbiemri.Location = new System.Drawing.Point(70, 195);
             this.lblemrimbiemri.Name = "lblemrimbiemri";
-            this.lblemrimbiemri.Size = new System.Drawing.Size(0, 24);
-            this.lblemrimbiemri.TabIndex = 1;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label5, "label5");
             this.label5.ForeColor = System.Drawing.Color.LightGray;
-            this.label5.Location = new System.Drawing.Point(62, 170);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 24);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Mr.Msc";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label2, "label2");
             this.label2.ForeColor = System.Drawing.Color.LightGray;
-            this.label2.Location = new System.Drawing.Point(30, 8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Paneli i kontrollit";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Poligoni.Properties.Resources._20;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 45);
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(127, 114);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // jGradientPanel1
@@ -271,11 +231,8 @@
             this.jGradientPanel1.Controls.Add(this.label1);
             this.jGradientPanel1.Controls.Add(this.menuStrip1);
             this.jGradientPanel1.Controls.Add(this.panel4);
-            this.jGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.jGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.jGradientPanel1, "jGradientPanel1");
             this.jGradientPanel1.Name = "jGradientPanel1";
-            this.jGradientPanel1.Size = new System.Drawing.Size(1210, 659);
-            this.jGradientPanel1.TabIndex = 0;
             this.jGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.jGradientPanel1_Paint);
             // 
             // panel12
@@ -286,66 +243,43 @@
             this.panel12.Controls.Add(this.label15);
             this.panel12.Controls.Add(this.lblgjuajtjemuaj);
             this.panel12.Controls.Add(this.label17);
-            this.panel12.Location = new System.Drawing.Point(739, 256);
+            resources.ApplyResources(this.panel12, "panel12");
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(446, 383);
-            this.panel12.TabIndex = 4;
             // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(179)))), ((int)(((byte)(133)))));
-            this.panel13.Location = new System.Drawing.Point(20, 64);
+            resources.ApplyResources(this.panel13, "panel13");
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(10, 258);
-            this.panel13.TabIndex = 8;
             // 
             // financatrrethi
             // 
-            this.financatrrethi.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.financatrrethi, "financatrrethi");
             this.financatrrethi.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.financatrrethi.Location = new System.Drawing.Point(76, 49);
             this.financatrrethi.Name = "financatrrethi";
             this.financatrrethi.ProgressColor = System.Drawing.Color.White;
             this.financatrrethi.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.financatrrethi.ShadowDecoration.Parent = this.financatrrethi;
             this.financatrrethi.ShowPercentage = true;
-            this.financatrrethi.Size = new System.Drawing.Size(294, 282);
-            this.financatrrethi.TabIndex = 6;
             this.financatrrethi.Value = 3;
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label15, "label15");
             this.label15.ForeColor = System.Drawing.Color.LightGray;
-            this.label15.Location = new System.Drawing.Point(16, 14);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(158, 24);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "Gjuajtje kete muaj";
             // 
             // lblgjuajtjemuaj
             // 
-            this.lblgjuajtjemuaj.AutoSize = true;
-            this.lblgjuajtjemuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblgjuajtjemuaj, "lblgjuajtjemuaj");
             this.lblgjuajtjemuaj.ForeColor = System.Drawing.Color.LightGray;
-            this.lblgjuajtjemuaj.Location = new System.Drawing.Point(199, 349);
             this.lblgjuajtjemuaj.Name = "lblgjuajtjemuaj";
-            this.lblgjuajtjemuaj.Size = new System.Drawing.Size(60, 24);
-            this.lblgjuajtjemuaj.TabIndex = 1;
-            this.lblgjuajtjemuaj.Text = "00000";
-            this.lblgjuajtjemuaj.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label17, "label17");
             this.label17.ForeColor = System.Drawing.Color.LightGray;
-            this.label17.Location = new System.Drawing.Point(16, 348);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(76, 24);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "Gjuajtjet";
             // 
             // panel7
             // 
@@ -355,90 +289,59 @@
             this.panel7.Controls.Add(this.label14);
             this.panel7.Controls.Add(this.lblklientamuaj);
             this.panel7.Controls.Add(this.label4);
-            this.panel7.Location = new System.Drawing.Point(243, 256);
+            resources.ApplyResources(this.panel7, "panel7");
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(446, 383);
-            this.panel7.TabIndex = 4;
             // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(152)))), ((int)(((byte)(50)))));
-            this.panel14.Location = new System.Drawing.Point(18, 73);
+            resources.ApplyResources(this.panel14, "panel14");
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(10, 258);
-            this.panel14.TabIndex = 8;
             // 
             // guna2CircleProgressBar2
             // 
-            this.guna2CircleProgressBar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.guna2CircleProgressBar2, "guna2CircleProgressBar2");
             this.guna2CircleProgressBar2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2CircleProgressBar2.Location = new System.Drawing.Point(76, 49);
             this.guna2CircleProgressBar2.Name = "guna2CircleProgressBar2";
             this.guna2CircleProgressBar2.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(112)))), ((int)(((byte)(94)))));
             this.guna2CircleProgressBar2.ProgressColor2 = System.Drawing.Color.Olive;
             this.guna2CircleProgressBar2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleProgressBar2.ShadowDecoration.Parent = this.guna2CircleProgressBar2;
             this.guna2CircleProgressBar2.ShowPercentage = true;
-            this.guna2CircleProgressBar2.Size = new System.Drawing.Size(294, 282);
-            this.guna2CircleProgressBar2.TabIndex = 6;
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label14, "label14");
             this.label14.ForeColor = System.Drawing.Color.LightGray;
-            this.label14.Location = new System.Drawing.Point(16, 14);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(259, 24);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "Klienta te regjistruar kete muaj";
             // 
             // lblklientamuaj
             // 
-            this.lblklientamuaj.AutoSize = true;
-            this.lblklientamuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblklientamuaj, "lblklientamuaj");
             this.lblklientamuaj.ForeColor = System.Drawing.Color.LightGray;
-            this.lblklientamuaj.Location = new System.Drawing.Point(199, 349);
             this.lblklientamuaj.Name = "lblklientamuaj";
-            this.lblklientamuaj.Size = new System.Drawing.Size(60, 24);
-            this.lblklientamuaj.TabIndex = 1;
-            this.lblklientamuaj.Text = "00000";
-            this.lblklientamuaj.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblklientamuaj.Click += new System.EventHandler(this.lblfinancat_Click);
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label4, "label4");
             this.label4.ForeColor = System.Drawing.Color.LightGray;
-            this.label4.Location = new System.Drawing.Point(16, 348);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 24);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Klientat";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label3, "label3");
             this.label3.ForeColor = System.Drawing.Color.LightGray;
-            this.label3.Location = new System.Drawing.Point(302, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 24);
-            this.label3.TabIndex = 1;
             // 
             // panel6
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.panel6, "panel6");
             this.panel6.Controls.Add(this.panel3);
             this.panel6.Controls.Add(this.panel5);
             this.panel6.Controls.Add(this.panel1);
             this.panel6.Controls.Add(this.panel2);
-            this.panel6.Location = new System.Drawing.Point(229, 74);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1007, 142);
-            this.panel6.TabIndex = 5;
             // 
             // panel3
             // 
@@ -447,55 +350,39 @@
             this.panel3.Controls.Add(this.guna2CircleProgressBar3);
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.lblaremtregjistruar);
-            this.panel3.Location = new System.Drawing.Point(510, 12);
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 114);
-            this.panel3.TabIndex = 4;
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(136)))), ((int)(((byte)(114)))));
-            this.panel10.Location = new System.Drawing.Point(16, 29);
+            resources.ApplyResources(this.panel10, "panel10");
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(3, 65);
-            this.panel10.TabIndex = 8;
             // 
             // guna2CircleProgressBar3
             // 
             this.guna2CircleProgressBar3.FillThickness = 5;
             this.guna2CircleProgressBar3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2CircleProgressBar3.Location = new System.Drawing.Point(133, 37);
+            resources.ApplyResources(this.guna2CircleProgressBar3, "guna2CircleProgressBar3");
             this.guna2CircleProgressBar3.Name = "guna2CircleProgressBar3";
             this.guna2CircleProgressBar3.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.guna2CircleProgressBar3.ProgressThickness = 5;
             this.guna2CircleProgressBar3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleProgressBar3.ShadowDecoration.Parent = this.guna2CircleProgressBar3;
             this.guna2CircleProgressBar3.ShowPercentage = true;
-            this.guna2CircleProgressBar3.Size = new System.Drawing.Size(57, 56);
-            this.guna2CircleProgressBar3.TabIndex = 0;
             this.guna2CircleProgressBar3.Value = 30;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
+            resources.ApplyResources(this.label12, "label12");
             this.label12.ForeColor = System.Drawing.Color.LightGray;
-            this.label12.Location = new System.Drawing.Point(9, 3);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(124, 16);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Arme të regjistruara";
             // 
             // lblaremtregjistruar
             // 
-            this.lblaremtregjistruar.AutoSize = true;
-            this.lblaremtregjistruar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblaremtregjistruar, "lblaremtregjistruar");
             this.lblaremtregjistruar.ForeColor = System.Drawing.Color.LightGray;
-            this.lblaremtregjistruar.Location = new System.Drawing.Point(34, 50);
             this.lblaremtregjistruar.Name = "lblaremtregjistruar";
-            this.lblaremtregjistruar.Size = new System.Drawing.Size(50, 24);
-            this.lblaremtregjistruar.TabIndex = 7;
-            this.lblaremtregjistruar.Text = "0000";
             // 
             // panel5
             // 
@@ -504,55 +391,39 @@
             this.panel5.Controls.Add(this.guna2CircleProgressBar5);
             this.panel5.Controls.Add(this.label13);
             this.panel5.Controls.Add(this.lblplumbastok);
-            this.panel5.Location = new System.Drawing.Point(756, 12);
+            resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 114);
-            this.panel5.TabIndex = 4;
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(179)))), ((int)(((byte)(133)))));
-            this.panel11.Location = new System.Drawing.Point(17, 29);
+            resources.ApplyResources(this.panel11, "panel11");
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(3, 65);
-            this.panel11.TabIndex = 8;
             // 
             // guna2CircleProgressBar5
             // 
             this.guna2CircleProgressBar5.FillThickness = 5;
             this.guna2CircleProgressBar5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2CircleProgressBar5.Location = new System.Drawing.Point(131, 37);
+            resources.ApplyResources(this.guna2CircleProgressBar5, "guna2CircleProgressBar5");
             this.guna2CircleProgressBar5.Name = "guna2CircleProgressBar5";
             this.guna2CircleProgressBar5.ProgressColor = System.Drawing.Color.White;
             this.guna2CircleProgressBar5.ProgressThickness = 5;
             this.guna2CircleProgressBar5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleProgressBar5.ShadowDecoration.Parent = this.guna2CircleProgressBar5;
             this.guna2CircleProgressBar5.ShowPercentage = true;
-            this.guna2CircleProgressBar5.Size = new System.Drawing.Size(57, 56);
-            this.guna2CircleProgressBar5.TabIndex = 1;
             this.guna2CircleProgressBar5.Value = 30;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
+            resources.ApplyResources(this.label13, "label13");
             this.label13.ForeColor = System.Drawing.Color.LightGray;
-            this.label13.Location = new System.Drawing.Point(10, 5);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(100, 16);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "Plumba ne stok";
             // 
             // lblplumbastok
             // 
-            this.lblplumbastok.AutoSize = true;
-            this.lblplumbastok.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblplumbastok, "lblplumbastok");
             this.lblplumbastok.ForeColor = System.Drawing.Color.LightGray;
-            this.lblplumbastok.Location = new System.Drawing.Point(35, 50);
             this.lblplumbastok.Name = "lblplumbastok";
-            this.lblplumbastok.Size = new System.Drawing.Size(50, 24);
-            this.lblplumbastok.TabIndex = 7;
-            this.lblplumbastok.Text = "0000";
             // 
             // panel1
             // 
@@ -561,48 +432,34 @@
             this.panel1.Controls.Add(this.lblklientaregjistrum);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.guna2CircleProgressBar1);
-            this.panel1.Location = new System.Drawing.Point(14, 12);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 114);
-            this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(179)))), ((int)(((byte)(133)))));
-            this.panel8.Location = new System.Drawing.Point(20, 29);
+            resources.ApplyResources(this.panel8, "panel8");
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(3, 65);
-            this.panel8.TabIndex = 6;
             // 
             // lblklientaregjistrum
             // 
-            this.lblklientaregjistrum.AutoSize = true;
-            this.lblklientaregjistrum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblklientaregjistrum, "lblklientaregjistrum");
             this.lblklientaregjistrum.ForeColor = System.Drawing.Color.LightGray;
-            this.lblklientaregjistrum.Location = new System.Drawing.Point(38, 50);
             this.lblklientaregjistrum.Name = "lblklientaregjistrum";
-            this.lblklientaregjistrum.Size = new System.Drawing.Size(50, 24);
-            this.lblklientaregjistrum.TabIndex = 1;
-            this.lblklientaregjistrum.Text = "0000";
             this.lblklientaregjistrum.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label6, "label6");
             this.label6.ForeColor = System.Drawing.Color.LightGray;
-            this.label6.Location = new System.Drawing.Point(11, 3);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 16);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Klienta të regjistruar";
             // 
             // guna2CircleProgressBar1
             // 
             this.guna2CircleProgressBar1.FillThickness = 5;
             this.guna2CircleProgressBar1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2CircleProgressBar1.Location = new System.Drawing.Point(136, 37);
+            resources.ApplyResources(this.guna2CircleProgressBar1, "guna2CircleProgressBar1");
             this.guna2CircleProgressBar1.Name = "guna2CircleProgressBar1";
             this.guna2CircleProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.guna2CircleProgressBar1.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(174)))), ((int)(((byte)(182)))));
@@ -610,8 +467,6 @@
             this.guna2CircleProgressBar1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleProgressBar1.ShadowDecoration.Parent = this.guna2CircleProgressBar1;
             this.guna2CircleProgressBar1.ShowPercentage = true;
-            this.guna2CircleProgressBar1.Size = new System.Drawing.Size(57, 56);
-            this.guna2CircleProgressBar1.TabIndex = 0;
             this.guna2CircleProgressBar1.Value = 30;
             // 
             // panel2
@@ -621,143 +476,97 @@
             this.panel2.Controls.Add(this.guna2CircleProgressBar4);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.lblgjuajtjet);
-            this.panel2.Location = new System.Drawing.Point(260, 12);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 114);
-            this.panel2.TabIndex = 4;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(152)))), ((int)(((byte)(50)))));
-            this.panel9.Location = new System.Drawing.Point(17, 29);
+            resources.ApplyResources(this.panel9, "panel9");
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(3, 65);
-            this.panel9.TabIndex = 8;
             // 
             // guna2CircleProgressBar4
             // 
             this.guna2CircleProgressBar4.FillThickness = 5;
             this.guna2CircleProgressBar4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2CircleProgressBar4.Location = new System.Drawing.Point(134, 37);
+            resources.ApplyResources(this.guna2CircleProgressBar4, "guna2CircleProgressBar4");
             this.guna2CircleProgressBar4.Name = "guna2CircleProgressBar4";
             this.guna2CircleProgressBar4.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.guna2CircleProgressBar4.ProgressThickness = 5;
             this.guna2CircleProgressBar4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleProgressBar4.ShadowDecoration.Parent = this.guna2CircleProgressBar4;
             this.guna2CircleProgressBar4.ShowPercentage = true;
-            this.guna2CircleProgressBar4.Size = new System.Drawing.Size(57, 56);
-            this.guna2CircleProgressBar4.TabIndex = 0;
             this.guna2CircleProgressBar4.Value = 30;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
+            resources.ApplyResources(this.label11, "label11");
             this.label11.ForeColor = System.Drawing.Color.LightGray;
-            this.label11.Location = new System.Drawing.Point(10, 3);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(89, 16);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Gjuajtje totale";
             // 
             // lblgjuajtjet
             // 
-            this.lblgjuajtjet.AutoSize = true;
-            this.lblgjuajtjet.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblgjuajtjet, "lblgjuajtjet");
             this.lblgjuajtjet.ForeColor = System.Drawing.Color.LightGray;
-            this.lblgjuajtjet.Location = new System.Drawing.Point(35, 50);
             this.lblgjuajtjet.Name = "lblgjuajtjet";
-            this.lblgjuajtjet.Size = new System.Drawing.Size(50, 24);
-            this.lblgjuajtjet.TabIndex = 7;
-            this.lblgjuajtjet.Text = "0000";
             // 
             // lbldata
             // 
-            this.lbldata.AutoSize = true;
-            this.lbldata.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lbldata, "lbldata");
             this.lbldata.ForeColor = System.Drawing.Color.LightGray;
-            this.lbldata.Location = new System.Drawing.Point(966, 34);
             this.lbldata.Name = "lbldata";
-            this.lbldata.Size = new System.Drawing.Size(47, 24);
-            this.lbldata.TabIndex = 1;
-            this.lbldata.Text = "Data";
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label18, "label18");
             this.label18.ForeColor = System.Drawing.Color.LightGray;
-            this.label18.Location = new System.Drawing.Point(834, 34);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(136, 24);
-            this.label18.TabIndex = 1;
-            this.label18.Text = "Data dhe koha:";
             // 
             // lblemri
             // 
-            this.lblemri.AutoSize = true;
-            this.lblemri.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblemri, "lblemri");
             this.lblemri.ForeColor = System.Drawing.Color.LightGray;
-            this.lblemri.Location = new System.Drawing.Point(379, 37);
             this.lblemri.Name = "lblemri";
-            this.lblemri.Size = new System.Drawing.Size(66, 24);
-            this.lblemri.TabIndex = 1;
-            this.lblemri.Text = "lblemri";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(239, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Pershendetje";
             // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(13)))), ((int)(((byte)(32)))));
-            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.administrimiToolStripMenuItem,
             this.klientatToolStripMenuItem,
             this.armetToolStripMenuItem,
             this.plumbatToolStripMenuItem,
             this.gjuajtjaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1210, 25);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked_1);
             // 
             // administrimiToolStripMenuItem
             // 
-            this.administrimiToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            resources.ApplyResources(this.administrimiToolStripMenuItem, "administrimiToolStripMenuItem");
             this.administrimiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.regjistroStafToolStripMenuItem,
             this.ndyshoStafToolStripMenuItem});
             this.administrimiToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.administrimiToolStripMenuItem.Name = "administrimiToolStripMenuItem";
-            this.administrimiToolStripMenuItem.Size = new System.Drawing.Size(95, 21);
-            this.administrimiToolStripMenuItem.Text = "Administrimi";
             // 
             // regjistroStafToolStripMenuItem
             // 
-            this.regjistroStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroStafToolStripMenuItem.Image")));
+            resources.ApplyResources(this.regjistroStafToolStripMenuItem, "regjistroStafToolStripMenuItem");
             this.regjistroStafToolStripMenuItem.Name = "regjistroStafToolStripMenuItem";
-            this.regjistroStafToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.regjistroStafToolStripMenuItem.Text = "Regjistro Staf";
             this.regjistroStafToolStripMenuItem.Click += new System.EventHandler(this.regjistroStafToolStripMenuItem_Click);
             // 
             // ndyshoStafToolStripMenuItem
             // 
-            this.ndyshoStafToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ndyshoStafToolStripMenuItem.Image")));
+            resources.ApplyResources(this.ndyshoStafToolStripMenuItem, "ndyshoStafToolStripMenuItem");
             this.ndyshoStafToolStripMenuItem.Name = "ndyshoStafToolStripMenuItem";
-            this.ndyshoStafToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ndyshoStafToolStripMenuItem.Text = "Ndysho Staf";
             this.ndyshoStafToolStripMenuItem.Click += new System.EventHandler(this.ndyshoStafToolStripMenuItem_Click);
             // 
             // klientatToolStripMenuItem
@@ -767,23 +576,18 @@
             this.listoKlientToolStripMenuItem1});
             this.klientatToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.klientatToolStripMenuItem.Name = "klientatToolStripMenuItem";
-            this.klientatToolStripMenuItem.Size = new System.Drawing.Size(67, 21);
-            this.klientatToolStripMenuItem.Text = "Klientat";
+            resources.ApplyResources(this.klientatToolStripMenuItem, "klientatToolStripMenuItem");
             // 
             // regjistroKlientToolStripMenuItem
             // 
-            this.regjistroKlientToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroKlientToolStripMenuItem.Image")));
+            resources.ApplyResources(this.regjistroKlientToolStripMenuItem, "regjistroKlientToolStripMenuItem");
             this.regjistroKlientToolStripMenuItem.Name = "regjistroKlientToolStripMenuItem";
-            this.regjistroKlientToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.regjistroKlientToolStripMenuItem.Text = "Regjistro Klient";
             this.regjistroKlientToolStripMenuItem.Click += new System.EventHandler(this.regjistroKlientToolStripMenuItem_Click_4);
             // 
             // listoKlientToolStripMenuItem1
             // 
-            this.listoKlientToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("listoKlientToolStripMenuItem1.Image")));
+            resources.ApplyResources(this.listoKlientToolStripMenuItem1, "listoKlientToolStripMenuItem1");
             this.listoKlientToolStripMenuItem1.Name = "listoKlientToolStripMenuItem1";
-            this.listoKlientToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
-            this.listoKlientToolStripMenuItem1.Text = "Menaxho Klientat";
             this.listoKlientToolStripMenuItem1.Click += new System.EventHandler(this.listoKlientToolStripMenuItem1_Click);
             // 
             // armetToolStripMenuItem
@@ -793,23 +597,19 @@
             this.menaxhoArmetToolStripMenuItem});
             this.armetToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.armetToolStripMenuItem.Name = "armetToolStripMenuItem";
-            this.armetToolStripMenuItem.Size = new System.Drawing.Size(57, 21);
-            this.armetToolStripMenuItem.Text = "Armet";
+            resources.ApplyResources(this.armetToolStripMenuItem, "armetToolStripMenuItem");
             // 
             // regjistroToolStripMenuItem
             // 
             this.regjistroToolStripMenuItem.Image = global::Poligoni.Properties.Resources.gun;
             this.regjistroToolStripMenuItem.Name = "regjistroToolStripMenuItem";
-            this.regjistroToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.regjistroToolStripMenuItem.Text = "Regjistro Armë";
+            resources.ApplyResources(this.regjistroToolStripMenuItem, "regjistroToolStripMenuItem");
             this.regjistroToolStripMenuItem.Click += new System.EventHandler(this.regjistroToolStripMenuItem_Click);
             // 
             // menaxhoArmetToolStripMenuItem
             // 
-            this.menaxhoArmetToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("menaxhoArmetToolStripMenuItem.Image")));
+            resources.ApplyResources(this.menaxhoArmetToolStripMenuItem, "menaxhoArmetToolStripMenuItem");
             this.menaxhoArmetToolStripMenuItem.Name = "menaxhoArmetToolStripMenuItem";
-            this.menaxhoArmetToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.menaxhoArmetToolStripMenuItem.Text = "Menaxho Armet";
             this.menaxhoArmetToolStripMenuItem.Click += new System.EventHandler(this.menaxhoArmetToolStripMenuItem_Click);
             // 
             // plumbatToolStripMenuItem
@@ -819,23 +619,18 @@
             this.menaxhoPlumbatToolStripMenuItem});
             this.plumbatToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.plumbatToolStripMenuItem.Name = "plumbatToolStripMenuItem";
-            this.plumbatToolStripMenuItem.Size = new System.Drawing.Size(71, 21);
-            this.plumbatToolStripMenuItem.Text = "Plumbat";
+            resources.ApplyResources(this.plumbatToolStripMenuItem, "plumbatToolStripMenuItem");
             // 
             // regjistroPlumbaToolStripMenuItem
             // 
-            this.regjistroPlumbaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regjistroPlumbaToolStripMenuItem.Image")));
+            resources.ApplyResources(this.regjistroPlumbaToolStripMenuItem, "regjistroPlumbaToolStripMenuItem");
             this.regjistroPlumbaToolStripMenuItem.Name = "regjistroPlumbaToolStripMenuItem";
-            this.regjistroPlumbaToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.regjistroPlumbaToolStripMenuItem.Text = "Regjistro Plumba";
             this.regjistroPlumbaToolStripMenuItem.Click += new System.EventHandler(this.regjistroPlumbaToolStripMenuItem_Click);
             // 
             // menaxhoPlumbatToolStripMenuItem
             // 
-            this.menaxhoPlumbatToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("menaxhoPlumbatToolStripMenuItem.Image")));
+            resources.ApplyResources(this.menaxhoPlumbatToolStripMenuItem, "menaxhoPlumbatToolStripMenuItem");
             this.menaxhoPlumbatToolStripMenuItem.Name = "menaxhoPlumbatToolStripMenuItem";
-            this.menaxhoPlumbatToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.menaxhoPlumbatToolStripMenuItem.Text = "Menaxho Plumbat";
             this.menaxhoPlumbatToolStripMenuItem.Click += new System.EventHandler(this.menaxhoPlumbatToolStripMenuItem_Click);
             // 
             // gjuajtjaToolStripMenuItem
@@ -845,22 +640,19 @@
             this.listoTeGjithaGjuajtjetToolStripMenuItem});
             this.gjuajtjaToolStripMenuItem.ForeColor = System.Drawing.Color.DimGray;
             this.gjuajtjaToolStripMenuItem.Name = "gjuajtjaToolStripMenuItem";
-            this.gjuajtjaToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
-            this.gjuajtjaToolStripMenuItem.Text = "Gjuajtja";
+            resources.ApplyResources(this.gjuajtjaToolStripMenuItem, "gjuajtjaToolStripMenuItem");
             // 
             // regjistroGjuajtjenToolStripMenuItem
             // 
             this.regjistroGjuajtjenToolStripMenuItem.Image = global::Poligoni.Properties.Resources._4;
             this.regjistroGjuajtjenToolStripMenuItem.Name = "regjistroGjuajtjenToolStripMenuItem";
-            this.regjistroGjuajtjenToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.regjistroGjuajtjenToolStripMenuItem.Text = "Regjistro gjuajtjen";
+            resources.ApplyResources(this.regjistroGjuajtjenToolStripMenuItem, "regjistroGjuajtjenToolStripMenuItem");
             this.regjistroGjuajtjenToolStripMenuItem.Click += new System.EventHandler(this.regjistroGjuajtjenToolStripMenuItem_Click);
             // 
             // listoTeGjithaGjuajtjetToolStripMenuItem
             // 
             this.listoTeGjithaGjuajtjetToolStripMenuItem.Name = "listoTeGjithaGjuajtjetToolStripMenuItem";
-            this.listoTeGjithaGjuajtjetToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.listoTeGjithaGjuajtjetToolStripMenuItem.Text = "Menagjo gjuajtjen";
+            resources.ApplyResources(this.listoTeGjithaGjuajtjetToolStripMenuItem, "listoTeGjithaGjuajtjetToolStripMenuItem");
             this.listoTeGjithaGjuajtjetToolStripMenuItem.Click += new System.EventHandler(this.listoTeGjithaGjuajtjetToolStripMenuItem_Click);
             // 
             // timer1
@@ -869,14 +661,12 @@
             // 
             // FrmDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1210, 659);
             this.Controls.Add(this.jGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmDashboard";
-            this.Text = "Form2";
             this.Load += new System.EventHandler(this.FrmDashboard_Load_1);
             this.Shown += new System.EventHandler(this.FrmDashboard_Load);
             this.panel4.ResumeLayout(false);

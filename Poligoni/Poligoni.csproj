@@ -170,6 +170,7 @@
     <Compile Include="frmRegjistroStaff.Designer.cs">
       <DependentUpon>frmRegjistroStaff.cs</DependentUpon>
     </Compile>
+    <Compile Include="gjuha.cs" />
     <Compile Include="lidhjainternet.cs" />
     <Compile Include="frmListoKlientat.cs">
       <SubType>Form</SubType>
@@ -187,10 +188,31 @@
     </Compile>
     <Compile Include="sesioni\UserSessiohhn.cs" />
     <Compile Include="sqllidhja.cs" />
+    <EmbeddedResource Include="frmDashboard.en-AU.resx">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.sq-AL.resx">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.sq-XK.resx">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListoKlientat.en-AU.resx">
+      <DependentUpon>frmListoKlientat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListoKlientat.sq-AL.resx">
+      <DependentUpon>frmListoKlientat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListoPlumbat.resx">
       <DependentUpon>frmListoPlumbat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.en-AU.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.sq-AL.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmmenagjoArmet.resx">
@@ -315,6 +337,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\gun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Language+Targeting.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

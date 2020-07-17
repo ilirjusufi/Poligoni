@@ -12,22 +12,29 @@ using System.Windows.Forms;
 using Poligoni.DAL;
 using System.Management;
 using System.Runtime.Remoting.Messaging;
+using System.Threading;
+using System.Security.Cryptography.X509Certificates;
+using System.Globalization;
 
 namespace Poligoni
 {
     public partial class frmLogin : Form
     {
+        static string a;
         FrmDashboard FrmDashboard = new FrmDashboard();
         public frmLogin()
         {
-           
+            
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("sq-al");
+
             InitializeComponent();
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string Useri = txtUser.Text;
-            string Passwordi = txtPass.Text;
+            string Useri = txtpass2.Text;
+            string Passwordi = txtuser1.Text;
             Users user = UserBLL.Login(Useri, Passwordi);
             
         }
@@ -45,17 +52,20 @@ namespace Poligoni
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+
+            
             btnkyquu.DialogResult = DialogResult.OK;
             FrmDashboard.StartPosition = FormStartPosition.CenterParent;
            
+
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
             if (lidhjainternet.CheckForInternetConnection())
             {
-                string Useri = txtuser1.Text;
-                string Passwordi = txtpass2.Text;
+                string Useri = txtpass2.Text;
+                string Passwordi = txtuser1.Text;
 
                 if (Useri.Trim() != "" && Passwordi != "")
                 {
@@ -103,7 +113,7 @@ namespace Poligoni
             }
            else
             {
-                MessageBox.Show("Konttrooloni lidhjen ne internet");
+                MessageBox.Show("Konttroloni lidhjen ne internet");
                 Application.Exit();
             }
             
@@ -113,5 +123,35 @@ namespace Poligoni
         {
 
         }
+
+        
+        private void DropGjuha_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (DropGjuha.SelectedIndex)
+            {
+                case 1:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-au");
+                 
+                    a = "en-au";
+                    btnkyquu.Text = "Login";
+                    btnanuloo.Text = "Cancle";
+                    break;
+                case 0:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("sq-al");
+                    btnkyquu.Text = "Kyqu";
+                    btnanuloo.Text = "Anulo";
+                    a = "sq-al";
+                    break;
+            }
+           
+            gjuha.Gjuha =a;
+          
+            
+
+
+
+
+        }
+
     }
 }
