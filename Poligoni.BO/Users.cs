@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Poligoni.BO
 {
@@ -16,7 +12,7 @@ namespace Poligoni.BO
 
         public string Email { get; set; }
 
-        
+
         public int UserRoleID { get; set; }
         public DateTime LastLoginDate { get; set; }
         public DateTime LastPasswordChangeDate { get; set; }
@@ -24,7 +20,7 @@ namespace Poligoni.BO
         public string insertBy { get; set; }
         public DateTime InsertDate { get; set; }
 
-        public virtual UserRole UserRole { get; set; } 
+        public virtual UserRole UserRole { get; set; }
 
 
         public Users()

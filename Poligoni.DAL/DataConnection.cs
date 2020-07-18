@@ -1,16 +1,10 @@
-﻿using Poligoni.BO;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 namespace Poligoni.DAL
 {
-     public class DataConnection
+    public class DataConnection
     {
         public static string sqllidhja
         {
@@ -18,8 +12,8 @@ namespace Poligoni.DAL
             {
                 return ConfigurationManager.ConnectionStrings["Poligoni.Properties.Settings.poligoniConnectionString"].ConnectionString;
             }
-         
-            
+
+
         }
 
         public static SqlConnection GetConnection()
@@ -42,26 +36,26 @@ namespace Poligoni.DAL
             command.CommandType = commandType;
             return command;
         }
-        
+
         public static void AddParameter(SqlCommand command, string parameterName, object value)
         {
-            
+
             SqlParameter parameter = command.CreateParameter();
             parameter.ParameterName = parameterName;
             if (value != null)
             {
                 if (value is DateTime)
                 {
-                    
+
                     if (DateTime.Parse(value.ToString()) <= DateTime.Parse("1/01/1900"))
                         value = null;
                 }
-                
+
             }
-            
+
             parameter.Value = value ?? DBNull.Value;
             command.Parameters.Add(parameter);
-            }
-       
+        }
+
     }
 }

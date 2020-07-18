@@ -49,6 +49,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.jGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -81,11 +82,8 @@
             this.jGradientPanel1.Controls.Add(this.label2);
             this.jGradientPanel1.Controls.Add(this.label6);
             this.jGradientPanel1.Controls.Add(this.label1);
-            this.jGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.jGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.jGradientPanel1, "jGradientPanel1");
             this.jGradientPanel1.Name = "jGradientPanel1";
-            this.jGradientPanel1.Size = new System.Drawing.Size(800, 450);
-            this.jGradientPanel1.TabIndex = 0;
             this.jGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.jGradientPanel1_Paint);
             // 
             // btnEdito
@@ -94,147 +92,98 @@
             this.btnEdito.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
             this.btnEdito.BorderColor = System.Drawing.Color.White;
             this.btnEdito.BorderRadius = 5;
-            this.btnEdito.ButtonText = "Edito";
-            this.btnEdito.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdito.ButtonText = "Edit";
+            resources.ApplyResources(this.btnEdito, "btnEdito");
             this.btnEdito.Font_Size = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdito.ForeColors = System.Drawing.Color.White;
             this.btnEdito.HoverBackground = System.Drawing.Color.White;
             this.btnEdito.HoverBorder = System.Drawing.Color.Empty;
             this.btnEdito.HoverFontColor = System.Drawing.Color.Black;
             this.btnEdito.LineThickness = 2;
-            this.btnEdito.Location = new System.Drawing.Point(347, 358);
-            this.btnEdito.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEdito.Name = "btnEdito";
-            this.btnEdito.Size = new System.Drawing.Size(142, 48);
-            this.btnEdito.TabIndex = 45;
             this.btnEdito.Click += new System.EventHandler(this.jThinButton1_Click);
             // 
             // btnEmail
             // 
             this.btnEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.btnEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btnEmail, "btnEmail");
             this.btnEmail.ForeColor = System.Drawing.Color.White;
-            this.btnEmail.Location = new System.Drawing.Point(330, 309);
-            this.btnEmail.Multiline = true;
             this.btnEmail.Name = "btnEmail";
-            this.btnEmail.Size = new System.Drawing.Size(177, 32);
-            this.btnEmail.TabIndex = 43;
-            this.btnEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnPassword
             // 
             this.btnPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.btnPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btnPassword, "btnPassword");
             this.btnPassword.ForeColor = System.Drawing.Color.White;
-            this.btnPassword.Location = new System.Drawing.Point(330, 251);
-            this.btnPassword.Multiline = true;
             this.btnPassword.Name = "btnPassword";
-            this.btnPassword.PasswordChar = '*';
-            this.btnPassword.Size = new System.Drawing.Size(177, 32);
-            this.btnPassword.TabIndex = 42;
-            this.btnPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Btnusername
             // 
             this.Btnusername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.Btnusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.Btnusername, "Btnusername");
             this.Btnusername.ForeColor = System.Drawing.Color.White;
-            this.Btnusername.Location = new System.Drawing.Point(330, 195);
-            this.Btnusername.Multiline = true;
             this.Btnusername.Name = "Btnusername";
-            this.Btnusername.Size = new System.Drawing.Size(177, 32);
-            this.Btnusername.TabIndex = 41;
-            this.Btnusername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnMbiemri
             // 
             this.btnMbiemri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.btnMbiemri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btnMbiemri, "btnMbiemri");
             this.btnMbiemri.ForeColor = System.Drawing.Color.White;
-            this.btnMbiemri.Location = new System.Drawing.Point(330, 137);
-            this.btnMbiemri.Multiline = true;
             this.btnMbiemri.Name = "btnMbiemri";
-            this.btnMbiemri.Size = new System.Drawing.Size(177, 32);
-            this.btnMbiemri.TabIndex = 40;
-            this.btnMbiemri.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnEmri
             // 
             this.btnEmri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.btnEmri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btnEmri, "btnEmri");
             this.btnEmri.ForeColor = System.Drawing.Color.White;
-            this.btnEmri.Location = new System.Drawing.Point(330, 84);
-            this.btnEmri.Multiline = true;
             this.btnEmri.Name = "btnEmri";
-            this.btnEmri.Size = new System.Drawing.Size(177, 32);
-            this.btnEmri.TabIndex = 39;
-            this.btnEmri.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEmri.TextChanged += new System.EventHandler(this.btnEmri_TextChanged_1);
             // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(536, 80);
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(237, 275);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 38;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::Poligoni.Properties.Resources._7;
-            this.pictureBox5.Location = new System.Drawing.Point(289, 306);
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 37;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::Poligoni.Properties.Resources._61;
-            this.pictureBox4.Location = new System.Drawing.Point(289, 248);
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 37;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Poligoni.Properties.Resources._3;
-            this.pictureBox3.Location = new System.Drawing.Point(289, 192);
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 37;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Poligoni.Properties.Resources._4;
-            this.pictureBox2.Location = new System.Drawing.Point(289, 134);
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 37;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Poligoni.Properties.Resources._3;
-            this.pictureBox1.Location = new System.Drawing.Point(289, 81);
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
             // 
             // btnShto
@@ -244,101 +193,70 @@
             this.btnShto.BorderColor = System.Drawing.Color.White;
             this.btnShto.BorderRadius = 5;
             this.btnShto.ButtonText = "Submit";
-            this.btnShto.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.btnShto, "btnShto");
             this.btnShto.Font_Size = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShto.ForeColors = System.Drawing.Color.White;
             this.btnShto.HoverBackground = System.Drawing.Color.White;
             this.btnShto.HoverBorder = System.Drawing.Color.Empty;
             this.btnShto.HoverFontColor = System.Drawing.Color.Black;
             this.btnShto.LineThickness = 2;
-            this.btnShto.Location = new System.Drawing.Point(347, 358);
-            this.btnShto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnShto.Name = "btnShto";
-            this.btnShto.Size = new System.Drawing.Size(142, 48);
-            this.btnShto.TabIndex = 36;
             this.btnShto.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
+            resources.ApplyResources(this.label5, "label5");
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(218, 319);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 20);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "Email";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
+            resources.ApplyResources(this.label4, "label4");
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(186, 261);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 20);
-            this.label4.TabIndex = 34;
-            this.label4.Text = "Password";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
+            resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(179, 205);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 20);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "Username";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
+            resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(196, 147);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 20);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Mbiemri";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
+            resources.ApplyResources(this.label6, "label6");
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(12, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(213, 31);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Regjistro Klient";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
+            resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(225, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 20);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "Emri";
+            // 
+            // helpProvider1
+            // 
+            resources.ApplyResources(this.helpProvider1, "helpProvider1");
             // 
             // frmRegjistroklienta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.jGradientPanel1);
+            this.HelpButton = true;
             this.Name = "frmRegjistroklienta";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmRegjistroklienta";
+            this.helpProvider1.SetShowHelp(this, ((bool)(resources.GetObject("$this.ShowHelp"))));
             this.Load += new System.EventHandler(this.frmRegjistroklienta_Load);
             this.jGradientPanel1.ResumeLayout(false);
             this.jGradientPanel1.PerformLayout();
@@ -374,5 +292,6 @@
 		private System.Windows.Forms.TextBox btnEmri;
         private JThinButton.JThinButton btnShto;
         private JThinButton.JThinButton btnEdito;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

@@ -96,6 +96,7 @@
             this.regjistroGjuajtjenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listoTeGjithaGjuajtjetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.jGradientPanel1.SuspendLayout();
@@ -659,6 +660,10 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // helpProvider1
+            // 
+            resources.ApplyResources(this.helpProvider1, "helpProvider1");
+            // 
             // FrmDashboard
             // 
             resources.ApplyResources(this, "$this");
@@ -667,6 +672,7 @@
             this.Controls.Add(this.jGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmDashboard";
+            this.helpProvider1.SetShowHelp(this, ((bool)(resources.GetObject("$this.ShowHelp"))));
             this.Load += new System.EventHandler(this.FrmDashboard_Load_1);
             this.Shown += new System.EventHandler(this.FrmDashboard_Load);
             this.panel4.ResumeLayout(false);
@@ -761,5 +767,6 @@
 		private System.Windows.Forms.ToolStripMenuItem regjistroPlumbaToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem menaxhoPlumbatToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

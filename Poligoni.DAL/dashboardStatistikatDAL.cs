@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using Poligoni.BO;
+using System;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Poligoni.BO;
 
 namespace Poligoni.DAL
 {
-   public class dashboardStatistikatDAL
+    public class dashboardStatistikatDAL
     {
 
         public static dashboardStatistikatBO MerrStatistika()
@@ -40,7 +35,7 @@ namespace Poligoni.DAL
             return s;
         }
     }
-            
 
-    
+
+
 }

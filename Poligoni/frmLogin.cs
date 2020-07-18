@@ -1,20 +1,8 @@
 ﻿using Poligoni.BLL;
 using Poligoni.BO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Poligoni.DAL;
-using System.Management;
-using System.Runtime.Remoting.Messaging;
 using System.Threading;
-using System.Security.Cryptography.X509Certificates;
-using System.Globalization;
+using System.Windows.Forms;
 
 namespace Poligoni
 {
@@ -24,11 +12,14 @@ namespace Poligoni
         FrmDashboard FrmDashboard = new FrmDashboard();
         public frmLogin()
         {
-            
+
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("sq-al");
 
+            
             InitializeComponent();
-           
+
+        
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -36,7 +27,7 @@ namespace Poligoni
             string Useri = txtpass2.Text;
             string Passwordi = txtuser1.Text;
             Users user = UserBLL.Login(Useri, Passwordi);
-            
+
         }
 
         private void jFlatButton1_Click(object sender, EventArgs e)
@@ -46,17 +37,17 @@ namespace Poligoni
 
         private void btnKyqu_Click(object sender, EventArgs e)
         {
-            
-      
+
+
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
 
-            
+
             btnkyquu.DialogResult = DialogResult.OK;
             FrmDashboard.StartPosition = FormStartPosition.CenterParent;
-           
+
 
         }
 
@@ -101,22 +92,22 @@ namespace Poligoni
                     }
                     else
                     {
-                        
+
                         MessageBox.Show("Username or password invalid");
                         Application.Exit();
 
-                        
+
                     }
                 }
-                
+
 
             }
-           else
+            else
             {
                 MessageBox.Show("Konttroloni lidhjen ne internet");
                 Application.Exit();
             }
-            
+
         }
 
         private void jGradientPanel1_Paint(object sender, PaintEventArgs e)
@@ -124,14 +115,14 @@ namespace Poligoni
 
         }
 
-        
+
         private void DropGjuha_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (DropGjuha.SelectedIndex)
             {
                 case 1:
                     Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-au");
-                 
+
                     a = "en-au";
                     btnkyquu.Text = "Login";
                     btnanuloo.Text = "Cancle";
@@ -143,15 +134,31 @@ namespace Poligoni
                     a = "sq-al";
                     break;
             }
-           
-            gjuha.Gjuha =a;
-          
-            
 
+            gjuha.Gjuha = a;
+
+        }
+        public static void GetHelpProvider(Form frm, string topic)
+        {
+
+         
+            Help.ShowHelp(frm, "Menagjimipoligonit.chm", HelpNavigator.Topic, topic);
+           
+
+
+        }
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, AppDomain.CurrentDomain.BaseDirectory + "\\Menagjimipoligonit.chm", HelpNavigator.Topic, "2.2.html");
 
 
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+           
+        }
     }
 }

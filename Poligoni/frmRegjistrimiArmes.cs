@@ -1,14 +1,6 @@
 ﻿using Poligoni.BLL;
 using Poligoni.BO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Poligoni
@@ -17,7 +9,7 @@ namespace Poligoni
     {
         public int ArmaID { get; set; }
         public string EmriArmes { get; set; }
-     
+
         public string Kalibiri { get; set; }
         public int MaxPlumba
         {
@@ -37,22 +29,22 @@ namespace Poligoni
 
         private void jFlatButton1_Click(object sender, EventArgs e)
         {
-    
+
             string EmriArmes = txtEmriArmes.Text;
             int Kalibri = Convert.ToInt32(txtKalibri.Text);
             int MaxPlumba = Convert.ToInt32(txtMaxPlumba.Text);
 
 
-            ArmaBO user = ArmaBLL.RegjistroArmen(EmriArmes,Kalibri,MaxPlumba);
+            ArmaBO user = ArmaBLL.RegjistroArmen(EmriArmes, Kalibri, MaxPlumba);
 
 
             MessageBox.Show("Ju keni regjistruar nje arme", "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        public void editoArmen(int ArmaID,string EmriArmes, string Kalibiri, int MaxPlumba)
+        public void editoArmen(int ArmaID, string EmriArmes, string Kalibiri, int MaxPlumba)
         {
 
-            
+
             btnEdito.Show();
             this.ArmaID = ArmaID;
             this.EmriArmes = EmriArmes;
@@ -158,9 +150,9 @@ namespace Poligoni
             this.EmriArmes = txtEmriArmes.Text;
             this.Kalibiri = txtKalibri.Text;
             this.MaxPlumba = int.Parse(txtMaxPlumba.Text);
-            ArmaBO ndryshoArma = ArmaBLL.ndryshoArma(this.ArmaID,EmriArmes, Kalibiri, MaxPlumba);
+            ArmaBO ndryshoArma = ArmaBLL.ndryshoArma(this.ArmaID, EmriArmes, Kalibiri, MaxPlumba);
 
-           
+
         }
     }
 }

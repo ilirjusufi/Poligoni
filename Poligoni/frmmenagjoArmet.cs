@@ -2,12 +2,6 @@
 using Poligoni.DAL;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Poligoni
@@ -26,7 +20,7 @@ namespace Poligoni
         {
             Edito.Clear();
 
-            Edito = ArmaDAL.ListoArmet("sadfsdf","sadff");
+            Edito = ArmaDAL.ListoArmet("sadfsdf", "sadff");
 
             this.bindingSource1.Clear();
 
@@ -64,10 +58,10 @@ namespace Poligoni
             {
                 var d = new ArmaBO();
                 int ArmaID = Convert.ToInt32(this.dsatagridArmet[0, dsatagridArmet.CurrentCell.RowIndex].Value);
-                string emriArmes  = this.dsatagridArmet[1, dsatagridArmet.CurrentCell.RowIndex].Value.ToString();
+                string emriArmes = this.dsatagridArmet[1, dsatagridArmet.CurrentCell.RowIndex].Value.ToString();
                 string Kalibri = this.dsatagridArmet[2, dsatagridArmet.CurrentCell.RowIndex].Value.ToString();
                 int maxPlumba = Convert.ToInt32(this.dsatagridArmet[3, dsatagridArmet.CurrentCell.RowIndex].Value);
-                frmRegjistrimiArmes.editoArmen(ArmaID,emriArmes, Kalibri, maxPlumba);
+                frmRegjistrimiArmes.editoArmen(ArmaID, emriArmes, Kalibri, maxPlumba);
             }
 
         }

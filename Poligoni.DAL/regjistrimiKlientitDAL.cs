@@ -1,12 +1,7 @@
 ﻿using Poligoni.BO;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
 using System.Data;
-using Poligoni;
+using System.Data.SqlClient;
 
 
 
@@ -17,31 +12,31 @@ namespace Poligoni.DAL
     {
         UsersDal dal = new UsersDal();
         Users users = new Users();
-        
-        public Users RegjistroKlient(string Emri, string Mbiemri, string Username, string Password, string Email,int roli)
+
+        public Users RegjistroKlient(string Emri, string Mbiemri, string Username, string Password, string Email, int roli)
         {
-                using (var conn = DataConnection.GetConnection())
+            using (var conn = DataConnection.GetConnection())
+            {
+
+                using (var cmd = DataConnection.Command(conn, "dbo.usp_regjistroklient", CommandType.StoredProcedure))
                 {
-                     
-                    using (var cmd = DataConnection.Command(conn, "dbo.usp_regjistroklient", CommandType.StoredProcedure))
-                    {
-                        
-                        DataConnection.AddParameter(cmd, "@emri", Emri);
-                        DataConnection.AddParameter(cmd, "@mbiemri", Mbiemri);
-                        DataConnection.AddParameter(cmd, "@username", Username);
-                        DataConnection.AddParameter(cmd, "@password", Password);
-                        DataConnection.AddParameter(cmd, "@email", Email);
-                        DataConnection.AddParameter(cmd, "@insertby", UserSession1.CurrentUser.ID);
-                        DataConnection.AddParameter(cmd, "@insertdate", DateTime.Now);
-                        DataConnection.AddParameter(cmd, "@roliID", roli);
-                    
+
+                    DataConnection.AddParameter(cmd, "@emri", Emri);
+                    DataConnection.AddParameter(cmd, "@mbiemri", Mbiemri);
+                    DataConnection.AddParameter(cmd, "@username", Username);
+                    DataConnection.AddParameter(cmd, "@password", Password);
+                    DataConnection.AddParameter(cmd, "@email", Email);
+                    DataConnection.AddParameter(cmd, "@insertby", UserSession1.CurrentUser.ID);
+                    DataConnection.AddParameter(cmd, "@insertdate", DateTime.Now);
+                    DataConnection.AddParameter(cmd, "@roliID", roli);
+
 
                     cmd.ExecuteNonQuery();
-                        
-                        return null;
-                    }
-               
+
+                    return null;
                 }
+
+            }
         }
         public Users editoKlient(int userID, string Emri, string Mbiemri, string Username, string Email)
         {

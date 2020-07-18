@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Poligoni.BO;
 using System.Data;
-using System.Linq;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
-using Poligoni.BO;
 
 namespace Poligoni.DAL
 {

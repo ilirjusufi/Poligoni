@@ -1,22 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Poligoni.BLL;
-using Poligoni.BO;
+﻿using Poligoni.BO;
 using Poligoni.DAL;
+using System;
+using System.Drawing;
+using System.Threading;
+using System.Windows.Forms;
 
 namespace Poligoni
 {
-    
+
 
     public partial class FrmDashboard : Form
     {
@@ -28,10 +19,10 @@ namespace Poligoni
         {
 
 
-            
+
 
             InitializeComponent();
-            
+
         }
 
 
@@ -69,19 +60,21 @@ namespace Poligoni
         {
 
 
-            
 
-            a:
+
+#pragma warning disable CS0164 // This label has not been referenced
+        a:
+#pragma warning restore CS0164 // This label has not been referenced
 
             timer1.Start();
 
             this.StartPosition = FormStartPosition.CenterParent;
-            
+
             frmLogin frlogin = new frmLogin();
             if (frlogin.ShowDialog() == DialogResult.OK)
             {
 
-                if(gjuha.Gjuha == "en-au")
+                if (gjuha.Gjuha == "en-au")
                 {
                     label2.Text = "Dahboard";
                     label18.Text = "Date and Time :";
@@ -100,6 +93,8 @@ namespace Poligoni
                     btnRegjistroGjuajtje.Text = "Register shots";
                     label2.Location = new Point(60, 8);
                     lblemri.Location = new Point(297, 36);
+                    menuStrip1.Items[0].Text = "Administring";
+                    menuStrip1.Items[1].Text = "Clients";
 
                 }
 
@@ -111,8 +106,8 @@ namespace Poligoni
                     Thread.Sleep(slep);
                     guna2CircleProgressBar2.Value = i;
                     guna2CircleProgressBar2.Update();
-                  
-                    
+
+
                 }
                 guna2CircleProgressBar2.Value = 2;
                 guna2CircleProgressBar2.Update();
@@ -127,7 +122,7 @@ namespace Poligoni
                 if (UserSession1.CurrentUser.UserRoleID == 2)
                 {
                     menuStrip1.Items[0].Visible = false;
-                   
+
                     //tesrde
                 }
                 else
@@ -144,12 +139,12 @@ namespace Poligoni
             // ndryshimi i userave
         }
 
-        public  void loadData()
+        public void loadData()
         {
-            
-            
+
+
             merre = dashboardStatistikatDAL.MerrStatistika();
-            
+
             lblklientaregjistrum.Text = merre.klientateRegjistrua.ToString();
             lblplumbastok.Text = merre.plumbaStok.ToString();
             lblgjuajtjet.Text = merre.gjuajtjaTotale.ToString();
@@ -267,7 +262,7 @@ namespace Poligoni
         }
         private void regjistroKlientToolStripMenuItem_Click_4(object sender, EventArgs e)
         {
-            
+
             frmRegjistroklienta klientatform = new frmRegjistroklienta();
             if (klientatform.ShowDialog() == DialogResult.Abort)
             {
@@ -298,7 +293,7 @@ namespace Poligoni
 
         private void btnregjistroarm_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void menuStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
@@ -360,7 +355,7 @@ namespace Poligoni
             frmRegjistroStaff frmRegjistroStaff = new frmRegjistroStaff();
             if (frmRegjistroStaff.ShowDialog() == DialogResult.Abort)
             {
-                
+
             }
         }
 
@@ -375,7 +370,7 @@ namespace Poligoni
             DateTime dateTime = DateTime.Now;
             lbldata.Text = dateTime.ToString();
             lbldata.Update();
-            
+
         }
 
         private void listoKlientToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -384,13 +379,13 @@ namespace Poligoni
             frmListoKlientat.LoadData(3);
             if (frmListoKlientat.ShowDialog() == DialogResult.Abort)
             {
-                
+
             }
         }
 
         private void fshijKlientToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void listoTeGjithePlumbatToolStripMenuItem_Click(object sender, EventArgs e)
@@ -399,7 +394,7 @@ namespace Poligoni
 
             if (frmListoArmet.ShowDialog() == DialogResult.Abort)
             {
-                
+
             }
         }
 
@@ -456,8 +451,8 @@ namespace Poligoni
             frmListoKlientat.LoadData(2);
             if (frmListoKlientat.ShowDialog() == DialogResult.Abort)
             {
-                
-                
+
+
             }
         }
 
@@ -479,6 +474,19 @@ namespace Poligoni
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        public static void GetHelpProvider(Form frm, string topic)
+        {
+
+
+            Help.ShowHelp(frm, "NewPr11oject11.chm", HelpNavigator.Topic, topic);
+
+
+        }
+     
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            GetHelpProvider(this, "11.htm");
         }
     }
 }

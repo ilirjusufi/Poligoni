@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Poligoni
 {
@@ -12,17 +7,19 @@ namespace Poligoni
     {
         public static bool CheckForInternetConnection()
         {
-			try
-			{
-               
-              using (var client = new WebClient())
-              using (client.OpenRead("http://google.com/generate_204"))
-              return true;
-            
+            try
+            {
+
+                using (var client = new WebClient())
+                using (client.OpenRead("http://google.com/generate_204"))
+                    return true;
+
             }
-			catch (Exception a)
-			{
-                
+#pragma warning disable CS0168 // The variable 'a' is declared but never used
+            catch (Exception a)
+#pragma warning restore CS0168 // The variable 'a' is declared but never used
+            {
+
                 return false;
             }
         }

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegjistroGjuajtjen));
             this.jGradientPanel1 = new JGradient_Panel.JGradientPanel();
+            this.btneditogjujtjen = new FlatButton.JFlatButton();
             this.dropklientat = new System.Windows.Forms.ComboBox();
             this.useratBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dB_A62C25_poligoniDataSet2 = new Poligoni.DB_A62C25_poligoniDataSet2();
@@ -56,7 +57,7 @@
             this.armaTableAdapter = new Poligoni.DB_A62C25_poligoniDataSetTableAdapters.ArmaTableAdapter();
             this.useratBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.useratTableAdapter1 = new Poligoni.DB_A62C25_poligoniDataSet2TableAdapters.UseratTableAdapter();
-            this.btneditogjujtjen = new FlatButton.JFlatButton();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.jGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.useratBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dB_A62C25_poligoniDataSet2)).BeginInit();
@@ -101,6 +102,33 @@
             this.jGradientPanel1.Size = new System.Drawing.Size(792, 450);
             this.jGradientPanel1.TabIndex = 8;
             this.jGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.jGradientPanel1_Paint);
+            // 
+            // btneditogjujtjen
+            // 
+            this.btneditogjujtjen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
+            this.btneditogjujtjen.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
+            this.btneditogjujtjen.ButtonText = "Edito Gjuajtjen";
+            this.btneditogjujtjen.CausesValidation = false;
+            this.btneditogjujtjen.ErrorImageLeft = ((System.Drawing.Image)(resources.GetObject("btneditogjujtjen.ErrorImageLeft")));
+            this.btneditogjujtjen.ErrorImageRight = ((System.Drawing.Image)(resources.GetObject("btneditogjujtjen.ErrorImageRight")));
+            this.btneditogjujtjen.FocusBackground = System.Drawing.Color.Empty;
+            this.btneditogjujtjen.FocusFontColor = System.Drawing.Color.Empty;
+            this.btneditogjujtjen.ForeColors = System.Drawing.Color.White;
+            this.btneditogjujtjen.HoverBackground = System.Drawing.Color.DarkSlateGray;
+            this.btneditogjujtjen.HoverFontColor = System.Drawing.Color.Transparent;
+            this.btneditogjujtjen.ImageLeft = ((System.Drawing.Image)(resources.GetObject("btneditogjujtjen.ImageLeft")));
+            this.btneditogjujtjen.ImageRight = null;
+            this.btneditogjujtjen.LeftPictureColor = System.Drawing.Color.Transparent;
+            this.btneditogjujtjen.Location = new System.Drawing.Point(281, 379);
+            this.btneditogjujtjen.Name = "btneditogjujtjen";
+            this.btneditogjujtjen.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
+            this.btneditogjujtjen.PaddingRightPicture = new System.Windows.Forms.Padding(0);
+            this.btneditogjujtjen.RightPictureColor = System.Drawing.Color.Transparent;
+            this.btneditogjujtjen.Size = new System.Drawing.Size(254, 43);
+            this.btneditogjujtjen.SizeModeLeft = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btneditogjujtjen.SizeModeRight = System.Windows.Forms.PictureBoxSizeMode.Normal;
+            this.btneditogjujtjen.TabIndex = 40;
+            this.btneditogjujtjen.Click += new System.EventHandler(this.jFlatButton1_Click);
             // 
             // dropklientat
             // 
@@ -366,32 +394,9 @@
             // 
             this.useratTableAdapter1.ClearBeforeFill = true;
             // 
-            // btneditogjujtjen
+            // helpProvider1
             // 
-            this.btneditogjujtjen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.btneditogjujtjen.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.btneditogjujtjen.ButtonText = "Edito Gjuajtjen";
-            this.btneditogjujtjen.CausesValidation = false;
-            this.btneditogjujtjen.ErrorImageLeft = ((System.Drawing.Image)(resources.GetObject("btneditogjujtjen.ErrorImageLeft")));
-            this.btneditogjujtjen.ErrorImageRight = ((System.Drawing.Image)(resources.GetObject("btneditogjujtjen.ErrorImageRight")));
-            this.btneditogjujtjen.FocusBackground = System.Drawing.Color.Empty;
-            this.btneditogjujtjen.FocusFontColor = System.Drawing.Color.Empty;
-            this.btneditogjujtjen.ForeColors = System.Drawing.Color.White;
-            this.btneditogjujtjen.HoverBackground = System.Drawing.Color.DarkSlateGray;
-            this.btneditogjujtjen.HoverFontColor = System.Drawing.Color.Transparent;
-            this.btneditogjujtjen.ImageLeft = ((System.Drawing.Image)(resources.GetObject("btneditogjujtjen.ImageLeft")));
-            this.btneditogjujtjen.ImageRight = null;
-            this.btneditogjujtjen.LeftPictureColor = System.Drawing.Color.Transparent;
-            this.btneditogjujtjen.Location = new System.Drawing.Point(281, 379);
-            this.btneditogjujtjen.Name = "btneditogjujtjen";
-            this.btneditogjujtjen.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
-            this.btneditogjujtjen.PaddingRightPicture = new System.Windows.Forms.Padding(0);
-            this.btneditogjujtjen.RightPictureColor = System.Drawing.Color.Transparent;
-            this.btneditogjujtjen.Size = new System.Drawing.Size(254, 43);
-            this.btneditogjujtjen.SizeModeLeft = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btneditogjujtjen.SizeModeRight = System.Windows.Forms.PictureBoxSizeMode.Normal;
-            this.btneditogjujtjen.TabIndex = 40;
-            this.btneditogjujtjen.Click += new System.EventHandler(this.jFlatButton1_Click);
+            this.helpProvider1.HelpNamespace = "C:\\Users\\TimeonSpace\\Desktop\\web\\menagjimi2333.chm";
             // 
             // frmRegjistroGjuajtjen
             // 
@@ -400,6 +405,7 @@
             this.ClientSize = new System.Drawing.Size(792, 450);
             this.Controls.Add(this.jGradientPanel1);
             this.Name = "frmRegjistroGjuajtjen";
+            this.helpProvider1.SetShowHelp(this, true);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRegjistroGjuajtjen";
             this.Load += new System.EventHandler(this.frmRegjistroGjuajtjen_Load);
@@ -451,5 +457,6 @@
         private System.Windows.Forms.BindingSource useratBindingSource1;
         private DB_A62C25_poligoniDataSet2TableAdapters.UseratTableAdapter useratTableAdapter1;
         private FlatButton.JFlatButton btneditogjujtjen;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

@@ -1,18 +1,14 @@
-﻿using System;
+﻿using Poligoni.BO;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Poligoni.BO;
 
 namespace Poligoni.DAL
 {
-	public class RegjistroPlumbatDAL
-	{
+    public class RegjistroPlumbatDAL
+    {
         RegjistroPlumbatBO qo = new RegjistroPlumbatBO();
-        
+
         public RegjistroPlumbatBO RegjistroPlumbat(int kalibri, int sasia)
         {
 
@@ -23,7 +19,7 @@ namespace Poligoni.DAL
 
                 using (var cmd = DataConnection.Command(conn, "usp_regjistroplumba", CommandType.StoredProcedure))
                 {
-                    
+
                     DataConnection.AddParameter(cmd, "@Kalibri", kalibri);
                     DataConnection.AddParameter(cmd, "@Sasia", sasia);
                     DataConnection.AddParameter(cmd, "@insertby", UserSession1.CurrentUser.ID);
@@ -93,7 +89,7 @@ namespace Poligoni.DAL
 
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = cnn;
-            
+
             cmd.CommandText = "delete from plumbat where PlumbiID = @plumbiID";
             cmd.Parameters.AddWithValue("@plumbiID", d);
             cmd.CommandType = CommandType.Text;
@@ -104,7 +100,7 @@ namespace Poligoni.DAL
         }
         public RegjistroPlumbatBO ndryshoPlumbat(int PlumbiID, int Kalibri, int Sasia)
         {
-           var cnn = DataConnection.GetConnection();
+            var cnn = DataConnection.GetConnection();
 
             using (var conn = DataConnection.GetConnection())
             {

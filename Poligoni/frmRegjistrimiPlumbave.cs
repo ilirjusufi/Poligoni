@@ -1,13 +1,6 @@
 ﻿using Poligoni.BLL;
 using Poligoni.BO;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Poligoni
@@ -23,7 +16,7 @@ namespace Poligoni
             InitializeComponent();
             btnNdryshoPlumbat.Hide();
             lblNdryshimi.Hide();
-            
+
         }
 
         private void btnRegjistroArmen_Click(object sender, EventArgs e)
@@ -41,7 +34,7 @@ namespace Poligoni
         {
 
         }
-        public void NdryshoPlumbat(int PlumbiID,int kalibri, int sasia)
+        public void NdryshoPlumbat(int PlumbiID, int kalibri, int sasia)
         {
 
             label1.Hide();
@@ -63,9 +56,9 @@ namespace Poligoni
             this.Kalibri = int.Parse(txtKalibri.Text);
             this.Sasia = int.Parse(txtSasia.Text);
             RegjistroPlumbatBO NdryshoPlumbat = RegjistroPlumbatBLL.ndryshoPlumbat(PlumbiID, Kalibri, Sasia);
-            
-            
-            
+
+
+
         }
 
         private void frmRegjistrimiPlumbave_Load(object sender, EventArgs e)

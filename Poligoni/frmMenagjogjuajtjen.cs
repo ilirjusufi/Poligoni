@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Poligoni.BLL;
+﻿using Poligoni.BO;
 using Poligoni.DAL;
-using Poligoni.BO;
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace Poligoni
 {
@@ -18,7 +11,7 @@ namespace Poligoni
         private List<gjuajtja> listoGjuajtjen;
         public frmMenagjogjuajtjen()
         {
-            
+
             InitializeComponent();
             listoGjuajtjen = new List<gjuajtja>();
             LoadData();
@@ -26,11 +19,11 @@ namespace Poligoni
 
         private void LoadData()
         {
-            
+
 
             listoGjuajtjen = gjuajtjalistodal.listoLlientat("k", "p");
 
-            
+
 
             listoGjuajtjen.ForEach(delegate (gjuajtja d)
             {
@@ -52,7 +45,7 @@ namespace Poligoni
         private void frmMenagjogjuajtjen_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dB_A62C25_poligoniDataSet4.Gjujtja' table. You can move, or remove it, as needed.
-   
+
 
         }
 
@@ -83,10 +76,10 @@ namespace Poligoni
             {
                 var d = new RegjistroPlumbatBO();
                 string klienti = this.Gridlistogjuajtien[0, Gridlistogjuajtien.CurrentCell.RowIndex].Value.ToString();
-                string  Arma = this.Gridlistogjuajtien[1, Gridlistogjuajtien.CurrentCell.RowIndex].Value.ToString();
+                string Arma = this.Gridlistogjuajtien[1, Gridlistogjuajtien.CurrentCell.RowIndex].Value.ToString();
                 string distanca = this.Gridlistogjuajtien[2, Gridlistogjuajtien.CurrentCell.RowIndex].Value.ToString();
                 string plumbashfryzuar = this.Gridlistogjuajtien[3, Gridlistogjuajtien.CurrentCell.RowIndex].Value.ToString();
-                int PiketEshenuara = Convert.ToInt32(this.Gridlistogjuajtien[4, Gridlistogjuajtien.CurrentCell.RowIndex].Value) ;
+                int PiketEshenuara = Convert.ToInt32(this.Gridlistogjuajtien[4, Gridlistogjuajtien.CurrentCell.RowIndex].Value);
                 frmRegjistroGjuajtjen.Editogjuajten(klienti, Arma, distanca, plumbashfryzuar, PiketEshenuara);
             }
         }

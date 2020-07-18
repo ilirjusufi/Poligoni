@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
+﻿using Poligoni.BO;
+using System;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Poligoni.BO;
+using System.Data.SqlClient;
 
 
 namespace Poligoni.DAL
@@ -13,7 +9,7 @@ namespace Poligoni.DAL
     public class UsersDal
     {
         Users qo = new Users();
-        
+
         public Users Login(string Useri, string Passwordi)
         {
             try
@@ -40,7 +36,7 @@ namespace Poligoni.DAL
             }
             catch (Exception e)
             {
-                
+
                 return null;
             }
 
@@ -66,12 +62,12 @@ namespace Poligoni.DAL
             //user.insertBy = reader["InsertBy"].ToString();
             //user.InsertDate = (DateTime)reader["InsertDate"];
             //update
-           
+
             return user;
 
         }
 
-        
-      
+
+
     }
 }

@@ -3,15 +3,12 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Poligoni.DAL
 {
-   public class gjuajtjalistodal
+    public class gjuajtjalistodal
     {
-        public static List<gjuajtja> listoLlientat( string kerko, string po)
+        public static List<gjuajtja> listoLlientat(string kerko, string po)
         {
             List<gjuajtja> lst = new List<gjuajtja>();
 
@@ -27,14 +24,14 @@ namespace Poligoni.DAL
             cnn.Open();
             SqlDataReader dr = cmd.ExecuteReader();
             cmd.CommandType = CommandType.Text;
-        
+
 
             while (dr.Read())
             {
                 gjuajtja d = new gjuajtja();
                 d.Arma = dr["Arma"].ToString();
                 d.distanca = dr["distanca"].ToString();
-                d.PiketEshenuara = Convert.ToInt32(dr["PiketEshenuara"].ToString()); 
+                d.PiketEshenuara = Convert.ToInt32(dr["PiketEshenuara"].ToString());
                 d.klienti = dr["Klienti"].ToString();
                 d.plumbashfryzuar = dr["plumbashfryzuar"].ToString();
 

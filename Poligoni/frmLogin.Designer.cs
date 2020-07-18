@@ -40,6 +40,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btnanuloo = new System.Windows.Forms.Button();
             this.btnkyquu = new System.Windows.Forms.Button();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.jGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -175,6 +176,10 @@
             this.btnkyquu.UseVisualStyleBackColor = false;
             this.btnkyquu.Click += new System.EventHandler(this.button2_Click_1);
             // 
+            // helpProvider1
+            // 
+            resources.ApplyResources(this.helpProvider1, "helpProvider1");
+            // 
             // frmLogin
             // 
             resources.ApplyResources(this, "$this");
@@ -205,5 +210,6 @@
         private Guna.UI.WinForms.GunaLineTextBox txtuser1;
         private Guna.UI2.WinForms.Guna2ComboBox DropGjuha;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

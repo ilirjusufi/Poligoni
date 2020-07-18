@@ -1,19 +1,14 @@
 ﻿using Poligoni.BO;
-using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.ServiceModel.Security.Tokens;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Poligoni.DAL
 {
-   public class listoKlient
+    public class listoKlient
     {
 
-       public static List<Users> listoLlientat(int roli,string kerko,string po)
+        public static List<Users> listoLlientat(int roli, string kerko, string po)
         {
             List<Users> lst = new List<Users>();
 
@@ -21,36 +16,36 @@ namespace Poligoni.DAL
 
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = cnn;
-            if(po == "p")
+            if (po == "p")
             {
                 cmd.CommandText = "select UserID,Emri,Mbiemri,Username,Email from Userat where Emri like @kerko";
-                cmd.Parameters.AddWithValue("@kerko", kerko );
+                cmd.Parameters.AddWithValue("@kerko", kerko);
             }
             else
-            if(roli ==3)
-            cmd.CommandText = "select UserID,Emri,Mbiemri,Username,Email from Userat where RoliID = 3";
+            if (roli == 3)
+                cmd.CommandText = "select UserID,Emri,Mbiemri,Username,Email from Userat where RoliID = 3";
             else
-                if(roli ==2)
+                if (roli == 2)
                 cmd.CommandText = "select UserID,Emri,Mbiemri,Username,Email from Userat where RoliID = 2";
             else
-            cmd.CommandType = CommandType.Text;
+                cmd.CommandType = CommandType.Text;
             cnn.Close();
             cnn.Open();
             SqlDataReader dr = cmd.ExecuteReader();
 
-                while (dr.Read())
-                {
-                    Users d = new Users();
-                    d.ID = int.Parse(dr["UserID"].ToString());
-                    d.Emri = dr["Emri"].ToString();
-                    d.Mbiemri = dr["Mbiemri"].ToString();
-                    d.Username = dr["Username"].ToString();
-                    d.Email = dr["Email"].ToString();
+            while (dr.Read())
+            {
+                Users d = new Users();
+                d.ID = int.Parse(dr["UserID"].ToString());
+                d.Emri = dr["Emri"].ToString();
+                d.Mbiemri = dr["Mbiemri"].ToString();
+                d.Username = dr["Username"].ToString();
+                d.Email = dr["Email"].ToString();
 
-                    lst.Add(d);
+                lst.Add(d);
 
-                }
-                cnn.Close();           
+            }
+            cnn.Close();
             return lst;
         }
 
