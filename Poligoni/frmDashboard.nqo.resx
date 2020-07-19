@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="guna2Button1.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="guna2Button1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="guna2Button1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnRegjistroGjuajtje.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnRegjistroGjuajtje.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="btnRegjistroGjuajtje.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnregjistroplumba.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnregjistroplumba.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="btnregjistroplumba.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnregjistoklienta.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnregjistoklienta.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="btnregjistoklienta.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnregjistroarm.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="btnregjistroarm.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="btnregjistroarm.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblemrimbiemri.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblemrimbiemri.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="lblemrimbiemri.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label5.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label5.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="label5.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label2.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label2.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="label2.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="pictureBox1.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="pictureBox1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="pictureBox1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel4.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel4.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="panel4.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel13.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel13.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="panel13.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="financatrrethi.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="financatrrethi.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="financatrrethi.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label15.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label15.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="label15.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblgjuajtjemuaj.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblgjuajtjemuaj.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="lblgjuajtjemuaj.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label17.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label17.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="label17.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel12.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel12.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="panel12.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel14.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel14.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="panel14.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="guna2CircleProgressBar2.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="guna2CircleProgressBar2.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="guna2CircleProgressBar2.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label14.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label14.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="label14.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblklientamuaj.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblklientamuaj.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="lblklientamuaj.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label4.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label4.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="label4.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel7.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel7.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="panel7.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label3.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label3.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="label3.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel10.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel10.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="panel10.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="guna2CircleProgressBar3.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="guna2CircleProgressBar3.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="guna2CircleProgressBar3.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label12.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label12.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="label12.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblaremtregjistruar.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblaremtregjistruar.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="lblaremtregjistruar.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel3.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel3.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="panel3.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel11.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel11.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="panel11.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="guna2CircleProgressBar5.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="guna2CircleProgressBar5.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="guna2CircleProgressBar5.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label13.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label13.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="label13.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblplumbastok.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblplumbastok.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="lblplumbastok.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel5.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel5.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="panel5.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel8.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel8.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="panel8.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblklientaregjistrum.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblklientaregjistrum.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="lblklientaregjistrum.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label6.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label6.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="label6.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="guna2CircleProgressBar1.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="guna2CircleProgressBar1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="guna2CircleProgressBar1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel1.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="panel1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel9.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel9.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="panel9.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="guna2CircleProgressBar4.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="guna2CircleProgressBar4.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="guna2CircleProgressBar4.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label11.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label11.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="label11.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblgjuajtjet.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblgjuajtjet.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="lblgjuajtjet.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel2.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel2.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="panel2.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel6.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="panel6.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="panel6.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lbldata.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lbldata.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="lbldata.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label18.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label18.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="label18.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblemri.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="lblemri.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="lblemri.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label1.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="label1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="label1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="menuStrip1.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="menuStrip1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="menuStrip1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="regjistroStafToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        WQAAAFkBqp2phgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEXSURBVDhPpZPP
+        bsIwDMZz2R5jorDDNrjtNfeXrQ3wACBx3HXsKcoOO/MAiBiJCToVf26CWGuoBJZ+VZLPdurEMWVrWeo0
+        Lb00EppGyXIJMMYaNO9WtfY4v4wsxVFCf0x+gCyK6Q2+PqwwLPAuX0qAjqXJvyR+54rjTb9A05iuBKMu
+        nmQlURhNV4KmMdn1O7UN1/SqiMLHz6+gaaBh3ZNpJvStiaAuAZMa/lBYuB0Uvx0CZ/O1EObQ4BP8GYcE
+        LizUJRimq/KhLs4vgRM8K4JQmyB2DwZXwZOTrvGqR3fSC2hPxeFoI+FtSDDMv4OJ5niAz/t+fuHDC5Mk
+        3J6MWo5ng50rwfuGM0GHsXPKoEcAj93jruadGbMFq51VydtYihgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="ndyshoStafToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        WQAAAFkBqp2phgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGdSURBVDhPfZHJ
+        SsNAGIB/igvuItKDuCCKCnoQelQfwKu1iAcnqaKIr6CH+gIefAgVFUVii9ZoXFqq0INUYiOCTYwFwQXB
+        igex40wg6WTBw0cyf+b7wiSAMf4XEJObIMS/QLoc9nzuNTQBWW+C6PELbAsY9g5+vCK2hTGQ5QpQ1EVQ
+        chlyLRqyiUfELme1AJFuCNiCDVBix682x7q5feggwrtN9grsHxVcAUiny0HRrlyyM7AbK8JpMuwO3OUm
+        GCkPWXUd7tQFwihExY+SnJo1xUGJb2QC6pohZ9UVMvDR2dTzVE0ER3wQP0sZspSaN+V2CW1U7aGfUkDR
+        HslXtzaEtOnhcZ1/C+rhZRoEId1M5/1yqKJFRNewhbD/EGmlwP19vV3mPkkAE867Lrgl+kZ/HGmVu+iX
+        ypTOU7RqBUzG8twQIxuYAktDFBUCwly1K0CEDCt7Bcp2ULEnwY+Yji0Q0vmz/wK1++i774KbZB1HYKab
+        HEF3BqjYesKJvYnpOnY/xbag2CPhWJs0M+Dcw+I5pBFynOvgE2/9Wm8w/AHDfI0oYbLKnwAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="regjistroKlientToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        WQAAAFkBqp2phgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEXSURBVDhPpZPP
+        bsIwDMZz2R5jorDDNrjtNfeXrQ3wACBx3HXsKcoOO/MAiBiJCToVf26CWGuoBJZ+VZLPdurEMWVrWeo0
+        Lb00EppGyXIJMMYaNO9WtfY4v4wsxVFCf0x+gCyK6Q2+PqwwLPAuX0qAjqXJvyR+54rjTb9A05iuBKMu
+        nmQlURhNV4KmMdn1O7UN1/SqiMLHz6+gaaBh3ZNpJvStiaAuAZMa/lBYuB0Uvx0CZ/O1EObQ4BP8GYcE
+        LizUJRimq/KhLs4vgRM8K4JQmyB2DwZXwZOTrvGqR3fSC2hPxeFoI+FtSDDMv4OJ5niAz/t+fuHDC5Mk
+        3J6MWo5ng50rwfuGM0GHsXPKoEcAj93jruadGbMFq51VydtYihgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="listoKlientToolStripMenuItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        WQAAAFkBqp2phgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADHSURBVDhPY/j/
+        /z9FmOF/0foEOC5eb+z7/b9iwK8/CTAs//brHHyY4X/xuv9wXLSuw+/nnwj/X3//wzDDsw/48WAwYI0G
+        HOeuEvX7/5/X9+d/DRhWevfVCx8GGrD2BBLO8v/928X/158TMMz36tNnfHgwhEHJugNwXLw+zff3bye/
+        X38OwLDA68/v8WGG/6XrDeC4YK1kwP//AgG//hvAsPLbb+H48GAIA4oNKFkXgcBr9ICZSQ5kCAzLv/s6
+        CR/GmkWJx/8ZADQ10HgrrwE2AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="menaxhoArmetToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        WQAAAFkBqp2phgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADHSURBVDhPY/j/
+        /z9FmOF/0foEOC5eb+z7/b9iwK8/CTAs//brHHyY4X/xuv9wXLSuw+/nnwj/X3//wzDDsw/48WAwYI0G
+        HOeuEvX7/5/X9+d/DRhWevfVCx8GGrD2BBLO8v/928X/158TMMz36tNnfHgwhEHJugNwXLw+zff3bye/
+        X38OwLDA68/v8WGG/6XrDeC4YK1kwP//AgG//hvAsPLbb+H48GAIA4oNKFkXgcBr9ICZSQ5kCAzLv/s6
+        CR/GmkWJx/8ZADQ10HgrrwE2AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="regjistroPlumbaToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
+        2AAAAdgB+lymcgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAS7SURBVHhe7Zld
+        bFNlGMcXIlGUEOMFMc54ozeGRSVzYbR0a7a1bGEqMTCdMmIQdH4Eg8aoi0YI+BHBbtFEb7wwXkCyC0VJ
+        2GyGk7LRDVw0fm3dARa3IQuoMFt2YaB/n+ec97hzdp6ejQYSpO8/+d205/nl7b/nvKfpKdLR0dHR0dHR
+        0dFxB2PLF+BYdS2Oht9EIrQNh6uK1VuXJTgWLYERWYfu0MfoDT2kXr4sgVG3CMPRevRXvoXuitfRHb5Z
+        vTV7gK3zYES3YDjyFwEkK4EvlgFfLcuiK5jAvtIb1aF5BcbKJfTBe0w3w26mY/kkFb1KHZZX8F3pfAzX
+        bCdvxnQnQtNr717xOVA0Tx0qx/zww5Hd/y2OsQuw+TrwB/rqFqmRSwqMmjA5p1x+p3tvOXCocrM6/JKC
+        kfAN5Otyue0CbOKBETobrlMj3iAVfcclYGYWYIqCx9XInAOj6k7yTXr8M91flmdp4ZVqbM5BKvKZxz2z
+        AOZA8LAacYcG7iMuuASMVACTCLWo0TmFXHGPm5HcncEzamxOoS+uTnRLBewlEqE1anQ6NLDHI2ByFdAR
+        OKdGZw1S1WWim5HczKEVTWp81tB1nxDdUgFMPDiiRq3Qrnk9DaQ9AiZXAUxvoEQpfEOedz1eG8nLdAWT
+        atw3dO3fSp6sx8vkKsDcFMMLlYILoJ1ZEjB+BRyseEUpfEOeTo/XRvIynYE5XQa0sa4UvUyuAhjnHYfu
+        yQFRwPgWEGpVCt+Qp8/jtZG8TEcgrcZ9QwU0iF7Gr4CeiqeVgiRDkaAoYPzPgDal8A15rlwBqegjopfx
+        K6A71GwJMq1nkY6lkX4PIoOPEjUyqVrQ/pHFyealpmxGkG7dYfl3XhDdjORlhqKWe3R9j9K5gvMf3ma6
+        z8cyopf5ebXsZozaLPu5APgy2Ci36+TUs2VqXa4g0xYTnU4kn5PfHh9QOlcw9cHtos8JFyA5HegCxEEn
+        w02eIQ9XawFDa2Sng9kLmNgsDrq4Wgs4uUl2OtAFiINOCraA8Rbg2weA/fcDny6me/5SUWCSTwHJBsvP
+        7j3FspfJp4ATL1nufSWWP1kmu4ncBZx40frB0H4XsGs+/TS9WxSY5FNAR5XlZ/dHC2Uvk08Bvz5juXff
+        Yfl9vjxdgChgdAG6AF2ALkAXoAvQBegCdAGFWsDp7cDQc8CRVUB8CTAQEAUm+RRgvGD52f3NPbKXyaeA
+        ia2Wu6/a8v8Qkt1E7gJs9P8BhV6A8X/+T3Ct7HQwewH6b/Frv4CLClnCT4ZSNTK26PeNpWpdrlABu8hx
+        EemY7GYkr4lyjzYdVTpXMBUrpnled9blc8IFiG7CLsCUXflng/0er43kZfaXZ9S4b/yfDVbIbsZ+Nsgp
+        6ALo9GzAmVffwOh6Ot0EBurph0pQ5qcHv8f4hlZMPnmLKZsRZN6/1/SPbzBENyN5md7wP6b71FNrlc4V
+        ILbAdE9saRO9TH+d7GYGHz7Afr0JioNOdAHXegHptudx7u0WnH65XcRYl8SP9WMiRuNBjD3RjonmxWpd
+        ruDv1qDp//O1T0Q3I3mZX1anTPf4pund2hFg502m++yObaKXGXxsQHQzxxvj7Fc6HR0dHR0dHR2dAktR
+        0b+BarLjEPTk5QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="menaxhoPlumbatToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        WQAAAFkBqp2phgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADHSURBVDhPY/j/
+        /z9FmOF/0foEOC5eb+z7/b9iwK8/CTAs//brHHyY4X/xuv9wXLSuw+/nnwj/X3//wzDDsw/48WAwYI0G
+        HOeuEvX7/5/X9+d/DRhWevfVCx8GGrD2BBLO8v/928X/158TMMz36tNnfHgwhEHJugNwXLw+zff3bye/
+        X38OwLDA68/v8WGG/6XrDeC4YK1kwP//AgG//hvAsPLbb+H48GAIA4oNKFkXgcBr9ICZSQ5kCAzLv/s6
+        CR/GmkWJx/8ZADQ10HgrrwE2AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="jGradientPanel1.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="jGradientPanel1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="jGradientPanel1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="$this.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+</root>

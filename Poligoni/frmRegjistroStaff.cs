@@ -1,6 +1,7 @@
 ﻿using Poligoni.BLL;
 using Poligoni.BO;
 using System;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Poligoni
@@ -9,6 +10,7 @@ namespace Poligoni
     {
         public frmRegjistroStaff()
         {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(gjuha.Gjuha);
             InitializeComponent();
         }
 
@@ -26,6 +28,19 @@ namespace Poligoni
         }
 
         private void jGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            if (gjuha.Gjuha == "en-au")
+                Help.ShowHelp(this, "./poligonihelpguideen.chm", HelpNavigator.Topic, "25.htm");
+            else
+                Help.ShowHelp(this, "./poligonihelpguide.chm", HelpNavigator.Topic, "25.htm");
+        }
+
+        private void frmRegjistroStaff_Load(object sender, EventArgs e)
         {
 
         }

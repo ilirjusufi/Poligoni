@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.jGradientPanel1 = new JGradient_Panel.JGradientPanel();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.txtuser1 = new Guna.UI.WinForms.GunaLineTextBox();
             this.txtpass2 = new Guna.UI.WinForms.GunaLineTextBox();
             this.DropGjuha = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -53,6 +54,7 @@
             this.jGradientPanel1.BackColor = System.Drawing.SystemColors.GrayText;
             this.jGradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
             this.jGradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
+            this.jGradientPanel1.Controls.Add(this.guna2CircleButton1);
             this.jGradientPanel1.Controls.Add(this.txtuser1);
             this.jGradientPanel1.Controls.Add(this.txtpass2);
             this.jGradientPanel1.Controls.Add(this.DropGjuha);
@@ -66,6 +68,22 @@
             resources.ApplyResources(this.jGradientPanel1, "jGradientPanel1");
             this.jGradientPanel1.Name = "jGradientPanel1";
             this.jGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.jGradientPanel1_Paint);
+            // 
+            // guna2CircleButton1
+            // 
+            this.guna2CircleButton1.Animated = true;
+            this.guna2CircleButton1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.guna2CircleButton1, "guna2CircleButton1");
+            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.IndicateFocus = true;
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click_1);
             // 
             // txtuser1
             // 
@@ -187,6 +205,7 @@
             this.Controls.Add(this.jGradientPanel1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "frmLogin";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.jGradientPanel1.ResumeLayout(false);
@@ -211,5 +230,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox DropGjuha;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.HelpProvider helpProvider1;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
     }
 }

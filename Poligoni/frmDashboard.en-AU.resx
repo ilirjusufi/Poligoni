@@ -208,6 +208,12 @@
         3J6MWo5ng50rwfuGM0GHsXPKoEcAj93jruadGbMFq51VydtYihgAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="regjistroStafToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="regjistroStafToolStripMenuItem.Text" xml:space="preserve">
+    <value>Register staf</value>
+  </data>
   <data name="ndyshoStafToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
@@ -221,6 +227,9 @@
         HEF3BqjYesKJvYnpOnY/xbag2CPhWJs0M+Dcw+I5pBFynOvgE2/9Wm8w/AHDfI0oYbLKnwAAAABJRU5E
         rkJggg==
 </value>
+  </data>
+  <data name="ndyshoStafToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
   <data name="regjistroKlientToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

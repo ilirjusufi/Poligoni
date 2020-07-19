@@ -41,6 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.jGradientPanel1 = new JGradient_Panel.JGradientPanel();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.financatrrethi = new Guna.UI2.WinForms.Guna2CircleProgressBar();
@@ -95,6 +96,9 @@
             this.gjuajtjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regjistroGjuajtjenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listoTeGjithaGjuajtjetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ndimaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.perAplikacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manualiIPerdorimitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.panel4.SuspendLayout();
@@ -124,6 +128,7 @@
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Name = "panel4";
+            this.helpProvider1.SetShowHelp(this.panel4, ((bool)(resources.GetObject("panel4.ShowHelp"))));
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // guna2Button1
@@ -136,6 +141,7 @@
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.helpProvider1.SetShowHelp(this.guna2Button1, ((bool)(resources.GetObject("guna2Button1.ShowHelp"))));
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // btnRegjistroGjuajtje
@@ -148,6 +154,7 @@
             this.btnRegjistroGjuajtje.HoverState.Parent = this.btnRegjistroGjuajtje;
             this.btnRegjistroGjuajtje.Name = "btnRegjistroGjuajtje";
             this.btnRegjistroGjuajtje.ShadowDecoration.Parent = this.btnRegjistroGjuajtje;
+            this.helpProvider1.SetShowHelp(this.btnRegjistroGjuajtje, ((bool)(resources.GetObject("btnRegjistroGjuajtje.ShowHelp"))));
             this.btnRegjistroGjuajtje.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnRegjistroGjuajtje.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.btnRegjistroGjuajtje.Click += new System.EventHandler(this.btnRegjistroGjuajtje_Click);
@@ -162,6 +169,7 @@
             this.btnregjistroplumba.HoverState.Parent = this.btnregjistroplumba;
             this.btnregjistroplumba.Name = "btnregjistroplumba";
             this.btnregjistroplumba.ShadowDecoration.Parent = this.btnregjistroplumba;
+            this.helpProvider1.SetShowHelp(this.btnregjistroplumba, ((bool)(resources.GetObject("btnregjistroplumba.ShowHelp"))));
             this.btnregjistroplumba.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnregjistroplumba.Click += new System.EventHandler(this.btnregjistroplumba_Click);
             // 
@@ -175,6 +183,7 @@
             this.btnregjistoklienta.HoverState.Parent = this.btnregjistoklienta;
             this.btnregjistoklienta.Name = "btnregjistoklienta";
             this.btnregjistoklienta.ShadowDecoration.Parent = this.btnregjistoklienta;
+            this.helpProvider1.SetShowHelp(this.btnregjistoklienta, ((bool)(resources.GetObject("btnregjistoklienta.ShowHelp"))));
             this.btnregjistoklienta.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnregjistoklienta.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.btnregjistoklienta.Click += new System.EventHandler(this.btnregjistoklienta_Click);
@@ -189,6 +198,7 @@
             this.btnregjistroarm.HoverState.Parent = this.btnregjistroarm;
             this.btnregjistroarm.Name = "btnregjistroarm";
             this.btnregjistroarm.ShadowDecoration.Parent = this.btnregjistroarm;
+            this.helpProvider1.SetShowHelp(this.btnregjistroarm, ((bool)(resources.GetObject("btnregjistroarm.ShowHelp"))));
             this.btnregjistroarm.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnregjistroarm.Click += new System.EventHandler(this.btnregjistroarm_Click);
             // 
@@ -197,24 +207,28 @@
             resources.ApplyResources(this.lblemrimbiemri, "lblemrimbiemri");
             this.lblemrimbiemri.ForeColor = System.Drawing.Color.LightGray;
             this.lblemrimbiemri.Name = "lblemrimbiemri";
+            this.helpProvider1.SetShowHelp(this.lblemrimbiemri, ((bool)(resources.GetObject("lblemrimbiemri.ShowHelp"))));
             // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
             this.label5.ForeColor = System.Drawing.Color.LightGray;
             this.label5.Name = "label5";
+            this.helpProvider1.SetShowHelp(this.label5, ((bool)(resources.GetObject("label5.ShowHelp"))));
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.ForeColor = System.Drawing.Color.LightGray;
             this.label2.Name = "label2";
+            this.helpProvider1.SetShowHelp(this.label2, ((bool)(resources.GetObject("label2.ShowHelp"))));
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Poligoni.Properties.Resources._20;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
+            this.helpProvider1.SetShowHelp(this.pictureBox1, ((bool)(resources.GetObject("pictureBox1.ShowHelp"))));
             this.pictureBox1.TabStop = false;
             // 
             // jGradientPanel1
@@ -222,6 +236,7 @@
             this.jGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
             this.jGradientPanel1.ColorBottom = System.Drawing.Color.Empty;
             this.jGradientPanel1.ColorTop = System.Drawing.Color.Empty;
+            this.jGradientPanel1.Controls.Add(this.guna2CircleButton1);
             this.jGradientPanel1.Controls.Add(this.panel12);
             this.jGradientPanel1.Controls.Add(this.panel7);
             this.jGradientPanel1.Controls.Add(this.label3);
@@ -234,7 +249,25 @@
             this.jGradientPanel1.Controls.Add(this.panel4);
             resources.ApplyResources(this.jGradientPanel1, "jGradientPanel1");
             this.jGradientPanel1.Name = "jGradientPanel1";
+            this.helpProvider1.SetShowHelp(this.jGradientPanel1, ((bool)(resources.GetObject("jGradientPanel1.ShowHelp"))));
             this.jGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.jGradientPanel1_Paint);
+            // 
+            // guna2CircleButton1
+            // 
+            this.guna2CircleButton1.Animated = true;
+            this.guna2CircleButton1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.guna2CircleButton1, "guna2CircleButton1");
+            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.IndicateFocus = true;
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
+            this.helpProvider1.SetShowHelp(this.guna2CircleButton1, ((bool)(resources.GetObject("guna2CircleButton1.ShowHelp"))));
+            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
             // panel12
             // 
@@ -246,12 +279,14 @@
             this.panel12.Controls.Add(this.label17);
             resources.ApplyResources(this.panel12, "panel12");
             this.panel12.Name = "panel12";
+            this.helpProvider1.SetShowHelp(this.panel12, ((bool)(resources.GetObject("panel12.ShowHelp"))));
             // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(179)))), ((int)(((byte)(133)))));
             resources.ApplyResources(this.panel13, "panel13");
             this.panel13.Name = "panel13";
+            this.helpProvider1.SetShowHelp(this.panel13, ((bool)(resources.GetObject("panel13.ShowHelp"))));
             // 
             // financatrrethi
             // 
@@ -261,6 +296,7 @@
             this.financatrrethi.ProgressColor = System.Drawing.Color.White;
             this.financatrrethi.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.financatrrethi.ShadowDecoration.Parent = this.financatrrethi;
+            this.helpProvider1.SetShowHelp(this.financatrrethi, ((bool)(resources.GetObject("financatrrethi.ShowHelp"))));
             this.financatrrethi.ShowPercentage = true;
             this.financatrrethi.Value = 3;
             // 
@@ -269,18 +305,21 @@
             resources.ApplyResources(this.label15, "label15");
             this.label15.ForeColor = System.Drawing.Color.LightGray;
             this.label15.Name = "label15";
+            this.helpProvider1.SetShowHelp(this.label15, ((bool)(resources.GetObject("label15.ShowHelp"))));
             // 
             // lblgjuajtjemuaj
             // 
             resources.ApplyResources(this.lblgjuajtjemuaj, "lblgjuajtjemuaj");
             this.lblgjuajtjemuaj.ForeColor = System.Drawing.Color.LightGray;
             this.lblgjuajtjemuaj.Name = "lblgjuajtjemuaj";
+            this.helpProvider1.SetShowHelp(this.lblgjuajtjemuaj, ((bool)(resources.GetObject("lblgjuajtjemuaj.ShowHelp"))));
             // 
             // label17
             // 
             resources.ApplyResources(this.label17, "label17");
             this.label17.ForeColor = System.Drawing.Color.LightGray;
             this.label17.Name = "label17";
+            this.helpProvider1.SetShowHelp(this.label17, ((bool)(resources.GetObject("label17.ShowHelp"))));
             // 
             // panel7
             // 
@@ -292,12 +331,14 @@
             this.panel7.Controls.Add(this.label4);
             resources.ApplyResources(this.panel7, "panel7");
             this.panel7.Name = "panel7";
+            this.helpProvider1.SetShowHelp(this.panel7, ((bool)(resources.GetObject("panel7.ShowHelp"))));
             // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(152)))), ((int)(((byte)(50)))));
             resources.ApplyResources(this.panel14, "panel14");
             this.panel14.Name = "panel14";
+            this.helpProvider1.SetShowHelp(this.panel14, ((bool)(resources.GetObject("panel14.ShowHelp"))));
             // 
             // guna2CircleProgressBar2
             // 
@@ -308,6 +349,7 @@
             this.guna2CircleProgressBar2.ProgressColor2 = System.Drawing.Color.Olive;
             this.guna2CircleProgressBar2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleProgressBar2.ShadowDecoration.Parent = this.guna2CircleProgressBar2;
+            this.helpProvider1.SetShowHelp(this.guna2CircleProgressBar2, ((bool)(resources.GetObject("guna2CircleProgressBar2.ShowHelp"))));
             this.guna2CircleProgressBar2.ShowPercentage = true;
             // 
             // label14
@@ -315,12 +357,14 @@
             resources.ApplyResources(this.label14, "label14");
             this.label14.ForeColor = System.Drawing.Color.LightGray;
             this.label14.Name = "label14";
+            this.helpProvider1.SetShowHelp(this.label14, ((bool)(resources.GetObject("label14.ShowHelp"))));
             // 
             // lblklientamuaj
             // 
             resources.ApplyResources(this.lblklientamuaj, "lblklientamuaj");
             this.lblklientamuaj.ForeColor = System.Drawing.Color.LightGray;
             this.lblklientamuaj.Name = "lblklientamuaj";
+            this.helpProvider1.SetShowHelp(this.lblklientamuaj, ((bool)(resources.GetObject("lblklientamuaj.ShowHelp"))));
             this.lblklientamuaj.Click += new System.EventHandler(this.lblfinancat_Click);
             // 
             // label4
@@ -328,12 +372,14 @@
             resources.ApplyResources(this.label4, "label4");
             this.label4.ForeColor = System.Drawing.Color.LightGray;
             this.label4.Name = "label4";
+            this.helpProvider1.SetShowHelp(this.label4, ((bool)(resources.GetObject("label4.ShowHelp"))));
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.ForeColor = System.Drawing.Color.LightGray;
             this.label3.Name = "label3";
+            this.helpProvider1.SetShowHelp(this.label3, ((bool)(resources.GetObject("label3.ShowHelp"))));
             // 
             // panel6
             // 
@@ -343,6 +389,7 @@
             this.panel6.Controls.Add(this.panel1);
             this.panel6.Controls.Add(this.panel2);
             this.panel6.Name = "panel6";
+            this.helpProvider1.SetShowHelp(this.panel6, ((bool)(resources.GetObject("panel6.ShowHelp"))));
             // 
             // panel3
             // 
@@ -353,12 +400,14 @@
             this.panel3.Controls.Add(this.lblaremtregjistruar);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
+            this.helpProvider1.SetShowHelp(this.panel3, ((bool)(resources.GetObject("panel3.ShowHelp"))));
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(136)))), ((int)(((byte)(114)))));
             resources.ApplyResources(this.panel10, "panel10");
             this.panel10.Name = "panel10";
+            this.helpProvider1.SetShowHelp(this.panel10, ((bool)(resources.GetObject("panel10.ShowHelp"))));
             // 
             // guna2CircleProgressBar3
             // 
@@ -370,6 +419,7 @@
             this.guna2CircleProgressBar3.ProgressThickness = 5;
             this.guna2CircleProgressBar3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleProgressBar3.ShadowDecoration.Parent = this.guna2CircleProgressBar3;
+            this.helpProvider1.SetShowHelp(this.guna2CircleProgressBar3, ((bool)(resources.GetObject("guna2CircleProgressBar3.ShowHelp"))));
             this.guna2CircleProgressBar3.ShowPercentage = true;
             this.guna2CircleProgressBar3.Value = 30;
             // 
@@ -378,12 +428,14 @@
             resources.ApplyResources(this.label12, "label12");
             this.label12.ForeColor = System.Drawing.Color.LightGray;
             this.label12.Name = "label12";
+            this.helpProvider1.SetShowHelp(this.label12, ((bool)(resources.GetObject("label12.ShowHelp"))));
             // 
             // lblaremtregjistruar
             // 
             resources.ApplyResources(this.lblaremtregjistruar, "lblaremtregjistruar");
             this.lblaremtregjistruar.ForeColor = System.Drawing.Color.LightGray;
             this.lblaremtregjistruar.Name = "lblaremtregjistruar";
+            this.helpProvider1.SetShowHelp(this.lblaremtregjistruar, ((bool)(resources.GetObject("lblaremtregjistruar.ShowHelp"))));
             // 
             // panel5
             // 
@@ -394,12 +446,14 @@
             this.panel5.Controls.Add(this.lblplumbastok);
             resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
+            this.helpProvider1.SetShowHelp(this.panel5, ((bool)(resources.GetObject("panel5.ShowHelp"))));
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(179)))), ((int)(((byte)(133)))));
             resources.ApplyResources(this.panel11, "panel11");
             this.panel11.Name = "panel11";
+            this.helpProvider1.SetShowHelp(this.panel11, ((bool)(resources.GetObject("panel11.ShowHelp"))));
             // 
             // guna2CircleProgressBar5
             // 
@@ -411,6 +465,7 @@
             this.guna2CircleProgressBar5.ProgressThickness = 5;
             this.guna2CircleProgressBar5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleProgressBar5.ShadowDecoration.Parent = this.guna2CircleProgressBar5;
+            this.helpProvider1.SetShowHelp(this.guna2CircleProgressBar5, ((bool)(resources.GetObject("guna2CircleProgressBar5.ShowHelp"))));
             this.guna2CircleProgressBar5.ShowPercentage = true;
             this.guna2CircleProgressBar5.Value = 30;
             // 
@@ -419,12 +474,14 @@
             resources.ApplyResources(this.label13, "label13");
             this.label13.ForeColor = System.Drawing.Color.LightGray;
             this.label13.Name = "label13";
+            this.helpProvider1.SetShowHelp(this.label13, ((bool)(resources.GetObject("label13.ShowHelp"))));
             // 
             // lblplumbastok
             // 
             resources.ApplyResources(this.lblplumbastok, "lblplumbastok");
             this.lblplumbastok.ForeColor = System.Drawing.Color.LightGray;
             this.lblplumbastok.Name = "lblplumbastok";
+            this.helpProvider1.SetShowHelp(this.lblplumbastok, ((bool)(resources.GetObject("lblplumbastok.ShowHelp"))));
             // 
             // panel1
             // 
@@ -435,6 +492,7 @@
             this.panel1.Controls.Add(this.guna2CircleProgressBar1);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            this.helpProvider1.SetShowHelp(this.panel1, ((bool)(resources.GetObject("panel1.ShowHelp"))));
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel8
@@ -442,12 +500,14 @@
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(179)))), ((int)(((byte)(133)))));
             resources.ApplyResources(this.panel8, "panel8");
             this.panel8.Name = "panel8";
+            this.helpProvider1.SetShowHelp(this.panel8, ((bool)(resources.GetObject("panel8.ShowHelp"))));
             // 
             // lblklientaregjistrum
             // 
             resources.ApplyResources(this.lblklientaregjistrum, "lblklientaregjistrum");
             this.lblklientaregjistrum.ForeColor = System.Drawing.Color.LightGray;
             this.lblklientaregjistrum.Name = "lblklientaregjistrum";
+            this.helpProvider1.SetShowHelp(this.lblklientaregjistrum, ((bool)(resources.GetObject("lblklientaregjistrum.ShowHelp"))));
             this.lblklientaregjistrum.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
@@ -455,6 +515,7 @@
             resources.ApplyResources(this.label6, "label6");
             this.label6.ForeColor = System.Drawing.Color.LightGray;
             this.label6.Name = "label6";
+            this.helpProvider1.SetShowHelp(this.label6, ((bool)(resources.GetObject("label6.ShowHelp"))));
             // 
             // guna2CircleProgressBar1
             // 
@@ -467,6 +528,7 @@
             this.guna2CircleProgressBar1.ProgressThickness = 5;
             this.guna2CircleProgressBar1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleProgressBar1.ShadowDecoration.Parent = this.guna2CircleProgressBar1;
+            this.helpProvider1.SetShowHelp(this.guna2CircleProgressBar1, ((bool)(resources.GetObject("guna2CircleProgressBar1.ShowHelp"))));
             this.guna2CircleProgressBar1.ShowPercentage = true;
             this.guna2CircleProgressBar1.Value = 30;
             // 
@@ -479,6 +541,7 @@
             this.panel2.Controls.Add(this.lblgjuajtjet);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
+            this.helpProvider1.SetShowHelp(this.panel2, ((bool)(resources.GetObject("panel2.ShowHelp"))));
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel9
@@ -486,6 +549,7 @@
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(152)))), ((int)(((byte)(50)))));
             resources.ApplyResources(this.panel9, "panel9");
             this.panel9.Name = "panel9";
+            this.helpProvider1.SetShowHelp(this.panel9, ((bool)(resources.GetObject("panel9.ShowHelp"))));
             // 
             // guna2CircleProgressBar4
             // 
@@ -497,6 +561,7 @@
             this.guna2CircleProgressBar4.ProgressThickness = 5;
             this.guna2CircleProgressBar4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleProgressBar4.ShadowDecoration.Parent = this.guna2CircleProgressBar4;
+            this.helpProvider1.SetShowHelp(this.guna2CircleProgressBar4, ((bool)(resources.GetObject("guna2CircleProgressBar4.ShowHelp"))));
             this.guna2CircleProgressBar4.ShowPercentage = true;
             this.guna2CircleProgressBar4.Value = 30;
             // 
@@ -505,36 +570,42 @@
             resources.ApplyResources(this.label11, "label11");
             this.label11.ForeColor = System.Drawing.Color.LightGray;
             this.label11.Name = "label11";
+            this.helpProvider1.SetShowHelp(this.label11, ((bool)(resources.GetObject("label11.ShowHelp"))));
             // 
             // lblgjuajtjet
             // 
             resources.ApplyResources(this.lblgjuajtjet, "lblgjuajtjet");
             this.lblgjuajtjet.ForeColor = System.Drawing.Color.LightGray;
             this.lblgjuajtjet.Name = "lblgjuajtjet";
+            this.helpProvider1.SetShowHelp(this.lblgjuajtjet, ((bool)(resources.GetObject("lblgjuajtjet.ShowHelp"))));
             // 
             // lbldata
             // 
             resources.ApplyResources(this.lbldata, "lbldata");
             this.lbldata.ForeColor = System.Drawing.Color.LightGray;
             this.lbldata.Name = "lbldata";
+            this.helpProvider1.SetShowHelp(this.lbldata, ((bool)(resources.GetObject("lbldata.ShowHelp"))));
             // 
             // label18
             // 
             resources.ApplyResources(this.label18, "label18");
             this.label18.ForeColor = System.Drawing.Color.LightGray;
             this.label18.Name = "label18";
+            this.helpProvider1.SetShowHelp(this.label18, ((bool)(resources.GetObject("label18.ShowHelp"))));
             // 
             // lblemri
             // 
             resources.ApplyResources(this.lblemri, "lblemri");
             this.lblemri.ForeColor = System.Drawing.Color.LightGray;
             this.lblemri.Name = "lblemri";
+            this.helpProvider1.SetShowHelp(this.lblemri, ((bool)(resources.GetObject("lblemri.ShowHelp"))));
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.LightGray;
             this.label1.Name = "label1";
+            this.helpProvider1.SetShowHelp(this.label1, ((bool)(resources.GetObject("label1.ShowHelp"))));
             // 
             // menuStrip1
             // 
@@ -545,8 +616,10 @@
             this.klientatToolStripMenuItem,
             this.armetToolStripMenuItem,
             this.plumbatToolStripMenuItem,
-            this.gjuajtjaToolStripMenuItem});
+            this.gjuajtjaToolStripMenuItem,
+            this.ndimaToolStripMenuItem});
             this.menuStrip1.Name = "menuStrip1";
+            this.helpProvider1.SetShowHelp(this.menuStrip1, ((bool)(resources.GetObject("menuStrip1.ShowHelp"))));
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked_1);
             // 
             // administrimiToolStripMenuItem
@@ -655,6 +728,27 @@
             this.listoTeGjithaGjuajtjetToolStripMenuItem.Name = "listoTeGjithaGjuajtjetToolStripMenuItem";
             resources.ApplyResources(this.listoTeGjithaGjuajtjetToolStripMenuItem, "listoTeGjithaGjuajtjetToolStripMenuItem");
             this.listoTeGjithaGjuajtjetToolStripMenuItem.Click += new System.EventHandler(this.listoTeGjithaGjuajtjetToolStripMenuItem_Click);
+            // 
+            // ndimaToolStripMenuItem
+            // 
+            this.ndimaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.perAplikacionToolStripMenuItem,
+            this.manualiIPerdorimitToolStripMenuItem});
+            this.ndimaToolStripMenuItem.ForeColor = System.Drawing.Color.Gray;
+            this.ndimaToolStripMenuItem.Name = "ndimaToolStripMenuItem";
+            resources.ApplyResources(this.ndimaToolStripMenuItem, "ndimaToolStripMenuItem");
+            // 
+            // perAplikacionToolStripMenuItem
+            // 
+            this.perAplikacionToolStripMenuItem.Name = "perAplikacionToolStripMenuItem";
+            resources.ApplyResources(this.perAplikacionToolStripMenuItem, "perAplikacionToolStripMenuItem");
+            this.perAplikacionToolStripMenuItem.Click += new System.EventHandler(this.perAplikacionToolStripMenuItem_Click);
+            // 
+            // manualiIPerdorimitToolStripMenuItem
+            // 
+            this.manualiIPerdorimitToolStripMenuItem.Name = "manualiIPerdorimitToolStripMenuItem";
+            resources.ApplyResources(this.manualiIPerdorimitToolStripMenuItem, "manualiIPerdorimitToolStripMenuItem");
+            this.manualiIPerdorimitToolStripMenuItem.Click += new System.EventHandler(this.manualiIPerdorimitToolStripMenuItem_Click);
             // 
             // timer1
             // 
@@ -768,5 +862,9 @@
 		private System.Windows.Forms.ToolStripMenuItem menaxhoPlumbatToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.ToolStripMenuItem ndimaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem perAplikacionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manualiIPerdorimitToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
     }
 }

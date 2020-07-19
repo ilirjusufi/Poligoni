@@ -214,6 +214,9 @@
     <EmbeddedResource Include="frmDashboard.en-AU.resx">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.nqo.resx">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.sq-AL.resx">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,8 +253,17 @@
     <EmbeddedResource Include="FrmDashboard.resx">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRegjistroGjuajtjen.en-AU.resx">
+      <DependentUpon>frmRegjistroGjuajtjen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRegjistroGjuajtjen.resx">
       <DependentUpon>frmRegjistroGjuajtjen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegjistroGjuajtjen.sq-AL.resx">
+      <DependentUpon>frmRegjistroGjuajtjen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegjistroklienta.en-AT.resx">
+      <DependentUpon>frmRegjistroklienta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegjistroklienta.en-AU.resx">
       <DependentUpon>frmRegjistroklienta.cs</DependentUpon>
@@ -262,11 +274,17 @@
     <EmbeddedResource Include="frmRegjistroklienta.sq-AL.resx">
       <DependentUpon>frmRegjistroklienta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRegjistroStaff.en-AU.resx">
+      <DependentUpon>frmRegjistroStaff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRegjistroStaff.resx">
       <DependentUpon>frmRegjistroStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListoKlientat.resx">
       <DependentUpon>frmListoKlientat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegjistroStaff.sq-AL.resx">
+      <DependentUpon>frmRegjistroStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -303,8 +321,6 @@
     <None Include="DB_A62C25_poligoniDataSet2.xss">
       <DependentUpon>DB_A62C25_poligoniDataSet2.xsd</DependentUpon>
     </None>
-    <None Include="Menagjimipoligonit.chm" />
-    <None Include="NewPr11oject11.chm" />
     <None Include="Poligoni_TemporaryKey.pfx" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\DataSources\Poligoni.BO.Users.datasource" />

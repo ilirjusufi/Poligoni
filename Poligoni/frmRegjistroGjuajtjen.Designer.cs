@@ -58,6 +58,7 @@
             this.useratBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.useratTableAdapter1 = new Poligoni.DB_A62C25_poligoniDataSet2TableAdapters.UseratTableAdapter();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.jGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.useratBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dB_A62C25_poligoniDataSet2)).BeginInit();
@@ -77,6 +78,7 @@
             this.jGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
             this.jGradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
             this.jGradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(28)))), ((int)(((byte)(48)))));
+            this.jGradientPanel1.Controls.Add(this.guna2CircleButton1);
             this.jGradientPanel1.Controls.Add(this.btneditogjujtjen);
             this.jGradientPanel1.Controls.Add(this.dropklientat);
             this.jGradientPanel1.Controls.Add(this.pictureBox6);
@@ -96,11 +98,9 @@
             this.jGradientPanel1.Controls.Add(this.label5);
             this.jGradientPanel1.Controls.Add(this.label3);
             this.jGradientPanel1.Controls.Add(this.lblArma);
-            this.jGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.jGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.jGradientPanel1, "jGradientPanel1");
             this.jGradientPanel1.Name = "jGradientPanel1";
-            this.jGradientPanel1.Size = new System.Drawing.Size(792, 450);
-            this.jGradientPanel1.TabIndex = 8;
+            this.helpProvider1.SetShowHelp(this.jGradientPanel1, ((bool)(resources.GetObject("jGradientPanel1.ShowHelp"))));
             this.jGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.jGradientPanel1_Paint);
             // 
             // btneditogjujtjen
@@ -119,15 +119,14 @@
             this.btneditogjujtjen.ImageLeft = ((System.Drawing.Image)(resources.GetObject("btneditogjujtjen.ImageLeft")));
             this.btneditogjujtjen.ImageRight = null;
             this.btneditogjujtjen.LeftPictureColor = System.Drawing.Color.Transparent;
-            this.btneditogjujtjen.Location = new System.Drawing.Point(281, 379);
+            resources.ApplyResources(this.btneditogjujtjen, "btneditogjujtjen");
             this.btneditogjujtjen.Name = "btneditogjujtjen";
             this.btneditogjujtjen.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
             this.btneditogjujtjen.PaddingRightPicture = new System.Windows.Forms.Padding(0);
             this.btneditogjujtjen.RightPictureColor = System.Drawing.Color.Transparent;
-            this.btneditogjujtjen.Size = new System.Drawing.Size(254, 43);
+            this.helpProvider1.SetShowHelp(this.btneditogjujtjen, ((bool)(resources.GetObject("btneditogjujtjen.ShowHelp"))));
             this.btneditogjujtjen.SizeModeLeft = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btneditogjujtjen.SizeModeRight = System.Windows.Forms.PictureBoxSizeMode.Normal;
-            this.btneditogjujtjen.TabIndex = 40;
             this.btneditogjujtjen.Click += new System.EventHandler(this.jFlatButton1_Click);
             // 
             // dropklientat
@@ -136,13 +135,11 @@
             this.dropklientat.DataSource = this.useratBindingSource1;
             this.dropklientat.DisplayMember = "Username";
             this.dropklientat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.dropklientat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            resources.ApplyResources(this.dropklientat, "dropklientat");
             this.dropklientat.ForeColor = System.Drawing.SystemColors.Info;
             this.dropklientat.FormattingEnabled = true;
-            this.dropklientat.Location = new System.Drawing.Point(287, 84);
             this.dropklientat.Name = "dropklientat";
-            this.dropklientat.Size = new System.Drawing.Size(248, 21);
-            this.dropklientat.TabIndex = 39;
+            this.helpProvider1.SetShowHelp(this.dropklientat, ((bool)(resources.GetObject("dropklientat.ShowHelp"))));
             this.dropklientat.ValueMember = "Username";
             // 
             // useratBindingSource1
@@ -159,11 +156,9 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::Poligoni.Properties.Resources._3;
-            this.pictureBox6.Location = new System.Drawing.Point(245, 81);
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(31, 32);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 38;
+            this.helpProvider1.SetShowHelp(this.pictureBox6, ((bool)(resources.GetObject("pictureBox6.ShowHelp"))));
             this.pictureBox6.TabStop = false;
             // 
             // droparmet
@@ -171,13 +166,11 @@
             this.droparmet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
             this.droparmet.DataSource = this.armaBindingSource;
             this.droparmet.DisplayMember = "EmriArmes";
-            this.droparmet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            resources.ApplyResources(this.droparmet, "droparmet");
             this.droparmet.ForeColor = System.Drawing.SystemColors.Info;
             this.droparmet.FormattingEnabled = true;
-            this.droparmet.Location = new System.Drawing.Point(283, 138);
             this.droparmet.Name = "droparmet";
-            this.droparmet.Size = new System.Drawing.Size(254, 21);
-            this.droparmet.TabIndex = 27;
+            this.helpProvider1.SetShowHelp(this.droparmet, ((bool)(resources.GetObject("droparmet.ShowHelp"))));
             this.droparmet.ValueMember = "EmriArmes";
             // 
             // armaBindingSource
@@ -192,130 +185,92 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
+            resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(241, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(236, 31);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Regjistro Gjuajtjen\r\n";
+            this.helpProvider1.SetShowHelp(this.label2, ((bool)(resources.GetObject("label2.ShowHelp"))));
             // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(552, -28);
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(236, 501);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 25;
+            this.helpProvider1.SetShowHelp(this.pictureBox5, ((bool)(resources.GetObject("pictureBox5.ShowHelp"))));
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(247, 248);
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(28, 31);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 24;
+            this.helpProvider1.SetShowHelp(this.pictureBox3, ((bool)(resources.GetObject("pictureBox3.ShowHelp"))));
             this.pictureBox3.TabStop = false;
             // 
             // Txtdistanca
             // 
             this.Txtdistanca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
             this.Txtdistanca.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Txtdistanca.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.Txtdistanca, "Txtdistanca");
             this.Txtdistanca.ForeColor = System.Drawing.Color.White;
-            this.Txtdistanca.Location = new System.Drawing.Point(281, 248);
-            this.Txtdistanca.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.Txtdistanca.Multiline = true;
             this.Txtdistanca.Name = "Txtdistanca";
-            this.Txtdistanca.Size = new System.Drawing.Size(254, 31);
-            this.Txtdistanca.TabIndex = 23;
-            this.Txtdistanca.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.helpProvider1.SetShowHelp(this.Txtdistanca, ((bool)(resources.GetObject("Txtdistanca.ShowHelp"))));
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
+            resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(10, 258);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 20);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Distanca e gjuajtjes ne metra";
+            this.helpProvider1.SetShowHelp(this.label1, ((bool)(resources.GetObject("label1.ShowHelp"))));
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(247, 130);
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(28, 31);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 20;
+            this.helpProvider1.SetShowHelp(this.pictureBox2, ((bool)(resources.GetObject("pictureBox2.ShowHelp"))));
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(247, 314);
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 31);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 19;
+            this.helpProvider1.SetShowHelp(this.pictureBox1, ((bool)(resources.GetObject("pictureBox1.ShowHelp"))));
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(247, 189);
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(28, 31);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 18;
+            this.helpProvider1.SetShowHelp(this.pictureBox4, ((bool)(resources.GetObject("pictureBox4.ShowHelp"))));
             this.pictureBox4.TabStop = false;
             // 
             // txtMaxPlumba
             // 
             this.txtMaxPlumba.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
             this.txtMaxPlumba.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMaxPlumba.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.txtMaxPlumba, "txtMaxPlumba");
             this.txtMaxPlumba.ForeColor = System.Drawing.Color.White;
-            this.txtMaxPlumba.Location = new System.Drawing.Point(281, 314);
-            this.txtMaxPlumba.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.txtMaxPlumba.Multiline = true;
             this.txtMaxPlumba.Name = "txtMaxPlumba";
-            this.txtMaxPlumba.Size = new System.Drawing.Size(254, 31);
-            this.txtMaxPlumba.TabIndex = 16;
-            this.txtMaxPlumba.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.helpProvider1.SetShowHelp(this.txtMaxPlumba, ((bool)(resources.GetObject("txtMaxPlumba.ShowHelp"))));
             // 
             // txtKalibri
             // 
             this.txtKalibri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
             this.txtKalibri.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtKalibri.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.txtKalibri, "txtKalibri");
             this.txtKalibri.ForeColor = System.Drawing.Color.White;
-            this.txtKalibri.Location = new System.Drawing.Point(281, 189);
-            this.txtKalibri.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.txtKalibri.Multiline = true;
             this.txtKalibri.Name = "txtKalibri";
-            this.txtKalibri.Size = new System.Drawing.Size(254, 31);
-            this.txtKalibri.TabIndex = 15;
-            this.txtKalibri.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.helpProvider1.SetShowHelp(this.txtKalibri, ((bool)(resources.GetObject("txtKalibri.ShowHelp"))));
             // 
             // btnRegjistroGjuajtjen
             // 
             this.btnRegjistroGjuajtjen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
             this.btnRegjistroGjuajtjen.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.btnRegjistroGjuajtjen.ButtonText = "Regjistro Gjuajtjen";
+            this.btnRegjistroGjuajtjen.ButtonText = "Register shoot";
             this.btnRegjistroGjuajtjen.CausesValidation = false;
             this.btnRegjistroGjuajtjen.ErrorImageLeft = ((System.Drawing.Image)(resources.GetObject("btnRegjistroGjuajtjen.ErrorImageLeft")));
             this.btnRegjistroGjuajtjen.ErrorImageRight = ((System.Drawing.Image)(resources.GetObject("btnRegjistroGjuajtjen.ErrorImageRight")));
@@ -327,64 +282,47 @@
             this.btnRegjistroGjuajtjen.ImageLeft = ((System.Drawing.Image)(resources.GetObject("btnRegjistroGjuajtjen.ImageLeft")));
             this.btnRegjistroGjuajtjen.ImageRight = null;
             this.btnRegjistroGjuajtjen.LeftPictureColor = System.Drawing.Color.Transparent;
-            this.btnRegjistroGjuajtjen.Location = new System.Drawing.Point(281, 379);
+            resources.ApplyResources(this.btnRegjistroGjuajtjen, "btnRegjistroGjuajtjen");
             this.btnRegjistroGjuajtjen.Name = "btnRegjistroGjuajtjen";
             this.btnRegjistroGjuajtjen.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
             this.btnRegjistroGjuajtjen.PaddingRightPicture = new System.Windows.Forms.Padding(0);
             this.btnRegjistroGjuajtjen.RightPictureColor = System.Drawing.Color.Transparent;
-            this.btnRegjistroGjuajtjen.Size = new System.Drawing.Size(254, 43);
+            this.helpProvider1.SetShowHelp(this.btnRegjistroGjuajtjen, ((bool)(resources.GetObject("btnRegjistroGjuajtjen.ShowHelp"))));
             this.btnRegjistroGjuajtjen.SizeModeLeft = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnRegjistroGjuajtjen.SizeModeRight = System.Windows.Forms.PictureBoxSizeMode.Normal;
-            this.btnRegjistroGjuajtjen.TabIndex = 13;
             this.btnRegjistroGjuajtjen.Click += new System.EventHandler(this.btnRegjistroGjuajtjen_Click);
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
+            resources.ApplyResources(this.label4, "label4");
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(54, 323);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(163, 20);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Plumbat e shfrytezuar";
+            this.helpProvider1.SetShowHelp(this.label4, ((bool)(resources.GetObject("label4.ShowHelp"))));
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
+            resources.ApplyResources(this.label5, "label5");
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(97, 198);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(128, 20);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Piket e shenuara";
+            this.helpProvider1.SetShowHelp(this.label5, ((bool)(resources.GetObject("label5.ShowHelp"))));
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
+            resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(112, 85);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 20);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Selekto Klientin";
+            this.helpProvider1.SetShowHelp(this.label3, ((bool)(resources.GetObject("label3.ShowHelp"))));
             // 
             // lblArma
             // 
-            this.lblArma.AutoSize = true;
+            resources.ApplyResources(this.lblArma, "lblArma");
             this.lblArma.BackColor = System.Drawing.Color.Transparent;
-            this.lblArma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArma.ForeColor = System.Drawing.Color.White;
-            this.lblArma.Location = new System.Drawing.Point(112, 139);
             this.lblArma.Name = "lblArma";
-            this.lblArma.Size = new System.Drawing.Size(114, 20);
-            this.lblArma.TabIndex = 8;
-            this.lblArma.Text = "Selekto Armen";
+            this.helpProvider1.SetShowHelp(this.lblArma, ((bool)(resources.GetObject("lblArma.ShowHelp"))));
             // 
             // armaTableAdapter
             // 
@@ -396,18 +334,32 @@
             // 
             // helpProvider1
             // 
-            this.helpProvider1.HelpNamespace = "C:\\Users\\TimeonSpace\\Desktop\\web\\menagjimi2333.chm";
+            resources.ApplyResources(this.helpProvider1, "helpProvider1");
+            // 
+            // guna2CircleButton1
+            // 
+            this.guna2CircleButton1.Animated = true;
+            this.guna2CircleButton1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.guna2CircleButton1, "guna2CircleButton1");
+            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.IndicateFocus = true;
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
+            this.helpProvider1.SetShowHelp(this.guna2CircleButton1, ((bool)(resources.GetObject("guna2CircleButton1.ShowHelp"))));
+            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click_1);
             // 
             // frmRegjistroGjuajtjen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 450);
             this.Controls.Add(this.jGradientPanel1);
             this.Name = "frmRegjistroGjuajtjen";
-            this.helpProvider1.SetShowHelp(this, true);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmRegjistroGjuajtjen";
+            this.helpProvider1.SetShowHelp(this, ((bool)(resources.GetObject("$this.ShowHelp"))));
             this.Load += new System.EventHandler(this.frmRegjistroGjuajtjen_Load);
             this.jGradientPanel1.ResumeLayout(false);
             this.jGradientPanel1.PerformLayout();
@@ -458,5 +410,6 @@
         private DB_A62C25_poligoniDataSet2TableAdapters.UseratTableAdapter useratTableAdapter1;
         private FlatButton.JFlatButton btneditogjujtjen;
         private System.Windows.Forms.HelpProvider helpProvider1;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
     }
 }

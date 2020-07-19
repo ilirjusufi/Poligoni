@@ -16,10 +16,10 @@ namespace Poligoni
         public string Email { get; set; }
         public frmRegjistroklienta()
         {
-            
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(gjuha.Gjuha);
             InitializeComponent();
             btnEdito.Hide();
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(gjuha.Gjuha);
+            
             if(gjuha.Gjuha == "sq-al")
             label6.Text = "Regjistro Klient";
 
@@ -78,7 +78,7 @@ namespace Poligoni
 
         private void frmRegjistroklienta_Load(object sender, EventArgs e)
         {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(gjuha.Gjuha);
+            
         }
 
         private void jThinButton1_Click(object sender, EventArgs e)
@@ -89,6 +89,14 @@ namespace Poligoni
             this.Email = btnEmail.Text;
             Users EditoKlient = UserBLL.editoKlienta(userID, Emri, Mbiemri, Username, Email);
 
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            if (gjuha.Gjuha == "en-au")
+                Help.ShowHelp(this, "./poligonihelpguideen.chm", HelpNavigator.Topic, "20.htm");
+            else
+                Help.ShowHelp(this, "./poligonihelpguide.chm", HelpNavigator.Topic, "20.htm");
         }
     }
 }

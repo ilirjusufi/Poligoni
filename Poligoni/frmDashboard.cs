@@ -94,7 +94,21 @@ namespace Poligoni
                     label2.Location = new Point(60, 8);
                     lblemri.Location = new Point(297, 36);
                     menuStrip1.Items[0].Text = "Administring";
-                    menuStrip1.Items[1].Text = "Clients";
+                    menuStrip1.Items[1].Text = "Clientes".ToString();
+                    menuStrip1.Items[2].Text = "Weapons".ToString();
+                    menuStrip1.Items[3].Text = "Bullets".ToString();
+                    menuStrip1.Items[4].Text = "Shoots".ToString();
+                    menuStrip1.Items[5].Text = "Help".ToString();
+                    regjistroStafToolStripMenuItem.Text = "Register Staf";
+                    ndyshoStafToolStripMenuItem.Text = "List of staf";
+                    regjistroKlientToolStripMenuItem.Text = "Register Client";
+                    listoKlientToolStripMenuItem1.Text = "List of clients";
+                    regjistroGjuajtjenToolStripMenuItem.Text = "New Shoot";
+                    listoTeGjithaGjuajtjetToolStripMenuItem.Text = "Manage shoots";
+                    guna2Button1.Text = "Logout";
+                    perAplikacionToolStripMenuItem.Text = "About";
+                    manualiIPerdorimitToolStripMenuItem.Text = "Use manual";
+
 
                 }
 
@@ -486,7 +500,28 @@ namespace Poligoni
      
         private void button1_Click_1(object sender, EventArgs e)
         {
-            GetHelpProvider(this, "11.htm");
+           
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            if (gjuha.Gjuha == "en-au")
+                Help.ShowHelp(this, "./poligonihelpguideen.chm", HelpNavigator.Topic, "19.htm");
+            else
+                Help.ShowHelp(this, "./poligonihelpguide.chm", HelpNavigator.Topic, "19.htm");
+        }
+
+        private void perAplikacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Poligoni ver 1.3", "info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void manualiIPerdorimitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (gjuha.Gjuha == "en-au")
+                Help.ShowHelp(this, "./poligonihelpguideen.chm", HelpNavigator.Topic, "menagjimi.htm");
+            else
+                Help.ShowHelp(this, "./poligonihelpguide.chm", HelpNavigator.Topic, "menagjimi.htm");
         }
     }
 }

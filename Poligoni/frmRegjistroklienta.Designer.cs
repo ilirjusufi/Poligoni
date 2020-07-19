@@ -50,6 +50,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.jGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -63,6 +64,7 @@
             // 
             this.jGradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
             this.jGradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
+            this.jGradientPanel1.Controls.Add(this.guna2CircleButton1);
             this.jGradientPanel1.Controls.Add(this.btnEdito);
             this.jGradientPanel1.Controls.Add(this.btnEmail);
             this.jGradientPanel1.Controls.Add(this.btnPassword);
@@ -84,6 +86,7 @@
             this.jGradientPanel1.Controls.Add(this.label1);
             resources.ApplyResources(this.jGradientPanel1, "jGradientPanel1");
             this.jGradientPanel1.Name = "jGradientPanel1";
+            this.helpProvider1.SetShowHelp(this.jGradientPanel1, ((bool)(resources.GetObject("jGradientPanel1.ShowHelp"))));
             this.jGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.jGradientPanel1_Paint);
             // 
             // btnEdito
@@ -101,6 +104,7 @@
             this.btnEdito.HoverFontColor = System.Drawing.Color.Black;
             this.btnEdito.LineThickness = 2;
             this.btnEdito.Name = "btnEdito";
+            this.helpProvider1.SetShowHelp(this.btnEdito, ((bool)(resources.GetObject("btnEdito.ShowHelp"))));
             this.btnEdito.Click += new System.EventHandler(this.jThinButton1_Click);
             // 
             // btnEmail
@@ -109,6 +113,7 @@
             resources.ApplyResources(this.btnEmail, "btnEmail");
             this.btnEmail.ForeColor = System.Drawing.Color.White;
             this.btnEmail.Name = "btnEmail";
+            this.helpProvider1.SetShowHelp(this.btnEmail, ((bool)(resources.GetObject("btnEmail.ShowHelp"))));
             // 
             // btnPassword
             // 
@@ -116,6 +121,7 @@
             resources.ApplyResources(this.btnPassword, "btnPassword");
             this.btnPassword.ForeColor = System.Drawing.Color.White;
             this.btnPassword.Name = "btnPassword";
+            this.helpProvider1.SetShowHelp(this.btnPassword, ((bool)(resources.GetObject("btnPassword.ShowHelp"))));
             // 
             // Btnusername
             // 
@@ -123,6 +129,7 @@
             resources.ApplyResources(this.Btnusername, "Btnusername");
             this.Btnusername.ForeColor = System.Drawing.Color.White;
             this.Btnusername.Name = "Btnusername";
+            this.helpProvider1.SetShowHelp(this.Btnusername, ((bool)(resources.GetObject("Btnusername.ShowHelp"))));
             // 
             // btnMbiemri
             // 
@@ -130,6 +137,7 @@
             resources.ApplyResources(this.btnMbiemri, "btnMbiemri");
             this.btnMbiemri.ForeColor = System.Drawing.Color.White;
             this.btnMbiemri.Name = "btnMbiemri";
+            this.helpProvider1.SetShowHelp(this.btnMbiemri, ((bool)(resources.GetObject("btnMbiemri.ShowHelp"))));
             // 
             // btnEmri
             // 
@@ -137,6 +145,7 @@
             resources.ApplyResources(this.btnEmri, "btnEmri");
             this.btnEmri.ForeColor = System.Drawing.Color.White;
             this.btnEmri.Name = "btnEmri";
+            this.helpProvider1.SetShowHelp(this.btnEmri, ((bool)(resources.GetObject("btnEmri.ShowHelp"))));
             this.btnEmri.TextChanged += new System.EventHandler(this.btnEmri_TextChanged_1);
             // 
             // pictureBox6
@@ -144,6 +153,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Name = "pictureBox6";
+            this.helpProvider1.SetShowHelp(this.pictureBox6, ((bool)(resources.GetObject("pictureBox6.ShowHelp"))));
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
@@ -152,6 +162,7 @@
             this.pictureBox5.Image = global::Poligoni.Properties.Resources._7;
             resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.Name = "pictureBox5";
+            this.helpProvider1.SetShowHelp(this.pictureBox5, ((bool)(resources.GetObject("pictureBox5.ShowHelp"))));
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
@@ -160,6 +171,7 @@
             this.pictureBox4.Image = global::Poligoni.Properties.Resources._61;
             resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
+            this.helpProvider1.SetShowHelp(this.pictureBox4, ((bool)(resources.GetObject("pictureBox4.ShowHelp"))));
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
@@ -168,6 +180,7 @@
             this.pictureBox3.Image = global::Poligoni.Properties.Resources._3;
             resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Name = "pictureBox3";
+            this.helpProvider1.SetShowHelp(this.pictureBox3, ((bool)(resources.GetObject("pictureBox3.ShowHelp"))));
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
@@ -176,6 +189,7 @@
             this.pictureBox2.Image = global::Poligoni.Properties.Resources._4;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
+            this.helpProvider1.SetShowHelp(this.pictureBox2, ((bool)(resources.GetObject("pictureBox2.ShowHelp"))));
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
@@ -184,6 +198,7 @@
             this.pictureBox1.Image = global::Poligoni.Properties.Resources._3;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
+            this.helpProvider1.SetShowHelp(this.pictureBox1, ((bool)(resources.GetObject("pictureBox1.ShowHelp"))));
             this.pictureBox1.TabStop = false;
             // 
             // btnShto
@@ -201,6 +216,7 @@
             this.btnShto.HoverFontColor = System.Drawing.Color.Black;
             this.btnShto.LineThickness = 2;
             this.btnShto.Name = "btnShto";
+            this.helpProvider1.SetShowHelp(this.btnShto, ((bool)(resources.GetObject("btnShto.ShowHelp"))));
             this.btnShto.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
@@ -209,6 +225,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Name = "label5";
+            this.helpProvider1.SetShowHelp(this.label5, ((bool)(resources.GetObject("label5.ShowHelp"))));
             // 
             // label4
             // 
@@ -216,6 +233,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Name = "label4";
+            this.helpProvider1.SetShowHelp(this.label4, ((bool)(resources.GetObject("label4.ShowHelp"))));
             // 
             // label3
             // 
@@ -223,6 +241,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Name = "label3";
+            this.helpProvider1.SetShowHelp(this.label3, ((bool)(resources.GetObject("label3.ShowHelp"))));
             // 
             // label2
             // 
@@ -230,6 +249,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Name = "label2";
+            this.helpProvider1.SetShowHelp(this.label2, ((bool)(resources.GetObject("label2.ShowHelp"))));
             // 
             // label6
             // 
@@ -237,6 +257,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Name = "label6";
+            this.helpProvider1.SetShowHelp(this.label6, ((bool)(resources.GetObject("label6.ShowHelp"))));
             // 
             // label1
             // 
@@ -244,10 +265,28 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
+            this.helpProvider1.SetShowHelp(this.label1, ((bool)(resources.GetObject("label1.ShowHelp"))));
             // 
             // helpProvider1
             // 
             resources.ApplyResources(this.helpProvider1, "helpProvider1");
+            // 
+            // guna2CircleButton1
+            // 
+            this.guna2CircleButton1.Animated = true;
+            this.guna2CircleButton1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.guna2CircleButton1, "guna2CircleButton1");
+            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.IndicateFocus = true;
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
+            this.helpProvider1.SetShowHelp(this.guna2CircleButton1, ((bool)(resources.GetObject("guna2CircleButton1.ShowHelp"))));
+            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
             // frmRegjistroklienta
             // 
@@ -293,5 +332,6 @@
         private JThinButton.JThinButton btnShto;
         private JThinButton.JThinButton btnEdito;
         private System.Windows.Forms.HelpProvider helpProvider1;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
     }
 }

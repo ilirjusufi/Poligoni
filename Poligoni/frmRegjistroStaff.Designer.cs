@@ -30,17 +30,11 @@
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegjistroStaff));
             this.jGradientPanel1 = new JGradient_Panel.JGradientPanel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.txtstafemail = new System.Windows.Forms.TextBox();
             this.txtstafpassword = new System.Windows.Forms.TextBox();
             this.txtstafusername = new System.Windows.Forms.TextBox();
             this.txtstafmbiemri = new System.Windows.Forms.TextBox();
             this.txtstafemri = new System.Windows.Forms.TextBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new JThinButton.JThinButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,6 +42,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.jGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -59,8 +60,10 @@
             // 
             // jGradientPanel1
             // 
+            resources.ApplyResources(this.jGradientPanel1, "jGradientPanel1");
             this.jGradientPanel1.ColorBottom = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
             this.jGradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(71)))));
+            this.jGradientPanel1.Controls.Add(this.guna2CircleButton1);
             this.jGradientPanel1.Controls.Add(this.pictureBox6);
             this.jGradientPanel1.Controls.Add(this.txtstafemail);
             this.jGradientPanel1.Controls.Add(this.txtstafpassword);
@@ -79,241 +82,173 @@
             this.jGradientPanel1.Controls.Add(this.label2);
             this.jGradientPanel1.Controls.Add(this.label6);
             this.jGradientPanel1.Controls.Add(this.label1);
-            this.jGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.jGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.jGradientPanel1.Name = "jGradientPanel1";
-            this.jGradientPanel1.Size = new System.Drawing.Size(800, 450);
-            this.jGradientPanel1.TabIndex = 1;
             this.jGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.jGradientPanel1_Paint);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(541, 80);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(220, 260);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 43;
-            this.pictureBox6.TabStop = false;
             // 
             // txtstafemail
             // 
+            resources.ApplyResources(this.txtstafemail, "txtstafemail");
             this.txtstafemail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.txtstafemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtstafemail.ForeColor = System.Drawing.Color.White;
-            this.txtstafemail.Location = new System.Drawing.Point(330, 299);
-            this.txtstafemail.Multiline = true;
             this.txtstafemail.Name = "txtstafemail";
-            this.txtstafemail.Size = new System.Drawing.Size(177, 32);
-            this.txtstafemail.TabIndex = 42;
-            this.txtstafemail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtstafpassword
             // 
+            resources.ApplyResources(this.txtstafpassword, "txtstafpassword");
             this.txtstafpassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.txtstafpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtstafpassword.ForeColor = System.Drawing.Color.White;
-            this.txtstafpassword.Location = new System.Drawing.Point(330, 247);
-            this.txtstafpassword.Multiline = true;
             this.txtstafpassword.Name = "txtstafpassword";
-            this.txtstafpassword.Size = new System.Drawing.Size(177, 32);
-            this.txtstafpassword.TabIndex = 41;
-            this.txtstafpassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtstafusername
             // 
+            resources.ApplyResources(this.txtstafusername, "txtstafusername");
             this.txtstafusername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.txtstafusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtstafusername.ForeColor = System.Drawing.Color.White;
-            this.txtstafusername.Location = new System.Drawing.Point(330, 194);
-            this.txtstafusername.Multiline = true;
             this.txtstafusername.Name = "txtstafusername";
-            this.txtstafusername.Size = new System.Drawing.Size(177, 32);
-            this.txtstafusername.TabIndex = 40;
-            this.txtstafusername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtstafmbiemri
             // 
+            resources.ApplyResources(this.txtstafmbiemri, "txtstafmbiemri");
             this.txtstafmbiemri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.txtstafmbiemri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtstafmbiemri.ForeColor = System.Drawing.Color.White;
-            this.txtstafmbiemri.Location = new System.Drawing.Point(330, 136);
-            this.txtstafmbiemri.Multiline = true;
             this.txtstafmbiemri.Name = "txtstafmbiemri";
-            this.txtstafmbiemri.Size = new System.Drawing.Size(177, 32);
-            this.txtstafmbiemri.TabIndex = 39;
-            this.txtstafmbiemri.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtstafemri
             // 
+            resources.ApplyResources(this.txtstafemri, "txtstafemri");
             this.txtstafemri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
-            this.txtstafemri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtstafemri.ForeColor = System.Drawing.Color.White;
-            this.txtstafemri.Location = new System.Drawing.Point(330, 80);
-            this.txtstafemri.Multiline = true;
             this.txtstafemri.Name = "txtstafemri";
-            this.txtstafemri.Size = new System.Drawing.Size(177, 32);
-            this.txtstafemri.TabIndex = 38;
-            this.txtstafemri.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = global::Poligoni.Properties.Resources._7;
-            this.pictureBox5.Location = new System.Drawing.Point(289, 299);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 37;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::Poligoni.Properties.Resources._61;
-            this.pictureBox4.Location = new System.Drawing.Point(289, 247);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 37;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::Poligoni.Properties.Resources._3;
-            this.pictureBox3.Location = new System.Drawing.Point(289, 191);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 37;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::Poligoni.Properties.Resources._4;
-            this.pictureBox2.Location = new System.Drawing.Point(289, 133);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 37;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Poligoni.Properties.Resources._3;
-            this.pictureBox1.Location = new System.Drawing.Point(289, 80);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 37;
-            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
+            resources.ApplyResources(this.button1, "button1");
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(0)))), ((int)(((byte)(47)))));
             this.button1.BorderColor = System.Drawing.Color.White;
             this.button1.BorderRadius = 5;
             this.button1.ButtonText = "Submit";
-            this.button1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Font_Size = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColors = System.Drawing.Color.White;
             this.button1.HoverBackground = System.Drawing.Color.White;
             this.button1.HoverBorder = System.Drawing.Color.Empty;
             this.button1.HoverFontColor = System.Drawing.Color.Black;
             this.button1.LineThickness = 2;
-            this.button1.Location = new System.Drawing.Point(342, 347);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 48);
-            this.button1.TabIndex = 36;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
+            resources.ApplyResources(this.label5, "label5");
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(208, 312);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 20);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "Email";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
+            resources.ApplyResources(this.label4, "label4");
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(176, 257);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 20);
-            this.label4.TabIndex = 34;
-            this.label4.Text = "Password";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
+            resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(170, 204);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 20);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "Username";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
+            resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(184, 146);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 20);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Mbiemri";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
+            resources.ApplyResources(this.label6, "label6");
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(12, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(188, 31);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Regjistro staf";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
+            resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(215, 93);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 20);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "Emri";
+            // 
+            // guna2CircleButton1
+            // 
+            resources.ApplyResources(this.guna2CircleButton1, "guna2CircleButton1");
+            this.guna2CircleButton1.Animated = true;
+            this.guna2CircleButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.IndicateFocus = true;
+            this.guna2CircleButton1.Name = "guna2CircleButton1";
+            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
+            this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
+            // 
+            // pictureBox6
+            // 
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = global::Poligoni.Properties.Resources._7;
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::Poligoni.Properties.Resources._61;
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::Poligoni.Properties.Resources._3;
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::Poligoni.Properties.Resources._4;
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Poligoni.Properties.Resources._3;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // frmRegjistroStaff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.jGradientPanel1);
             this.Name = "frmRegjistroStaff";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmRegjistroStaff";
+            this.Load += new System.EventHandler(this.frmRegjistroStaff_Load);
             this.jGradientPanel1.ResumeLayout(false);
             this.jGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -347,5 +282,6 @@
 		private System.Windows.Forms.TextBox txtstafusername;
 		private System.Windows.Forms.TextBox txtstafmbiemri;
 		private System.Windows.Forms.TextBox txtstafemri;
-	}
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+    }
 }

@@ -1,6 +1,8 @@
 ﻿using Poligoni.BLL;
 using Poligoni.BO;
 using System;
+using System.Diagnostics;
+using System.IO;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -100,7 +102,7 @@ namespace Poligoni
                     }
                 }
 
-
+                
             }
             else
             {
@@ -142,14 +144,14 @@ namespace Poligoni
         {
 
          
-            Help.ShowHelp(frm, "Menagjimipoligonit.chm", HelpNavigator.Topic, topic);
+            Help.ShowHelp(frm, "NewProject.chm", HelpNavigator.Topic, topic);
            
 
 
         }
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, AppDomain.CurrentDomain.BaseDirectory + "\\Menagjimipoligonit.chm", HelpNavigator.Topic, "2.2.html");
+           
 
 
 
@@ -159,6 +161,27 @@ namespace Poligoni
         {
             
            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+         
+            
+           
+        }
+
+        private void guna2CircleButton1_Click_1(object sender, EventArgs e)
+        {
+            if(a == "en-au")
+            Help.ShowHelp(this, "./poligonihelpguideen.chm", HelpNavigator.Topic, "18.htm");
+            else
+                Help.ShowHelp(this, "./poligonihelpguide.chm", HelpNavigator.Topic, "18.htm");
+
         }
     }
 }
