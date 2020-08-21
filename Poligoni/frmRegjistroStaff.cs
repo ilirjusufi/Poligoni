@@ -34,6 +34,8 @@ namespace Poligoni
 
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
+           
+
             if (gjuha.Gjuha == "en-au")
                 Help.ShowHelp(this, "./poligonihelpguideen.chm", HelpNavigator.Topic, "25.htm");
             else

@@ -14,7 +14,6 @@ namespace Poligoni
         string c;
         private dashboardStatistikatBO merre;
 
-        public dashboardStatistikatBO merr { get; set; }
         public FrmDashboard()
         {
 
@@ -522,6 +521,11 @@ namespace Poligoni
                 Help.ShowHelp(this, "./poligonihelpguideen.chm", HelpNavigator.Topic, "menagjimi.htm");
             else
                 Help.ShowHelp(this, "./poligonihelpguide.chm", HelpNavigator.Topic, "menagjimi.htm");
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

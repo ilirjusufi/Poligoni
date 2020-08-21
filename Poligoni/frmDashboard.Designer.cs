@@ -390,6 +390,7 @@
             this.panel6.Controls.Add(this.panel2);
             this.panel6.Name = "panel6";
             this.helpProvider1.SetShowHelp(this.panel6, ((bool)(resources.GetObject("panel6.ShowHelp"))));
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // panel3
             // 

@@ -171,7 +171,11 @@ namespace Poligoni
 
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "./poligonihelpguide.chm", HelpNavigator.Topic, "27.htm");
+
+            if (gjuha.Gjuha == "en-au")
+                Help.ShowHelp(this, "./poligonihelpguideen.chm", HelpNavigator.Topic, "27.htm");
+            else
+                Help.ShowHelp(this, "./poligonihelpguide.chm", HelpNavigator.Topic, "27.htm");
         }
     }
 }
